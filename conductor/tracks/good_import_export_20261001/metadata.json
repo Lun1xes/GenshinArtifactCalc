@@ -1,0 +1,8 @@
+{
+  "track_id": "good_import_export_20261001",
+  "type": "Feature",
+  "status": "new",
+  "created_at": "2026-10-01T11:24:00+02:00",
+  "updated_at": "2026-10-01T11:24:00+02:00",
+  "description": "Add GOOD format (Genshin Open Object Data) import and export for artifact builds"
+}
