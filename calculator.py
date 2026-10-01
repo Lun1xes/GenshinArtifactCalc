@@ -4,6 +4,7 @@ from datetime import datetime
 
 import customtkinter as ctk
 
+import good_adapter
 from artifact_logic import (
     ARTIFACT_SLOTS,
     MAIN_STATS_BY_SLOT,
@@ -261,6 +262,15 @@ class ArtifactCalculatorApp(ctk.CTk):
             state="disabled",
         )
         self.share_btn.pack(side="left", padx=(0, 5))
+        self.good_btn = ctk.CTkButton(
+            action_frame,
+            text="📤 GOOD",
+            width=90,
+            fg_color="#00695c",
+            hover_color="#004d40",
+            command=self.open_good_transfer_dialog,
+        )
+        self.good_btn.pack(side="left", padx=(0, 5))
         ctk.CTkButton(
             action_frame,
             text="📜 История",
@@ -473,17 +483,20 @@ class ArtifactCalculatorApp(ctk.CTk):
             return "B", "#FF8C00"
         return "C", "#FF4444"
 
+    def _load_history(self) -> list:
+        if not os.path.exists(HISTORY_FILE):
+            return []
+        try:
+            with open(HISTORY_FILE, "r", encoding="utf-8") as f:
+                loaded = json.load(f)
+                return loaded if isinstance(loaded, list) else []
+        except (OSError, json.JSONDecodeError):
+            return []
+
     def save_to_history(self):
         if not self._result_is_current():
             return
-        history = []
-        if os.path.exists(HISTORY_FILE):
-            try:
-                with open(HISTORY_FILE, "r", encoding="utf-8") as f:
-                    loaded = json.load(f)
-                    history = loaded if isinstance(loaded, list) else []
-            except (OSError, json.JSONDecodeError):
-                history = []
+        history = self._load_history()
         history.insert(0, self.last_calculation)
         with open(HISTORY_FILE, "w", encoding="utf-8") as f:
             json.dump(history, f, ensure_ascii=False, indent=4)
@@ -511,6 +524,173 @@ class ArtifactCalculatorApp(ctk.CTk):
         self.clipboard_append(card_text)
         self.share_btn.configure(text="✅ Скопировано!")
         self.after(2000, lambda: self.share_btn.configure(text="📋 Скопировать отчет"))
+
+    def load_artifact_from_good(self, parsed: good_adapter.ParsedArtifact):
+        self.slot_var.set(parsed.slot)
+        self._update_main_stat_options(parsed.slot, invalidate=False)
+        self.main_stat_var.set(parsed.main_stat)
+
+        lvl = parsed.level
+        level_str = f"+{lvl}" if not str(lvl).startswith("+") else str(lvl)
+        if level_str in ["+0", "+4", "+8", "+12", "+16", "+20"]:
+            self.level_var.set(level_str)
+        else:
+            self.level_var.set("+0")
+
+        if len(parsed.substats) <= 3 and parsed.level <= 4:
+            self.initial_stats_var.set("3 сабстата")
+        else:
+            self.initial_stats_var.set("4 сабстата")
+
+        for i, w in enumerate(self.stat_widgets):
+            w["entry"].delete(0, "end")
+            if i < len(parsed.substats):
+                stat_name, val = parsed.substats[i]
+                w["stat_combo"].set(stat_name)
+                w["entry"].insert(0, str(val))
+            else:
+                w["entry"].insert(0, "")
+
+        self._invalidate_calculation()
+        self.calculate_artifact()
+
+    def export_current_artifact_to_good(self) -> dict:
+        level_raw = self.level_var.get().replace("+", "").strip()
+        level = int(level_raw) if level_raw.isdigit() else 0
+        substats = []
+        for w in self.stat_widgets:
+            val_str = w["entry"].get().strip().replace("%", "").replace(",", ".")
+            if val_str:
+                try:
+                    val_dec = good_adapter.D(val_str)
+                    substats.append({"stat": w["stat_combo"].get(), "value": val_dec})
+                except Exception:
+                    pass
+        raw_art = {
+            "slot": self.slot_var.get(),
+            "main_stat": self.main_stat_var.get(),
+            "level": level,
+            "rarity": 5,
+            "substats": substats,
+        }
+        return good_adapter.to_good_artifact(raw_art)
+
+    def bulk_import_to_history(self, artifacts):
+        history = self._load_history()
+        for parsed in artifacts:
+            entry = {
+                "timestamp": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+                "slot": parsed.slot,
+                "main_stat": parsed.main_stat,
+                "role": self.preset_var.get(),
+                "level": f"+{parsed.level}",
+                "rank": "GOOD",
+                "current_pct": 0.0,
+                "potential_pct": 0.0,
+                "expected_pct": 0.0,
+                "substats": {s: float(v) for s, v in parsed.substats},
+                "set_key": parsed.set_key,
+            }
+            history.insert(0, entry)
+        with open(HISTORY_FILE, "w", encoding="utf-8") as f:
+            json.dump(history, f, ensure_ascii=False, indent=4)
+
+    def open_good_transfer_dialog(self):
+        dialog = ctk.CTkToplevel(self)
+        dialog.title("📤 GOOD Импорт / Экспорт")
+        dialog.geometry("640x540")
+        dialog.grab_set()
+
+        ctk.CTkLabel(dialog, text="Genshin Open Object Data (GOOD)", font=("Arial", 16, "bold")).pack(pady=(12, 5))
+
+        info_lbl = ctk.CTkLabel(
+            dialog,
+            text="Вставьте GOOD JSON для импорта или выберите экспорт:",
+            font=("Arial", 11),
+            text_color="#aaaaaa",
+        )
+        info_lbl.pack(pady=(0, 5))
+
+        textbox = ctk.CTkTextbox(dialog, width=600, height=330, font=("Consolas", 11))
+        textbox.pack(padx=15, pady=5, fill="both", expand=True)
+
+        btn_frame = ctk.CTkFrame(dialog, fg_color="transparent")
+        btn_frame.pack(fill="x", padx=15, pady=10)
+
+        def do_import():
+            content = textbox.get("1.0", "end").strip()
+            if not content:
+                info_lbl.configure(text="❌ Поле ввода пусто!", text_color="#ff5252")
+                return
+            try:
+                parsed_list = good_adapter.from_good_json(content)
+                if not parsed_list:
+                    info_lbl.configure(text="❌ Артефакты не найдены в JSON", text_color="#ff5252")
+                    return
+                self.load_artifact_from_good(parsed_list[0])
+                if len(parsed_list) > 1:
+                    self.bulk_import_to_history(parsed_list)
+                    info_lbl.configure(
+                        text=f"✅ Загружен 1 артефакт, {len(parsed_list)} сохранено в историю!",
+                        text_color="#69f0ae",
+                    )
+                else:
+                    info_lbl.configure(text="✅ Артефакт успешно загружен в калькулятор!", text_color="#69f0ae")
+            except Exception as e:
+                info_lbl.configure(text=f"❌ Ошибка импорта: {e}", text_color="#ff5252")
+
+        def do_export_active():
+            try:
+                good_obj = self.export_current_artifact_to_good()
+                json_str = json.dumps(good_obj, indent=2, ensure_ascii=False)
+                textbox.delete("1.0", "end")
+                textbox.insert("1.0", json_str)
+                self.clipboard_clear()
+                self.clipboard_append(json_str)
+                info_lbl.configure(text="✅ Текущий артефакт экспортирован и скопирован в буфер!", text_color="#69f0ae")
+            except Exception as e:
+                info_lbl.configure(text=f"❌ Ошибка экспорта: {e}", text_color="#ff5252")
+
+        def do_export_history():
+            try:
+                history = self._load_history()
+                if not history:
+                    info_lbl.configure(text="⚠️ История пуста!", text_color="#ffd700")
+                    return
+                good_list = []
+                for item in history:
+                    subs = [{"stat": k, "value": v} for k, v in item.get("substats", {}).items()]
+                    raw_art = {
+                        "slot": item.get("slot", "Перо смерти"),
+                        "main_stat": item.get("main_stat", "Сила атаки"),
+                        "level": int(str(item.get("level", "0")).replace("+", "") or 0),
+                        "rarity": 5,
+                        "substats": subs,
+                        "set_key": item.get("set_key", ""),
+                    }
+                    try:
+                        good_list.append(good_adapter.to_good_artifact(raw_art))
+                    except Exception:
+                        pass
+                json_str = good_adapter.to_good_json(good_list)
+                textbox.delete("1.0", "end")
+                textbox.insert("1.0", json_str)
+                self.clipboard_clear()
+                self.clipboard_append(json_str)
+                info_lbl.configure(text=f"✅ {len(good_list)} артефактов из истории скопированы в буфер!", text_color="#69f0ae")
+            except Exception as e:
+                info_lbl.configure(text=f"❌ Ошибка экспорта истории: {e}", text_color="#ff5252")
+
+        ctk.CTkButton(btn_frame, text="📥 Импортировать", command=do_import, width=130, fg_color="#1565c0").pack(
+            side="left", padx=(0, 5)
+        )
+        ctk.CTkButton(btn_frame, text="📋 Экспорт текущего", command=do_export_active, width=150, fg_color="#2e7d32").pack(
+            side="left", padx=(0, 5)
+        )
+        ctk.CTkButton(btn_frame, text="📜 Экспорт истории", command=do_export_history, width=140, fg_color="#4a148c").pack(
+            side="left", padx=(0, 5)
+        )
+        ctk.CTkButton(btn_frame, text="Закрыть", command=dialog.destroy, width=90, fg_color="#424242").pack(side="right")
 
     def open_history_window(self):
         history_win = ctk.CTkToplevel(self)
