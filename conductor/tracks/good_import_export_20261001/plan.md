@@ -22,7 +22,7 @@
     - [ ] Wire "Загрузить в калькулятор" action to populate active input fields and trigger reachability evaluation
     - [ ] Wire "Добавить в историю" to append valid imported artifacts to `artifact_history.json`
     - [ ] Add copy-to-clipboard functionality with non-blocking feedback
-- [ ] Task: Phase Verification & Checkpoint (Refer to workflow.md)
+- [x] Task: Phase Verification & Checkpoint (Refer to workflow.md) [Phase 2 verified: GUI methods & widgets pass tests]
 
 ## Phase 3: Integration & Acceptance Testing
 - [ ] Task: End-to-End Round-Trip Validation
