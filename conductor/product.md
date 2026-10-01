@@ -38,3 +38,7 @@ Artifact evaluation in Genshin Impact is frequently misled by rounding errors, f
 
 5. **Modern Desktop Interface:**
    - CustomTkinter dark-mode graphical user interface with responsive real-time feedback.
+
+6. **GOOD Format (Genshin Open Object Data) Interoperability:**
+   - Direct import/export of 5★ artifacts and complete evaluation histories adhering to the GOOD standard.
+   - Bidirectional translation between standard GOOD keys and localized terminology with exact Decimal precision.

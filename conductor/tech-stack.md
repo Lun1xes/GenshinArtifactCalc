@@ -13,6 +13,7 @@
 ## Architecture and Key Design Patterns
 - **Separation of Concerns:**
   - `artifact_logic.py`: Pure domain logic, mathematical combinatorics, validation, and rating heuristics. Zero GUI dependencies.
+  - `good_adapter.py`: Bidirectional translation layer for Genshin Open Object Data (GOOD) specification with strict Decimal precision.
   - `calculator.py`: Presentation layer managing event handlers, user input widgets, dynamic dropdown updating, and state synchronization.
 - **Precision Arithmetic:**
   - Mandatory use of `decimal.Decimal` with configured step quantization to avoid IEEE-754 floating-point drift.
