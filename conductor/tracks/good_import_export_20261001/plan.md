@@ -16,7 +16,7 @@
 ## Phase 2: GUI Integration & User Workflows
 - [x] Task: Write GUI State Tests for Import/Export Dialog (Red Phase) [4da7ed1]
     - [ ] Add test cases in `test_calculator_state.py` or new `test_good_ui.py` for dialog state transitions
-- [ ] Task: Implement GOOD Import/Export Dialog in CustomTkinter (Green Phase)
+- [x] Task: Implement GOOD Import/Export Dialog in CustomTkinter (Green Phase) [75ad676]
     - [ ] Add "Импорт / Экспорт (GOOD)" launcher button to `calculator.py`
     - [ ] Implement `GoodTransferDialog` modal with Import and Export tabs
     - [ ] Wire "Загрузить в калькулятор" action to populate active input fields and trigger reachability evaluation
