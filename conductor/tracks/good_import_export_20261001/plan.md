@@ -25,7 +25,7 @@
 - [x] Task: Phase Verification & Checkpoint (Refer to workflow.md) [Phase 2 verified: GUI methods & widgets pass tests]
 
 ## Phase 3: Integration & Acceptance Testing
-- [ ] Task: End-to-End Round-Trip Validation
+- [x] Task: End-to-End Round-Trip Validation [0a82390]
     - [ ] Perform full round-trip verification: enter artifact -> export GOOD -> re-import -> verify exact reachability
     - [ ] Verify non-blocking diagnostic warnings when importing unreachable roll values
     - [ ] Run complete regression test suite (`test_*.py`)
