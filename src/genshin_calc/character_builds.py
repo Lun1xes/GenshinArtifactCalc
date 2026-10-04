@@ -1273,7 +1273,7 @@ def find_top_characters_for_artifact(
 
 def _load_external_data() -> None:
     """Seamlessly load and merge external data from data/*.json if present."""
-    from genshin_calc.utils import get_project_root
+    from .utils import get_project_root
     data_dir = os.path.join(get_project_root(), "data")
     if not os.path.isdir(data_dir):
         return

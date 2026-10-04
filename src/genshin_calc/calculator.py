@@ -14,13 +14,13 @@ from typing import Any
 
 import customtkinter as ctk
 
-import character_builds as cb
-import enka_adapter
-import good_adapter
-import kamera_adapter
-from icon_manager import icon_manager
-from upgrade_probability import calculate_upgrade_forecast, UpgradeForecastResult
-from artifact_logic import (
+from . import character_builds as cb
+from . import enka_adapter
+from . import good_adapter
+from . import kamera_adapter
+from .icon_manager import icon_manager
+from .upgrade_probability import calculate_upgrade_forecast, UpgradeForecastResult
+from .artifact_logic import (
     ARTIFACT_SLOTS,
     MAIN_STATS_BY_SLOT,
     STATS_DB,

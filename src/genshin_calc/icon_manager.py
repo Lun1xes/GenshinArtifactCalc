@@ -19,7 +19,7 @@ try:
 except Exception:
     HAS_GUI_LIBS = False
 
-from genshin_calc.utils import get_project_root
+from .utils import get_project_root
 
 ROOT_DIR = get_project_root()
 CACHE_DIR = os.path.join(ROOT_DIR, ".cache", "icons")

@@ -14,7 +14,7 @@ from dataclasses import dataclass
 from decimal import Decimal
 from typing import Any, Mapping
 
-from good_adapter import ParsedArtifact, to_good_artifact
+from .good_adapter import ParsedArtifact, to_good_artifact
 
 D = Decimal
 

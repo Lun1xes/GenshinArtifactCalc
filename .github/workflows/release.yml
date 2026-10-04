@@ -27,7 +27,7 @@ jobs:
           
       - name: Build executable with PyInstaller
         run: |
-          pyinstaller --name "GenshinArtifactCalc" --onefile --windowed --paths src --collect-all genshin_calc --collect-all customtkinter main.py
+          pyinstaller --name "GenshinArtifactCalc" --onefile --windowed --paths src --paths src/genshin_calc --collect-all genshin_calc --collect-all customtkinter main.py
           
       - name: Package Release ZIP
         run: |

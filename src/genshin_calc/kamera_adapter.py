@@ -18,7 +18,7 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Any, Callable, Optional, Sequence
 
-from good_adapter import ParsedArtifact, from_good_artifact, from_good_json
+from .good_adapter import ParsedArtifact, from_good_artifact, from_good_json
 
 logger = logging.getLogger(__name__)
 
@@ -57,7 +57,7 @@ def find_kamera_executable(search_dirs: Optional[Sequence[str | Path]] = None) -
                     return sub
         return None
 
-    from genshin_calc.utils import get_project_root
+    from .utils import get_project_root
     root = Path(get_project_root())
     for rel_path in DEFAULT_SEARCH_PATHS:
         p = root / rel_path
@@ -80,7 +80,7 @@ def get_kamera_output_dirs(search_dirs: Optional[Sequence[str | Path]] = None) -
                 results.append(p)
         return results
 
-    from genshin_calc.utils import get_project_root
+    from .utils import get_project_root
     root = Path(get_project_root())
     for rel in DEFAULT_OUTPUT_DIRS:
         p = (root / rel).resolve()

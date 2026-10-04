@@ -14,10 +14,10 @@ from dataclasses import dataclass
 from decimal import Decimal
 from typing import Any, Mapping, Sequence
 
-import artifact_logic as al
-from artifact_logic import D, STATS_DB, SUBSTAT_SPAWN_WEIGHT
+from . import artifact_logic as al
+from .artifact_logic import D, STATS_DB, SUBSTAT_SPAWN_WEIGHT
 
-from genshin_calc.utils import get_project_root
+from .utils import get_project_root
 
 ROOT_DIR = get_project_root()
 MATH_FILE = os.path.join(ROOT_DIR, "data", "relic_math.json")

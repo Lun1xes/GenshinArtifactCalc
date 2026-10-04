@@ -2,7 +2,7 @@ import sys
 from pathlib import Path
 
 # Add src to Python path
-sys.path.insert(0, str(Path(__file__).parent / "src" / "genshin_calc"))
+sys.path.insert(0, str(Path(__file__).parent / "src"))
 
 from genshin_calc.calculator import ArtifactCalculatorApp
 
