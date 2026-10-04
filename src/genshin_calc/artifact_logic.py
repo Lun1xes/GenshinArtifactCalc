@@ -424,3 +424,5 @@ def describe_rolls(counts: tuple[int, ...]) -> str:
     if len(counts) == 1:
         return f"{counts[0]} ролл."
     return f"{counts[0]}–{counts[-1]} ролл."
+
+SLOT_EMOJI = {'Цветок жизни': '🌺', 'Перо смерти': '✒️', 'Пески времени': '⏳', 'Кубок пространства': '🍷', 'Корона разума': '👑'}
