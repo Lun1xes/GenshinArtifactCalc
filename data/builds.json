@@ -1,0 +1,6460 @@
+[
+  {
+    "char_id": "amber",
+    "name": "Эмбер",
+    "build_name": "DPS",
+    "element": "Пиро",
+    "role": "DPS",
+    "recommended": false,
+    "best_sets": [
+      "Странствующий ансамбль",
+      "Воспоминания Симэнавы",
+      "Горящая алая ведьма"
+    ],
+    "good_set_keys": [
+      "WanderersTroupe",
+      "ShimenawasReminiscence",
+      "CrimsonWitchOfFlames"
+    ],
+    "main_stats": {
+      "Пески времени": [
+        "Сила атаки %",
+        "Мастерство стихий"
+      ],
+      "Кубок пространства": [
+        "Пиро урон %"
+      ],
+      "Корона разума": [
+        "Крит. урон"
+      ]
+    },
+    "substat_weights": {
+      "Крит. урон": 2.0,
+      "Шанс крит. попадания": 0.0,
+      "Сила атаки %": 1.5,
+      "Сила атаки": 0.1,
+      "HP %": 0.0,
+      "HP": 0.0,
+      "Защита %": 0.0,
+      "Защита": 0.0,
+      "Восст. энергии": 0.7,
+      "Мастерство стихий": 1.0
+    },
+    "weapons": [
+      {
+        "id": "amos_bow"
+      },
+      {
+        "id": "thundering_pulse"
+      },
+      {
+        "id": "aqua_simulacra"
+      },
+      {
+        "id": "skyward_harp"
+      },
+      {
+        "id": "prototype_crescent"
+      }
+    ],
+    "notes": "Amber DPS will be focused on maximizing Charged Shot damage on enemy weak spots as Amber's Ascension 4 Talent increases ATK by 15% for 10s after hitting a weak spot. Crit is also guaranteed when you land your shot on a weak spot so we aim to maximize Crit DMG with little to no dependance on Crit Rate, this could change after [C4].\nAfter [C4], the playstyle catering towards her Skill damage becomes available, with this build you will want to run Crimson Witch of Flames (4) while trying to maintai"
+  },
+  {
+    "char_id": "amber",
+    "name": "Эмбер",
+    "build_name": "SUPPORT",
+    "element": "Пиро",
+    "role": "SUPPORT",
+    "recommended": true,
+    "best_sets": [
+      "Церемония древней знати",
+      "Инструктор"
+    ],
+    "good_set_keys": [
+      "NoblesseOblige",
+      "Instructor"
+    ],
+    "main_stats": {
+      "Пески времени": [
+        "Восст. энергии",
+        "Сила атаки %"
+      ],
+      "Кубок пространства": [
+        "Пиро урон %"
+      ],
+      "Корона разума": [
+        "Шанс крит. попадания",
+        "DMG"
+      ]
+    },
+    "substat_weights": {
+      "Крит. урон": 1.5,
+      "Шанс крит. попадания": 1.5,
+      "Сила атаки %": 1.0,
+      "Сила атаки": 0.1,
+      "HP %": 0.0,
+      "HP": 0.0,
+      "Защита %": 0.0,
+      "Защита": 0.0,
+      "Восст. энергии": 2.0,
+      "Мастерство стихий": 0.7
+    },
+    "weapons": [
+      {
+        "id": "elegy_for_the_end"
+      },
+      {
+        "id": "favonius_warbow"
+      },
+      {
+        "id": "sacrificial_bow"
+      },
+      {
+        "id": "the_viridescent_hunt"
+      }
+    ],
+    "notes": "Due to her poor scalings, this section is dedicated to a low-investment build that provides utility and shieldbreaking capabilities by abusing her quick Pyro application on her Elemental Burst. Due to her energy generation being extremely poor, her Energy Recharge options are prioritized.\n\nRegarding Artifact Sets:\nInstructor (4): This set is preferred over Noblesse Oblige (4) when Amber is used as support in a Hu Tao Vaporize team."
+  },
+  {
+    "char_id": "xiangling",
+    "name": "Сян Лин",
+    "build_name": "OFF-FIELD DPS",
+    "element": "Пиро",
+    "role": "OFF-FIELD DPS",
+    "recommended": true,
+    "best_sets": [
+      "Эмблема рассечённой судьбы",
+      "Горящая алая ведьма",
+      "Церемония древней знати",
+      "Учёный"
+    ],
+    "good_set_keys": [
+      "EmblemOfSeveredFate",
+      "CrimsonWitchOfFlames",
+      "NoblesseOblige",
+      "Scholar"
+    ],
+    "main_stats": {
+      "Пески времени": [
+        "Восст. энергии",
+        "Сила атаки %",
+        "Мастерство стихий"
+      ],
+      "Кубок пространства": [
+        "Пиро урон %"
+      ],
+      "Корона разума": [
+        "Шанс крит. попадания",
+        "DMG"
+      ]
+    },
+    "substat_weights": {
+      "Крит. урон": 1.5,
+      "Шанс крит. попадания": 1.5,
+      "Сила атаки %": 1.0,
+      "Сила атаки": 0.1,
+      "HP %": 0.0,
+      "HP": 0.0,
+      "Защита %": 0.0,
+      "Защита": 0.0,
+      "Восст. энергии": 2.0,
+      "Мастерство стихий": 0.7
+    },
+    "weapons": [
+      {
+        "id": "staff_of_the_scarlet_sands"
+      },
+      {
+        "id": "staff_of_homa"
+      },
+      {
+        "id": "engulfing_lightning"
+      },
+      {
+        "id": "the_catch",
+        "refine": [
+          5
+        ]
+      },
+      {
+        "id": "primordial_jade_winged-spear"
+      }
+    ],
+    "notes": "A few commonly used teams for pyro Xiangling are:\nNational Team: Xiangling, Xingqiu, Bennett and a Flex unit (Sucrose/Zhongli/Kazuha/Raiden/Chongyun/etc)\nChilde Team: Childe, Xiangling, Bennett and a Flex unit (Sucrose/Zhongli/Venti/Kazuha/etc)\n\nRegarding Weapon Choices: THIS LIST ASSUMES THAT XIANGLING IS RUN WITH BOTH BENNETT AND A SECONDARY BUFFER (i.e. Kazuha/Sucrose)\nWavebreaker's Fin: At [R5], this weapon is equal to or outperforms Staff of Homa, depending on your total team burst cost.\nDr"
+  },
+  {
+    "char_id": "bennett",
+    "name": "Беннет",
+    "build_name": "DPS",
+    "element": "Пиро",
+    "role": "DPS",
+    "recommended": false,
+    "best_sets": [
+      "Горящая алая ведьма",
+      "Церемония древней знати",
+      "Громогласный рёв ярости"
+    ],
+    "good_set_keys": [
+      "CrimsonWitchOfFlames",
+      "NoblesseOblige",
+      "ThunderingFury"
+    ],
+    "main_stats": {
+      "Пески времени": [
+        "Мастерство стихий",
+        "Сила атаки %"
+      ],
+      "Кубок пространства": [
+        "Пиро урон %"
+      ],
+      "Корона разума": [
+        "Шанс крит. попадания",
+        "DMG"
+      ]
+    },
+    "substat_weights": {
+      "Крит. урон": 2.0,
+      "Шанс крит. попадания": 2.0,
+      "Сила атаки %": 1.0,
+      "Сила атаки": 0.2,
+      "HP %": 0.0,
+      "HP": 0.0,
+      "Защита %": 0.0,
+      "Защита": 0.0,
+      "Восст. энергии": 0.7,
+      "Мастерство стихий": 1.5
+    },
+    "weapons": [
+      {
+        "id": "mistsplitter_reforged"
+      },
+      {
+        "id": "primordial_jade_cutter"
+      },
+      {
+        "id": "freedom-sworn"
+      },
+      {
+        "id": "summit_shaper"
+      },
+      {
+        "id": "aquila_favonia"
+      }
+    ],
+    "notes": "Bennett's EB grants you a pyro status as long as your characters are within his burst AoE (Cryo in specific, since Pyro > Cryo).\n\nFor that, cast EB with Bennett, switch to the character imbued with Cryo and walk on Bennett's Burst field\n\nUpon entering burst field, the Pyro status will continuously imbue you with Pyro, reacting with other elements on you and eventually removing them.\n\nRegarding Weapon Choices:\nThe Black Sword: With an EM sand, this combo has the highest Melt/Vaporize damage. \nIro"
+  },
+  {
+    "char_id": "bennett",
+    "name": "Беннет",
+    "build_name": "BURST SUPPORT",
+    "element": "Пиро",
+    "role": "BURST SUPPORT",
+    "recommended": true,
+    "best_sets": [
+      "Церемония древней знати",
+      "Эмблема рассечённой судьбы",
+      "Горящая алая ведьма"
+    ],
+    "good_set_keys": [
+      "NoblesseOblige",
+      "EmblemOfSeveredFate",
+      "CrimsonWitchOfFlames"
+    ],
+    "main_stats": {
+      "Пески времени": [
+        "Сила атаки %",
+        "Восст. энергии"
+      ],
+      "Кубок пространства": [
+        "Пиро урон %"
+      ],
+      "Корона разума": [
+        "Шанс крит. попадания",
+        "DMG"
+      ]
+    },
+    "substat_weights": {
+      "Крит. урон": 2.0,
+      "Шанс крит. попадания": 2.0,
+      "Сила атаки %": 1.5,
+      "Сила атаки": 0.2,
+      "HP %": 0.0,
+      "HP": 0.0,
+      "Защита %": 0.0,
+      "Защита": 0.0,
+      "Восст. энергии": 1.0,
+      "Мастерство стихий": 0.7
+    },
+    "weapons": [
+      {
+        "id": "mistsplitter_reforged"
+      },
+      {
+        "id": "aquila_favonia"
+      },
+      {
+        "id": "skyward_blade"
+      },
+      {
+        "id": "freedom-sworn"
+      },
+      {
+        "id": "the_alley_flash"
+      }
+    ],
+    "notes": "A Burst Support Bennett completely ignores the need for excess healing potential and is aimed for people who prefer to squeeze out more damage instead. \nOn this build, Bennett is built with offensive stats like ATK%, Pyro Damage, and Crit stats while having a good amount of Energy Recharge to burst off cooldown. \nPrioritize Energy Recharge before offensive stats if you cannot cast your Elemental Burst off cooldown.\n\nPrioritize Energy Recharge first if you can't burst off cooldown"
+  },
+  {
+    "char_id": "bennett",
+    "name": "Беннет",
+    "build_name": "SUPPORT",
+    "element": "Пиро",
+    "role": "SUPPORT",
+    "recommended": false,
+    "best_sets": [
+      "Церемония древней знати",
+      "Стойкость Миллелита",
+      "Инструктор"
+    ],
+    "good_set_keys": [
+      "NoblesseOblige",
+      "TenacityOfTheMillelith",
+      "Instructor"
+    ],
+    "main_stats": {
+      "Пески времени": [
+        "Восст. энергии",
+        "HP %"
+      ],
+      "Кубок пространства": [
+        "HP %"
+      ],
+      "Корона разума": [
+        "Healing Bonus%",
+        "HP %"
+      ]
+    },
+    "substat_weights": {
+      "Крит. урон": 0.0,
+      "Шанс крит. попадания": 0.0,
+      "Сила атаки %": 0.0,
+      "Сила атаки": 0.0,
+      "HP %": 1.5,
+      "HP": 0.3,
+      "Защита %": 0.0,
+      "Защита": 0.0,
+      "Восст. энергии": 2.0,
+      "Мастерство стихий": 0.0
+    },
+    "weapons": [
+      {
+        "id": "mistsplitter_reforged"
+      },
+      {
+        "id": "aquila_favonia"
+      },
+      {
+        "id": "freedom-sworn"
+      },
+      {
+        "id": "the_alley_flash"
+      },
+      {
+        "id": "skyward_blade"
+      }
+    ],
+    "notes": "Heals from his Elemental Burst scale off of HP, while his damage buff from Burst only scales with your base ATK (Character Base ATK stat and Weapon Base ATK stat)\nDO NOT increase Bennett's constellation from 5 to 6 unless he is in a Pyro team and you know what you're doing. This is because Bennett turns all of your melee on-field character's Auto Attacks into Pyro, which means that Bennett will lose a lot of his team comp potential.\nAlthough Bennett is usually considered a healer, he already hea"
+  },
+  {
+    "char_id": "xinyan",
+    "name": "Синь Янь",
+    "build_name": "PHYSICAL DPS",
+    "element": "Пиро",
+    "role": "PHYSICAL DPS",
+    "recommended": true,
+    "best_sets": [
+      "Эмблема рассечённой судьбы",
+      "Церемония древней знати",
+      "Кокон сладких грёз"
+    ],
+    "good_set_keys": [
+      "EmblemOfSeveredFate",
+      "NoblesseOblige",
+      "HuskOfOpulentDreams"
+    ],
+    "main_stats": {
+      "Пески времени": [
+        "Сила атаки %",
+        "Восст. энергии"
+      ],
+      "Кубок пространства": [
+        "Физ. урон %"
+      ],
+      "Корона разума": [
+        "Шанс крит. попадания",
+        "DMG"
+      ]
+    },
+    "substat_weights": {
+      "Крит. урон": 2.0,
+      "Шанс крит. попадания": 2.0,
+      "Сила атаки %": 1.5,
+      "Сила атаки": 0.2,
+      "HP %": 0.0,
+      "HP": 0.0,
+      "Защита %": 0.7,
+      "Защита": 0.0,
+      "Восст. энергии": 1.0,
+      "Мастерство стихий": 0.0
+    },
+    "weapons": [
+      {
+        "id": "redhorn_stonethresher"
+      },
+      {
+        "id": "skyward_pride"
+      },
+      {
+        "id": "serpent_spine"
+      },
+      {
+        "id": "the_unforged"
+      },
+      {
+        "id": "song_of_broken_pines"
+      }
+    ],
+    "notes": "This build focuses primarily on her Physical Damage as an On-Field DPS. At [C2], she can build a 1:3 Crit Rate:Crit DMG ratio, instead of the usual 1:2 Crit Rate:Crit DMG ratio.\n\nRegarding Weapon Choices:\nSerpent Spine: At [R5], this weapon performs better than Skyward Pride.\nThe Unforged: This ranking is based on unshielded performance, while shielded this weapon performs better than low refinement Serpent Spine.\nPrototype Archaic: At [R5], this weapon performs better than Snow-Tombed Starsilve"
+  },
+  {
+    "char_id": "xinyan",
+    "name": "Синь Янь",
+    "build_name": "PYRO DPS",
+    "element": "Пиро",
+    "role": "PYRO DPS",
+    "recommended": false,
+    "best_sets": [
+      "Ступающий по лаве",
+      "Эмблема рассечённой судьбы",
+      "Горящая алая ведьма",
+      "Церемония древней знати",
+      "Кокон сладких грёз"
+    ],
+    "good_set_keys": [
+      "Lavawalker",
+      "EmblemOfSeveredFate",
+      "CrimsonWitchOfFlames",
+      "NoblesseOblige",
+      "HuskOfOpulentDreams"
+    ],
+    "main_stats": {
+      "Пески времени": [
+        "Сила атаки %"
+      ],
+      "Кубок пространства": [
+        "Пиро урон %"
+      ],
+      "Корона разума": [
+        "Шанс крит. попадания",
+        "Крит. урон"
+      ]
+    },
+    "substat_weights": {
+      "Крит. урон": 2.0,
+      "Шанс крит. попадания": 2.0,
+      "Сила атаки %": 1.5,
+      "Сила атаки": 0.2,
+      "HP %": 0.0,
+      "HP": 0.0,
+      "Защита %": 0.7,
+      "Защита": 0.0,
+      "Восст. энергии": 1.0,
+      "Мастерство стихий": 0.0
+    },
+    "weapons": [
+      {
+        "id": "redhorn_stonethresher"
+      },
+      {
+        "id": "serpent_spine"
+      },
+      {
+        "id": "wolfs_gravestone"
+      },
+      {
+        "id": "the_unforged"
+      },
+      {
+        "id": "skyward_pride"
+      }
+    ],
+    "notes": "It is required to run this build with [C6] Bennett. However, it is not recommended to [C6] Bennett solely for Xinyan.\n\nRegarding Weapon Choices:\nSerpent Spine: It is worth noting that an [R5] Serpent Spine can outperform Redhorn Stonethresher [R1] with good Serpent Spine stack management.\nLithic Blade: This ranking assumes 2 stacks.\n\nRegarding Artifact Sets:\nLavawalker (4): Xinyan can maintain a high Pyro aura uptime on an enemy, making this her best set."
+  },
+  {
+    "char_id": "xinyan",
+    "name": "Синь Янь",
+    "build_name": "SUPPORT",
+    "element": "Пиро",
+    "role": "SUPPORT",
+    "recommended": false,
+    "best_sets": [
+      "Стойкость Миллелита",
+      "Кокон сладких грёз"
+    ],
+    "good_set_keys": [
+      "TenacityOfTheMillelith",
+      "HuskOfOpulentDreams"
+    ],
+    "main_stats": {
+      "Пески времени": [
+        "Защита %",
+        "Восст. энергии"
+      ],
+      "Кубок пространства": [
+        "Защита %"
+      ],
+      "Корона разума": [
+        "Защита %"
+      ]
+    },
+    "substat_weights": {
+      "Крит. урон": 1.0,
+      "Шанс крит. попадания": 1.0,
+      "Сила атаки %": 0.0,
+      "Сила атаки": 0.0,
+      "HP %": 0.0,
+      "HP": 0.0,
+      "Защита %": 0.0,
+      "Защита": 0.0,
+      "Восст. энергии": 2.0,
+      "Мастерство стихий": 0.0
+    },
+    "weapons": [
+      {
+        "id": "sacrificial_greatsword"
+      },
+      {
+        "id": "whiteblind"
+      },
+      {
+        "id": "favonius_greatsword"
+      }
+    ],
+    "notes": "Xinyan's skill grants you a Pyro status upon contact with shield. No matter how many times you switch your characters, it'll still apply Pyro every instance you switch with shield. This allows you to cleanse most elemental statuses that has been applied to you.\n\nIf the status doesn't get cleansed, switch on that character one more time with the shield. Some elements, such as Hydro, are not cleansed very efficiently.\n\nThis section is dedicated to using Xinyan as a shielder for her team.\n\nRegardin"
+  },
+  {
+    "char_id": "yanfei",
+    "name": "Янь Фэй",
+    "build_name": "DPS",
+    "element": "Пиро",
+    "role": "DPS",
+    "recommended": true,
+    "best_sets": [
+      "Горящая алая ведьма",
+      "Позолоченные сны",
+      "Странствующий ансамбль",
+      "Воспоминания Симэнавы"
+    ],
+    "good_set_keys": [
+      "CrimsonWitchOfFlames",
+      "GildedDreams",
+      "WanderersTroupe",
+      "ShimenawasReminiscence"
+    ],
+    "main_stats": {
+      "Пески времени": [
+        "Сила атаки %",
+        "Мастерство стихий"
+      ],
+      "Кубок пространства": [
+        "Пиро урон %"
+      ],
+      "Корона разума": [
+        "Шанс крит. попадания",
+        "DMG"
+      ]
+    },
+    "substat_weights": {
+      "Крит. урон": 2.0,
+      "Шанс крит. попадания": 2.0,
+      "Сила атаки %": 1.5,
+      "Сила атаки": 0.1,
+      "HP %": 0.0,
+      "HP": 0.0,
+      "Защита %": 0.0,
+      "Защита": 0.0,
+      "Восст. энергии": 1.0,
+      "Мастерство стихий": 0.7
+    },
+    "weapons": [
+      {
+        "id": "skyward_atlas"
+      },
+      {
+        "id": "memory_of_dust"
+      },
+      {
+        "id": "lost_prayer_to_the_sacred_winds"
+      },
+      {
+        "id": "kaguras_verity"
+      },
+      {
+        "id": "the_widsith"
+      }
+    ],
+    "notes": "Yanfei's Ascension 4 Talent does a second hit after a Crit Charge Attack. This scales 80% of your ATK and can trigger reactions as well due to having a separate internal cooldown on its Pyro application.\n\nYanfei can have trouble trying to set up for her reaction DPS. Vaporize is generally the more consistent option and you need Xingqiu to make this work best. When running a Vaporize team with Xingqiu, 3 normal attacks into a charged attack (N1>N2>N3>C) is the safest and most reliable way to Vapo"
+  },
+  {
+    "char_id": "yanfei",
+    "name": "Янь Фэй",
+    "build_name": "SHIELD SUPPORT",
+    "element": "Пиро",
+    "role": "SHIELD SUPPORT",
+    "recommended": false,
+    "best_sets": [
+      "Эмблема рассечённой судьбы",
+      "Стойкость Миллелита",
+      "Церемония древней знати"
+    ],
+    "good_set_keys": [
+      "EmblemOfSeveredFate",
+      "TenacityOfTheMillelith",
+      "NoblesseOblige"
+    ],
+    "main_stats": {
+      "Пески времени": [
+        "Восст. энергии",
+        "HP %"
+      ],
+      "Кубок пространства": [
+        "HP %"
+      ],
+      "Корона разума": [
+        "HP %"
+      ]
+    },
+    "substat_weights": {
+      "Крит. урон": 0.0,
+      "Шанс крит. попадания": 0.0,
+      "Сила атаки %": 0.0,
+      "Сила атаки": 0.0,
+      "HP %": 1.5,
+      "HP": 0.3,
+      "Защита %": 0.0,
+      "Защита": 0.0,
+      "Восст. энергии": 2.0,
+      "Мастерство стихий": 0.0
+    },
+    "weapons": [
+      {
+        "id": "prototype_amber"
+      },
+      {
+        "id": "favonius_codex"
+      },
+      {
+        "id": "thrilling_tales_of_dragon_slayers"
+      }
+    ],
+    "notes": "C4+ REQUIRED\nThis section is dedicated to a playstyle where Yanfei is utilised as a primary shielder through her 4th Constellation. Due to the requirement of having to burst off cooldown, this build has high energy requirements.\n\nYanfei's talent levels provide nothing for this role and it is not recommended to level them."
+  },
+  {
+    "char_id": "thoma",
+    "name": "Тома",
+    "build_name": "BURGEON",
+    "element": "Пиро",
+    "role": "BURGEON",
+    "recommended": true,
+    "best_sets": [
+      "Цветок потерянного рая",
+      "Позолоченные сны",
+      "Эмблема рассечённой судьбы",
+      "Горящая алая ведьма"
+    ],
+    "good_set_keys": [
+      "FlowerOfParadiseLost",
+      "GildedDreams",
+      "EmblemOfSeveredFate",
+      "CrimsonWitchOfFlames"
+    ],
+    "main_stats": {
+      "Пески времени": [
+        "Восст. энергии",
+        "Мастерство стихий"
+      ],
+      "Кубок пространства": [
+        "Мастерство стихий"
+      ],
+      "Корона разума": [
+        "Мастерство стихий"
+      ]
+    },
+    "substat_weights": {
+      "Крит. урон": 0.0,
+      "Шанс крит. попадания": 0.4,
+      "Сила атаки %": 0.0,
+      "Сила атаки": 0.0,
+      "HP %": 1.0,
+      "HP": 0.2,
+      "Защита %": 0.0,
+      "Защита": 0.0,
+      "Восст. энергии": 2.0,
+      "Мастерство стихий": 1.5
+    },
+    "weapons": [
+      {
+        "id": "kitain_cross_spear"
+      },
+      {
+        "id": "favonius_lance"
+      },
+      {
+        "id": "dragons_bane"
+      },
+      {
+        "id": "moonpiercer"
+      },
+      {
+        "id": "black_tassel"
+      }
+    ],
+    "notes": "This build focuses on using Thoma as a trigger unit for Burgeon reactions. A role he excels at because of his slow Pyro application reducing the likelihood of creating Burning reactions and his shield reducing the self-damage from the aforementioned Burgeon reactions.\n\nRegarding Weapon Choices:\nKitain Cross Spear: High refinement is recommended to further reduce Thoma's Energy Recharge requirements\nDragon's Bane: Becomes a more reasonable option when you have Thoma's C4.\n\n\nFor an EM-focused buil"
+  },
+  {
+    "char_id": "thoma",
+    "name": "Тома",
+    "build_name": "SUPPORT",
+    "element": "Пиро",
+    "role": "SUPPORT",
+    "recommended": false,
+    "best_sets": [
+      "Церемония древней знати",
+      "Стойкость Миллелита",
+      "Эмблема рассечённой судьбы",
+      "Инструктор",
+      "Учёный"
+    ],
+    "good_set_keys": [
+      "NoblesseOblige",
+      "TenacityOfTheMillelith",
+      "EmblemOfSeveredFate",
+      "Instructor",
+      "Scholar"
+    ],
+    "main_stats": {
+      "Пески времени": [
+        "Восст. энергии",
+        "HP %"
+      ],
+      "Кубок пространства": [
+        "HP %"
+      ],
+      "Корона разума": [
+        "HP %"
+      ]
+    },
+    "substat_weights": {
+      "Крит. урон": 0.0,
+      "Шанс крит. попадания": 1.0,
+      "Сила атаки %": 0.0,
+      "Сила атаки": 0.0,
+      "HP %": 1.5,
+      "HP": 0.2,
+      "Защита %": 0.0,
+      "Защита": 0.0,
+      "Восст. энергии": 2.0,
+      "Мастерство стихий": 0.0
+    },
+    "weapons": [
+      {
+        "id": "favonius_lance"
+      },
+      {
+        "id": "engulfing_lightning"
+      },
+      {
+        "id": "the_catch",
+        "refine": [
+          5
+        ]
+      },
+      {
+        "id": "kitain_cross_spear"
+      },
+      {
+        "id": "prototype_starglitter"
+      }
+    ],
+    "notes": "Thoma ideally wants to focus on shield over damage, and his burst uptime is required to achieve better shields, which is why he needs ER% on top of HP%.\n\nRegarding Weapon Choices:\nBlack Tassel: At [C4], Thoma gains 15 energy when he fires his Elemental Burst. This effectively reduces his energy cost to 65 and makes it possible to use Black Tassel with ER sands instead of ER weapon with ER sands to further strengthen his shield.\n\nRegarding Artifact sets:\nInstructor (4): This set ideally works bes"
+  },
+  {
+    "char_id": "diluc",
+    "name": "Дилюк",
+    "build_name": "DPS",
+    "element": "Пиро",
+    "role": "DPS",
+    "recommended": true,
+    "best_sets": [
+      "Горящая алая ведьма",
+      "Позолоченные сны",
+      "Конец гладиатора"
+    ],
+    "good_set_keys": [
+      "CrimsonWitchOfFlames",
+      "GildedDreams",
+      "GladiatorsFinale"
+    ],
+    "main_stats": {
+      "Пески времени": [
+        "Мастерство стихий",
+        "Сила атаки %"
+      ],
+      "Кубок пространства": [
+        "Пиро урон %"
+      ],
+      "Корона разума": [
+        "Шанс крит. попадания",
+        "DMG"
+      ]
+    },
+    "substat_weights": {
+      "Крит. урон": 2.0,
+      "Шанс крит. попадания": 2.0,
+      "Сила атаки %": 1.5,
+      "Сила атаки": 0.2,
+      "HP %": 0.0,
+      "HP": 0.0,
+      "Защита %": 0.0,
+      "Защита": 0.0,
+      "Восст. энергии": 0.0,
+      "Мастерство стихий": 1.0
+    },
+    "weapons": [
+      {
+        "id": "redhorn_stonethresher"
+      },
+      {
+        "id": "serpent_spine"
+      },
+      {
+        "id": "wolfs_gravestone"
+      },
+      {
+        "id": "the_unforged"
+      },
+      {
+        "id": "rainslasher"
+      }
+    ],
+    "notes": "Diluc has a number of combos he can do during his uptime. \n N = Normal Attack, E = Elemental Skill, Q = Elemental Burst  (N2 would equal 2 Normal Attacks)\nHis most common combo is  Q N2 E N2 E N2 E.  This fits perfectly into the buff window of his teams.\n\nFor high upfront damage, use  Q E N1 E N1 E N1 . This falls off significantly if the enemy isn't killed within this window.\n\nA full rotation combo can look similar to  Q N2 E N2 E N2 E N4 N3 E N1 E E . An example video can be found  here.\n\nRega"
+  },
+  {
+    "char_id": "klee",
+    "name": "Кли",
+    "build_name": "DPS",
+    "element": "Пиро",
+    "role": "DPS",
+    "recommended": true,
+    "best_sets": [
+      "Горящая алая ведьма",
+      "Ступающий по лаве",
+      "Церемония древней знати",
+      "Странствующий ансамбль"
+    ],
+    "good_set_keys": [
+      "CrimsonWitchOfFlames",
+      "Lavawalker",
+      "NoblesseOblige",
+      "WanderersTroupe"
+    ],
+    "main_stats": {
+      "Пески времени": [
+        "Сила атаки %"
+      ],
+      "Кубок пространства": [
+        "Пиро урон %"
+      ],
+      "Корона разума": [
+        "Шанс крит. попадания",
+        "DMG"
+      ]
+    },
+    "substat_weights": {
+      "Крит. урон": 2.0,
+      "Шанс крит. попадания": 2.0,
+      "Сила атаки %": 1.5,
+      "Сила атаки": 0.1,
+      "HP %": 0.0,
+      "HP": 0.0,
+      "Защита %": 0.0,
+      "Защита": 0.0,
+      "Восст. энергии": 0.7,
+      "Мастерство стихий": 1.0
+    },
+    "weapons": [
+      {
+        "id": "the_widsith",
+        "refine": [
+          5
+        ]
+      },
+      {
+        "id": "lost_prayer_to_the_sacred_winds"
+      },
+      {
+        "id": "kaguras_verity"
+      },
+      {
+        "id": "the_widsith",
+        "refine": [
+          1,
+          4
+        ]
+      },
+      {
+        "id": "skyward_atlas"
+      }
+    ],
+    "notes": "Klee has access to a number of animation cancels that allow her to deal damage with her talents faster than normal. \n\nHer N1 can be canceled through holding a directional key while clicking attack. This can be chained over and over again to produce a \"machine gun\" effect.\n\nHer optimal combos include N1C and N2C. N1C is higher DPS but eats stamina faster, while N2C has more consistency in keeping enemies stunned and gives a higher chance of obtaining her A1 passive onto the following CA.\n\nBeing e"
+  },
+  {
+    "char_id": "hu_tao",
+    "name": "Ху Тао",
+    "build_name": "DPS",
+    "element": "Пиро",
+    "role": "DPS",
+    "recommended": true,
+    "best_sets": [
+      "Горящая алая ведьма",
+      "Воспоминания Симэнавы",
+      "Позолоченные сны",
+      "Стойкость Миллелита"
+    ],
+    "good_set_keys": [
+      "CrimsonWitchOfFlames",
+      "ShimenawasReminiscence",
+      "GildedDreams",
+      "TenacityOfTheMillelith"
+    ],
+    "main_stats": {
+      "Пески времени": [
+        "HP %",
+        "Мастерство стихий"
+      ],
+      "Кубок пространства": [
+        "Пиро урон %"
+      ],
+      "Корона разума": [
+        "Шанс крит. попадания",
+        "DMG"
+      ]
+    },
+    "substat_weights": {
+      "Крит. урон": 2.0,
+      "Шанс крит. попадания": 2.0,
+      "Сила атаки %": 0.7,
+      "Сила атаки": 0.0,
+      "HP %": 1.0,
+      "HP": 0.2,
+      "Защита %": 0.0,
+      "Защита": 0.0,
+      "Восст. энергии": 0.4,
+      "Мастерство стихий": 1.5
+    },
+    "weapons": [
+      {
+        "id": "staff_of_homa"
+      },
+      {
+        "id": "staff_of_the_scarlet_sands"
+      },
+      {
+        "id": "dragons_bane"
+      },
+      {
+        "id": "deathmatch"
+      },
+      {
+        "id": "primordial_jade_winged-spear"
+      }
+    ],
+    "notes": "When ending Hu Tao's combos with an Elemental Burst, if you do not jump/dash cancel the last charged attack, the Elemental Burst will still benefit from Hu Tao's Elemental Skill.\n\nIt is recommended to use cancels when performing your Hu Tao combos as to maximize damage.\nN2CJ for [C0] and N2CD for [C1].\nN3CJ/N3CD can be used to conserve stamina at the cost of damage.\n\n*N = Normal Attack, C = Charged Attack, J = Jump, D = Dash\n\nHu Tao is most effective when used with Xingqiu to proc Vaporize/Freez"
+  },
+  {
+    "char_id": "yoimiya",
+    "name": "Ёимия",
+    "build_name": "DPS",
+    "element": "Пиро",
+    "role": "DPS",
+    "recommended": true,
+    "best_sets": [
+      "Воспоминания Симэнавы",
+      "Горящая алая ведьма"
+    ],
+    "good_set_keys": [
+      "ShimenawasReminiscence",
+      "CrimsonWitchOfFlames"
+    ],
+    "main_stats": {
+      "Пески времени": [
+        "Сила атаки %",
+        "Мастерство стихий"
+      ],
+      "Кубок пространства": [
+        "Пиро урон %"
+      ],
+      "Корона разума": [
+        "Шанс крит. попадания",
+        "DMG"
+      ]
+    },
+    "substat_weights": {
+      "Крит. урон": 2.0,
+      "Шанс крит. попадания": 2.0,
+      "Сила атаки %": 1.5,
+      "Сила атаки": 0.1,
+      "HP %": 0.0,
+      "HP": 0.0,
+      "Защита %": 0.0,
+      "Защита": 0.0,
+      "Восст. энергии": 0.7,
+      "Мастерство стихий": 1.0
+    },
+    "weapons": [
+      {
+        "id": "thundering_pulse"
+      },
+      {
+        "id": "aqua_simulacra"
+      },
+      {
+        "id": "polar_star"
+      },
+      {
+        "id": "slingshot",
+        "refine": [
+          5
+        ]
+      },
+      {
+        "id": "amos_bow"
+      }
+    ],
+    "notes": "Regarding Weapon Choices: \nAqua Simulacra: This weapon requires Yoimiya to be very close to enemies (~8m). As such, this weapon is recommended only with a good shielder. \nSlingshot [R5]: This ranking is assuming you're using either Yun Jin or Bennett in your team. While using both Yun Jin and Bennett, this weapon can potentially beat Rust [R5].\nAmos' Bow: This weapon's ranking is assuming low stacks of its passive due to you ideally being close to enemies to consistently hit all attacks in your "
+  },
+  {
+    "char_id": "dehya",
+    "name": "Дэхья",
+    "build_name": "ON FIELD DPS",
+    "element": "Пиро",
+    "role": "ON FIELD DPS",
+    "recommended": false,
+    "best_sets": [
+      "Эмблема рассечённой судьбы",
+      "Сияние Вурукаши",
+      "Горящая алая ведьма",
+      "Ступающий по лаве"
+    ],
+    "good_set_keys": [
+      "EmblemOfSeveredFate",
+      "VourukashasGlow",
+      "CrimsonWitchOfFlames",
+      "Lavawalker"
+    ],
+    "main_stats": {
+      "Пески времени": [
+        "Сила атаки %",
+        "Восст. энергии"
+      ],
+      "Кубок пространства": [
+        "Пиро урон %"
+      ],
+      "Корона разума": [
+        "Cirt Rate",
+        "DMG"
+      ]
+    },
+    "substat_weights": {
+      "Крит. урон": 1.5,
+      "Шанс крит. попадания": 1.5,
+      "Сила атаки %": 1.0,
+      "Сила атаки": 0.1,
+      "HP %": 0.4,
+      "HP": 0.0,
+      "Защита %": 0.0,
+      "Защита": 0.0,
+      "Восст. энергии": 2.0,
+      "Мастерство стихий": 0.7
+    },
+    "weapons": [
+      {
+        "id": "beacon_of_the_reed_sea"
+      },
+      {
+        "id": "redhorn_stonethresher"
+      },
+      {
+        "id": "wolfs_gravestone"
+      },
+      {
+        "id": "skyward_pride"
+      },
+      {
+        "id": "akuoumaru"
+      }
+    ],
+    "notes": "Regarding Weapon Choice:\nAkuoumaru: At R5, it is comparable to Wolf's Gravestone (5✩) at R1"
+  },
+  {
+    "char_id": "dehya",
+    "name": "Дэхья",
+    "build_name": "OFF FIELD DPS",
+    "element": "Пиро",
+    "role": "OFF FIELD DPS",
+    "recommended": false,
+    "best_sets": [
+      "Стойкость Миллелита",
+      "Инструктор"
+    ],
+    "good_set_keys": [
+      "TenacityOfTheMillelith",
+      "Instructor"
+    ],
+    "main_stats": {
+      "Пески времени": [
+        "HP %"
+      ],
+      "Кубок пространства": [
+        "HP %"
+      ],
+      "Корона разума": [
+        "HP %",
+        "Шанс крит. попадания"
+      ]
+    },
+    "substat_weights": {
+      "Крит. урон": 0.0,
+      "Шанс крит. попадания": 0.0,
+      "Сила атаки %": 0.7,
+      "Сила атаки": 0.1,
+      "HP %": 2.0,
+      "HP": 0.4,
+      "Защита %": 0.0,
+      "Защита": 0.0,
+      "Восст. энергии": 0.0,
+      "Мастерство стихий": 1.0
+    },
+    "weapons": [
+      {
+        "id": "favonius_greatsword"
+      },
+      {
+        "id": "wolfs_gravestone"
+      },
+      {
+        "id": "the_bell"
+      },
+      {
+        "id": "prototype_archaic"
+      }
+    ],
+    "notes": "Regarding Artifacts:\nInstructor: Only if your team is reaction based.\n\nRegarding Main Stats:\nCirclet: Crit Rate is only for Favonius Greatsword."
+  },
+  {
+    "char_id": "dehya",
+    "name": "Дэхья",
+    "build_name": "BURGEON",
+    "element": "Пиро",
+    "role": "BURGEON",
+    "recommended": false,
+    "best_sets": [
+      "Цветок потерянного рая",
+      "Позолоченные сны",
+      "Горящая алая ведьма"
+    ],
+    "good_set_keys": [
+      "FlowerOfParadiseLost",
+      "GildedDreams",
+      "CrimsonWitchOfFlames"
+    ],
+    "main_stats": {
+      "Пески времени": [
+        "Мастерство стихий"
+      ],
+      "Кубок пространства": [
+        "Мастерство стихий"
+      ],
+      "Корона разума": [
+        "Мастерство стихий"
+      ]
+    },
+    "substat_weights": {
+      "Крит. урон": 0.0,
+      "Шанс крит. попадания": 0.0,
+      "Сила атаки %": 0.0,
+      "Сила атаки": 0.0,
+      "HP %": 1.5,
+      "HP": 0.3,
+      "Защита %": 0.0,
+      "Защита": 0.0,
+      "Восст. энергии": 0.0,
+      "Мастерство стихий": 2.0
+    },
+    "weapons": [
+      {
+        "id": "mailed_flower"
+      },
+      {
+        "id": "makhaira_aquamarine"
+      },
+      {
+        "id": "bloodtainted_greatsword"
+      },
+      {
+        "id": "rainslasher"
+      },
+      {
+        "id": "favonius_greatsword"
+      }
+    ],
+    "notes": "Since Dehya does not need her elemental burst to trigger burgeon, she doesn't need to build energy recharge.\n\n\nFor an EM-focused build, upgrading Dehya's talent levels isn't a necessity."
+  },
+  {
+    "char_id": "fischl",
+    "name": "Фишль",
+    "build_name": "OFF-FIELD DPS",
+    "element": "Электро",
+    "role": "OFF-FIELD DPS",
+    "recommended": true,
+    "best_sets": [
+      "Громогласный рёв ярости",
+      "Усмиряющий гром",
+      "Стойкость Миллелита"
+    ],
+    "good_set_keys": [
+      "ThunderingFury",
+      "Thundersoother",
+      "TenacityOfTheMillelith"
+    ],
+    "main_stats": {
+      "Пески времени": [
+        "Сила атаки %"
+      ],
+      "Кубок пространства": [
+        "Электро урон %"
+      ],
+      "Корона разума": [
+        "Шанс крит. попадания",
+        "DMG"
+      ]
+    },
+    "substat_weights": {
+      "Крит. урон": 2.0,
+      "Шанс крит. попадания": 2.0,
+      "Сила атаки %": 1.5,
+      "Сила атаки": 0.1,
+      "HP %": 0.0,
+      "HP": 0.0,
+      "Защита %": 0.0,
+      "Защита": 0.0,
+      "Восст. энергии": 1.0,
+      "Мастерство стихий": 0.7
+    },
+    "weapons": [
+      {
+        "id": "polar_star"
+      },
+      {
+        "id": "aqua_simulacra"
+      },
+      {
+        "id": "skyward_harp"
+      },
+      {
+        "id": "thundering_pulse"
+      },
+      {
+        "id": "amos_bow"
+      }
+    ],
+    "notes": "Elemental Burst and Skill both summon Oz, so make sure you're only using one at a time. Start with your Skill, use Burst for second Oz rotation and alternate. Hopefully, by the time your second/third round of Oz summoning is over, you'll have gained enough energy to repeat the loop.\n\nRegarding Weapon Choices: \nIn general, Fischl's rankings depend significantly on the refinements of her weapons. For more detailed numbers, see the Google Sheet here.\nAlley Hunter: At [R5] this weapon can be similar"
+  },
+  {
+    "char_id": "fischl",
+    "name": "Фишль",
+    "build_name": "OFF-FIELD AGGRAVATE DPS",
+    "element": "Электро",
+    "role": "OFF-FIELD AGGRAVATE DPS",
+    "recommended": true,
+    "best_sets": [
+      "Громогласный рёв ярости",
+      "Позолоченные сны",
+      "Усмиряющий гром"
+    ],
+    "good_set_keys": [
+      "ThunderingFury",
+      "GildedDreams",
+      "Thundersoother"
+    ],
+    "main_stats": {
+      "Пески времени": [
+        "Сила атаки %",
+        "Мастерство стихий"
+      ],
+      "Кубок пространства": [
+        "Электро урон %"
+      ],
+      "Корона разума": [
+        "Шанс крит. попадания",
+        "DMG"
+      ]
+    },
+    "substat_weights": {
+      "Крит. урон": 2.0,
+      "Шанс крит. попадания": 2.0,
+      "Сила атаки %": 0.0,
+      "Сила атаки": 0.2,
+      "HP %": 0.0,
+      "HP": 0.0,
+      "Защита %": 0.0,
+      "Защита": 0.0,
+      "Восст. энергии": 1.0,
+      "Мастерство стихий": 0.0
+    },
+    "weapons": [
+      {
+        "id": "aqua_simulacra"
+      },
+      {
+        "id": "polar_star"
+      },
+      {
+        "id": "hunters_path"
+      },
+      {
+        "id": "skyward_harp"
+      },
+      {
+        "id": "thundering_pulse"
+      }
+    ],
+    "notes": "Regarding Weapon Choices: \nFor more detailed numbers, see the Google Sheet here.\nAlley Hunter: At [R5] this weapon can be similar in performance to Skyward Harp.\nThe Stringless: At [R5] this weapon can be stronger than Skyward Harp / Alley Hunter [R5].\n\nRegarding Artifact Sets:\nThundersoother (4): This artifact set will outperform the other listed sets if used in a team comp where an Electro aura is always present."
+  },
+  {
+    "char_id": "beidou",
+    "name": "Бэй Доу",
+    "build_name": "OFF-FIELD DPS",
+    "element": "Электро",
+    "role": "OFF-FIELD DPS",
+    "recommended": true,
+    "best_sets": [
+      "Эмблема рассечённой судьбы",
+      "Церемония древней знати",
+      "Громогласный рёв ярости",
+      "Усмиряющий гром"
+    ],
+    "good_set_keys": [
+      "EmblemOfSeveredFate",
+      "NoblesseOblige",
+      "ThunderingFury",
+      "Thundersoother"
+    ],
+    "main_stats": {
+      "Пески времени": [
+        "Сила атаки %",
+        "Восст. энергии"
+      ],
+      "Кубок пространства": [
+        "Электро урон %"
+      ],
+      "Корона разума": [
+        "Шанс крит. попадания",
+        "DMG"
+      ]
+    },
+    "substat_weights": {
+      "Крит. урон": 2.0,
+      "Шанс крит. попадания": 2.0,
+      "Сила атаки %": 1.5,
+      "Сила атаки": 0.1,
+      "HP %": 0.0,
+      "HP": 0.0,
+      "Защита %": 0.0,
+      "Защита": 0.0,
+      "Восст. энергии": 1.0,
+      "Мастерство стихий": 0.7
+    },
+    "weapons": [
+      {
+        "id": "wolfs_gravestone"
+      },
+      {
+        "id": "serpent_spine"
+      },
+      {
+        "id": "redhorn_stonethresher"
+      },
+      {
+        "id": "the_unforged"
+      },
+      {
+        "id": "akuoumaru"
+      }
+    ],
+    "notes": "Beidou's skill grants you an Electro status for a brief moment upon holding it. This means it can be used for status-cleansing (No particular effective element). Can only be done on herself.\n\nRegarding Weapon Choices:\nSerpent Spine: This weapon is a fine choice for Off-Field DPS Beidou and can outperform Wolf's Gravestone by a significant margin when Bennett/Sara ATK buffs are applied. Be sure to use Beidou in slot 1 to pre-stack Serpent Spine before starting an abyss floor.\nRedhorn Stonethreshe"
+  },
+  {
+    "char_id": "lisa",
+    "name": "Лиза",
+    "build_name": "AGGRAVATE DPS",
+    "element": "Электро",
+    "role": "AGGRAVATE DPS",
+    "recommended": true,
+    "best_sets": [
+      "Громогласный рёв ярости",
+      "Позолоченные сны",
+      "Усмиряющий гром"
+    ],
+    "good_set_keys": [
+      "ThunderingFury",
+      "GildedDreams",
+      "Thundersoother"
+    ],
+    "main_stats": {
+      "Пески времени": [
+        "Мастерство стихий",
+        "Сила атаки %"
+      ],
+      "Кубок пространства": [
+        "Электро урон %"
+      ],
+      "Корона разума": [
+        "Шанс крит. попадания",
+        "DMG"
+      ]
+    },
+    "substat_weights": {
+      "Крит. урон": 2.0,
+      "Шанс крит. попадания": 2.0,
+      "Сила атаки %": 0.0,
+      "Сила атаки": 0.2,
+      "HP %": 0.0,
+      "HP": 0.0,
+      "Защита %": 0.0,
+      "Защита": 0.0,
+      "Восст. энергии": 1.0,
+      "Мастерство стихий": 0.0
+    },
+    "weapons": [
+      {
+        "id": "kaguras_verity"
+      },
+      {
+        "id": "lost_prayer_to_the_sacred_winds"
+      },
+      {
+        "id": "skyward_atlas"
+      },
+      {
+        "id": "a_thousand_floating_dreams"
+      },
+      {
+        "id": "the_widsith"
+      }
+    ],
+    "notes": "Optimal Thundering Fury Lisa String: \n- ES (tap) ES (tap) > N2 > ES (tap) ES (hold)\n(N2CA when ES is on cooldown)\n\n\n*N/NA = Normal attack, C = Charged attack, ES = Elemental Skill\n\nThis build makes the best use of Lisa's entire kit, from her EM ascension stat to her high rate of Electro application. While also minimizing her high energy needs by making her an on-field driver for Quicken teams, and is therefore her best usage case.\n\nRegarding Weapons:\nFor more details see the sheet here\nThe Widsi"
+  },
+  {
+    "char_id": "lisa",
+    "name": "Лиза",
+    "build_name": "OFF-FIELD DPS",
+    "element": "Электро",
+    "role": "OFF-FIELD DPS",
+    "recommended": false,
+    "best_sets": [
+      "Эмблема рассечённой судьбы",
+      "Громогласный рёв ярости",
+      "Церемония древней знати",
+      "Позолоченные сны",
+      "Усмиряющий гром"
+    ],
+    "good_set_keys": [
+      "EmblemOfSeveredFate",
+      "ThunderingFury",
+      "NoblesseOblige",
+      "GildedDreams",
+      "Thundersoother"
+    ],
+    "main_stats": {
+      "Пески времени": [
+        "Восст. энергии",
+        "Сила атаки %",
+        "Мастерство стихий"
+      ],
+      "Кубок пространства": [
+        "Electro Damage"
+      ],
+      "Корона разума": [
+        "Шанс крит. попадания",
+        "DMG"
+      ]
+    },
+    "substat_weights": {
+      "Крит. урон": 1.5,
+      "Шанс крит. попадания": 1.5,
+      "Сила атаки %": 1.0,
+      "Сила атаки": 0.1,
+      "HP %": 0.0,
+      "HP": 0.0,
+      "Защита %": 0.0,
+      "Защита": 0.0,
+      "Восст. энергии": 2.0,
+      "Мастерство стихий": 0.7
+    },
+    "weapons": [
+      {
+        "id": "kaguras_verity"
+      },
+      {
+        "id": "skyward_atlas"
+      },
+      {
+        "id": "lost_prayer_to_the_sacred_winds"
+      },
+      {
+        "id": "tulaytullahs_remembrance"
+      },
+      {
+        "id": "memory_of_dust"
+      }
+    ],
+    "notes": "Lisa's Hold cast does not require 4 full seconds of charging to reach maximum damage threshold, as long as the indicator aligns with ring, you can release your cast at max damage.\n\nThis build focuses more on making Lisa a flexible buffing/bursting unit in short durations as a part of a variety of teams including quickswap comps and, especially, Quicken comps.\n\nRegarding Weapon Choice:\nKagura's Verity: This weapon's ranking is based on executing a specific rotation, but the rotation is different "
+  },
+  {
+    "char_id": "lisa",
+    "name": "Лиза",
+    "build_name": "EM DPS",
+    "element": "Электро",
+    "role": "EM DPS",
+    "recommended": false,
+    "best_sets": [
+      "Цветок потерянного рая",
+      "Позолоченные сны",
+      "Эмблема рассечённой судьбы",
+      "Громогласный рёв ярости",
+      "Инструктор",
+      "Церемония древней знати"
+    ],
+    "good_set_keys": [
+      "FlowerOfParadiseLost",
+      "GildedDreams",
+      "EmblemOfSeveredFate",
+      "ThunderingFury",
+      "Instructor",
+      "NoblesseOblige"
+    ],
+    "main_stats": {
+      "Пески времени": [
+        "Мастерство стихий",
+        "Восст. энергии"
+      ],
+      "Кубок пространства": [
+        "Мастерство стихий"
+      ],
+      "Корона разума": [
+        "Мастерство стихий"
+      ]
+    },
+    "substat_weights": {
+      "Крит. урон": 0.7,
+      "Шанс крит. попадания": 0.7,
+      "Сила атаки %": 1.0,
+      "Сила атаки": 0.2,
+      "HP %": 0.0,
+      "HP": 0.0,
+      "Защита %": 0.0,
+      "Защита": 0.0,
+      "Восст. энергии": 2.0,
+      "Мастерство стихий": 1.5
+    },
+    "weapons": [
+      {
+        "id": "fruit_of_fulfillment"
+      },
+      {
+        "id": "a_thousand_floating_dreams"
+      },
+      {
+        "id": "sacrificial_fragments"
+      },
+      {
+        "id": "favonius_codex"
+      },
+      {
+        "id": "magic_guide"
+      }
+    ],
+    "notes": "This build aims to be the consistent trigger for reactions, Hyperbloom and Overload are generally the best reactions for this set up. These reactions are primarily triggered by her burst, which is why it's important to make sure its uptime is as high as possible. Avoid having a second Electro in the Overload team for this build since this could mess up the Pyro aura Lisa wants for this playstyle. \n\nRegarding Weapons:\nFruit of Fulfillment: At high refinement this weapon performs similarly to A Th"
+  },
+  {
+    "char_id": "razor",
+    "name": "Рэйзор",
+    "build_name": "DPS",
+    "element": "Электро",
+    "role": "DPS",
+    "recommended": true,
+    "best_sets": [
+      "Конец гладиатора"
+    ],
+    "good_set_keys": [
+      "GladiatorsFinale"
+    ],
+    "main_stats": {
+      "Пески времени": [
+        "Сила атаки %"
+      ],
+      "Кубок пространства": [
+        "Физ. урон %"
+      ],
+      "Корона разума": [
+        "Шанс крит. попадания",
+        "DMG"
+      ]
+    },
+    "substat_weights": {
+      "Крит. урон": 2.0,
+      "Шанс крит. попадания": 2.0,
+      "Сила атаки %": 1.5,
+      "Сила атаки": 0.1,
+      "HP %": 0.0,
+      "HP": 0.0,
+      "Защита %": 0.0,
+      "Защита": 0.0,
+      "Восст. энергии": 1.0,
+      "Мастерство стихий": 0.7
+    },
+    "weapons": [
+      {
+        "id": "wolfs_gravestone"
+      },
+      {
+        "id": "song_of_broken_pines"
+      },
+      {
+        "id": "redhorn_stonethresher"
+      },
+      {
+        "id": "the_unforged"
+      },
+      {
+        "id": "serpent_spine"
+      }
+    ],
+    "notes": "Razor's EB grants you an Electro Status when you basic attack while burst is in-effect, that means it can be used for status-cleansing (no particular effective element).  Can only be done on himself.\n\nRegarding Weapon Choices:\nWolf's Gravestone: While the passive is inactive, this weapon outperforms Skyward Pride in every scenario except crowd battles.\nRedhorn Stonethresher: Depending on the amount of ATK% buffs you're getting, this weapon can overtake Wolf's Gravestone in personal damage.\nThe U"
+  },
+  {
+    "char_id": "kujou_sara",
+    "name": "Сара",
+    "build_name": "BURST SUPPORT",
+    "element": "Электро",
+    "role": "BURST SUPPORT",
+    "recommended": true,
+    "best_sets": [
+      "Эмблема рассечённой судьбы",
+      "Церемония древней знати",
+      "Громогласный рёв ярости"
+    ],
+    "good_set_keys": [
+      "EmblemOfSeveredFate",
+      "NoblesseOblige",
+      "ThunderingFury"
+    ],
+    "main_stats": {
+      "Пески времени": [
+        "Восст. энергии",
+        "Сила атаки %"
+      ],
+      "Кубок пространства": [
+        "Электро урон %"
+      ],
+      "Корона разума": [
+        "Шанс крит. попадания",
+        "DMG"
+      ]
+    },
+    "substat_weights": {
+      "Крит. урон": 1.5,
+      "Шанс крит. попадания": 1.5,
+      "Сила атаки %": 1.0,
+      "Сила атаки": 0.2,
+      "HP %": 0.0,
+      "HP": 0.0,
+      "Защита %": 0.0,
+      "Защита": 0.0,
+      "Восст. энергии": 2.0,
+      "Мастерство стихий": 0.0
+    },
+    "weapons": [
+      {
+        "id": "polar_star"
+      },
+      {
+        "id": "skyward_harp"
+      },
+      {
+        "id": "hunters_path"
+      },
+      {
+        "id": "aqua_simulacra"
+      },
+      {
+        "id": "thundering_pulse"
+      }
+    ],
+    "notes": "For her Elemental Skill to generate particles, you need to perform a Charged Shot to place a Crowfeather after casting her Elemental Skill. If the Crowfeather explosion hits an enemy, it generates 3 particles.\n\nCrowfeathers generated from Sara's [C2] do NOT generate particles.\n\nSara is a quickswap support who is able to buff your active characters via its Crowfeather mechanics. When Sara uses her Elemental Skill, her next Charged Shot will leave a Crowfeather on the target location and after a s"
+  },
+  {
+    "char_id": "kuki_shinobu",
+    "name": "Синобу",
+    "build_name": "HYPERBLOOM",
+    "element": "Электро",
+    "role": "HYPERBLOOM",
+    "recommended": true,
+    "best_sets": [
+      "Цветок потерянного рая",
+      "Позолоченные сны",
+      "Громогласный рёв ярости"
+    ],
+    "good_set_keys": [
+      "FlowerOfParadiseLost",
+      "GildedDreams",
+      "ThunderingFury"
+    ],
+    "main_stats": {
+      "Пески времени": [
+        "Мастерство стихий"
+      ],
+      "Кубок пространства": [
+        "Мастерство стихий"
+      ],
+      "Корона разума": [
+        "Мастерство стихий"
+      ]
+    },
+    "substat_weights": {
+      "Крит. урон": 0.0,
+      "Шанс крит. попадания": 0.0,
+      "Сила атаки %": 0.0,
+      "Сила атаки": 0.0,
+      "HP %": 1.5,
+      "HP": 0.3,
+      "Защита %": 0.0,
+      "Защита": 0.0,
+      "Восст. энергии": 0.7,
+      "Мастерство стихий": 2.0
+    },
+    "weapons": [
+      {
+        "id": "freedom-sworn"
+      },
+      {
+        "id": "xiphos_moonlight"
+      },
+      {
+        "id": "iron_sting"
+      },
+      {
+        "id": "key_of_khaj-nisut"
+      },
+      {
+        "id": "toukabou_shigure",
+        "refine": [
+          5
+        ]
+      }
+    ],
+    "notes": "Aim for around 850-950+ Elemental Mastery. Depending on whether you use a Elemental Mastery weapon or not.\n\nThis is a Dendro team that requires a reliable Electro trigger unit to work,for which Kuki is one of the best Electro units to perform this role.\n\nRegarding Weapon Choices:\nKey of Khaj-Nisut: This becomes a better choice than Iron Sting at [C4] when you can gain the 3rd passive stack without extending your rotation time or taking extra field time. It can also net more Elemental Mastery tha"
+  },
+  {
+    "char_id": "kuki_shinobu",
+    "name": "Синобу",
+    "build_name": "AGGRAVATE",
+    "element": "Электро",
+    "role": "AGGRAVATE",
+    "recommended": false,
+    "best_sets": [
+      "Позолоченные сны",
+      "Громогласный рёв ярости",
+      "Церемония древней знати",
+      "Усмиряющий гром",
+      "Стойкость Миллелита"
+    ],
+    "good_set_keys": [
+      "GildedDreams",
+      "ThunderingFury",
+      "NoblesseOblige",
+      "Thundersoother",
+      "TenacityOfTheMillelith"
+    ],
+    "main_stats": {
+      "Пески времени": [
+        "Восст. энергии",
+        "Мастерство стихий"
+      ],
+      "Кубок пространства": [
+        "Электро урон %"
+      ],
+      "Корона разума": [
+        "Шанс крит. попадания",
+        "DMG"
+      ]
+    },
+    "substat_weights": {
+      "Крит. урон": 1.5,
+      "Шанс крит. попадания": 1.5,
+      "Сила атаки %": 0.0,
+      "Сила атаки": 0.0,
+      "HP %": 0.7,
+      "HP": 0.1,
+      "Защита %": 0.0,
+      "Защита": 0.0,
+      "Восст. энергии": 2.0,
+      "Мастерство стихий": 1.0
+    },
+    "weapons": [
+      {
+        "id": "freedom-sworn"
+      },
+      {
+        "id": "primordial_jade_cutter"
+      },
+      {
+        "id": "key_of_khaj-nisut"
+      },
+      {
+        "id": "festering_desire"
+      },
+      {
+        "id": "xiphos_moonlight"
+      }
+    ],
+    "notes": "This adds flat damage to the triggering Electro attack that scales off Elemental Mastery and levels, which essentially allows Kuki's personal damage to become relevant while also filling the role of a healer in the team.\n\nRegarding Weapon Choices:\nFor more details see the sheet here\nFreedom-Sworn: While not having the highest personal damage it makes up for it in overall team damage through its competitive buffs.\nPrimordial Jade Cutter: Has the highest personal damage of any weapon on Kuki but l"
+  },
+  {
+    "char_id": "kuki_shinobu",
+    "name": "Синобу",
+    "build_name": "SUPPORT",
+    "element": "Электро",
+    "role": "SUPPORT",
+    "recommended": false,
+    "best_sets": [
+      "Стойкость Миллелита",
+      "Церемония древней знати",
+      "Инструктор",
+      "Моллюск морских красок"
+    ],
+    "good_set_keys": [
+      "TenacityOfTheMillelith",
+      "NoblesseOblige",
+      "Instructor",
+      "OceanHuedClam"
+    ],
+    "main_stats": {
+      "Пески времени": [
+        "HP %"
+      ],
+      "Кубок пространства": [
+        "HP %"
+      ],
+      "Корона разума": [
+        "Бонус лечения %",
+        "HP %",
+        "Шанс крит. попадания"
+      ]
+    },
+    "substat_weights": {
+      "Крит. урон": 0.0,
+      "Шанс крит. попадания": 1.5,
+      "Сила атаки %": 0.0,
+      "Сила атаки": 0.0,
+      "HP %": 2.0,
+      "HP": 0.2,
+      "Защита %": 0.0,
+      "Защита": 0.0,
+      "Восст. энергии": 0.0,
+      "Мастерство стихий": 0.0
+    },
+    "weapons": [
+      {
+        "id": "favonius_sword"
+      },
+      {
+        "id": "freedom-sworn"
+      },
+      {
+        "id": "key_of_khaj-nisut"
+      },
+      {
+        "id": "iron_sting"
+      }
+    ],
+    "notes": "Outside of reaction teams where she can be a reliable trigger unit, Kuki's damage contribution is usually insignificant. Hence her best usage case in those scenarios is building purely for utility.\n\nRegarding Weapon Choices:\nFavonius Sword: The passive lets her provide energy to the rest of the team. A Crit Rate circlet or substats should be considered to reliably trigger the passive.\nFreedom-Sworn: In teams where Kuki can reliably trigger reactions, the teamwide buff from this weapon can make i"
+  },
+  {
+    "char_id": "dori",
+    "name": "Дори",
+    "build_name": "SUPPORT",
+    "element": "Электро",
+    "role": "SUPPORT",
+    "recommended": true,
+    "best_sets": [
+      "Церемония древней знати",
+      "Воспоминания дремучего леса",
+      "Инструктор"
+    ],
+    "good_set_keys": [
+      "NoblesseOblige",
+      "DeepwoodMemories",
+      "Instructor"
+    ],
+    "main_stats": {
+      "Пески времени": [
+        "Восст. энергии",
+        "HP %",
+        "Мастерство стихий"
+      ],
+      "Кубок пространства": [
+        "HP %",
+        "Мастерство стихий"
+      ],
+      "Корона разума": [
+        "Бонус лечения %",
+        "HP %",
+        "Мастерство стихий"
+      ]
+    },
+    "substat_weights": {
+      "Крит. урон": 0.0,
+      "Шанс крит. попадания": 2.0,
+      "Сила атаки %": 0.0,
+      "Сила атаки": 0.0,
+      "HP %": 1.0,
+      "HP": 0.2,
+      "Защита %": 0.0,
+      "Защита": 0.0,
+      "Восст. энергии": 1.5,
+      "Мастерство стихий": 0.7
+    },
+    "weapons": [
+      {
+        "id": "favonius_greatsword"
+      },
+      {
+        "id": "sacrificial_greatsword"
+      },
+      {
+        "id": "katsuragikiri_nagamasa"
+      },
+      {
+        "id": "forest_regalia"
+      }
+    ],
+    "notes": "It is generally advised to use 2 elemental skills per burst rotation, as this helps to alleviate her otherwise extreme Energy requirements.\n\nDori is mainly a support character that provides Healing and Energy to a teammate through her burst.\n\nRegarding Weapon Choices: \nSacrificial Greatsword: This weapon's passive allows Dori to cast her elemental skill twice while only swapping to her once per rotation. \n\nRegarding Artifact Choices: \nDeepwood Memories (4): This set should only be used when Dori"
+  },
+  {
+    "char_id": "traveler_electro",
+    "name": "Traveler (Electro)",
+    "build_name": "SUPPORT",
+    "element": "Электро",
+    "role": "SUPPORT",
+    "recommended": true,
+    "best_sets": [
+      "Церемония древней знати",
+      "Эмблема рассечённой судьбы",
+      "Инструктор"
+    ],
+    "good_set_keys": [
+      "NoblesseOblige",
+      "EmblemOfSeveredFate",
+      "Instructor"
+    ],
+    "main_stats": {
+      "Пески времени": [
+        "Восст. энергии"
+      ],
+      "Кубок пространства": [
+        "Электро урон %"
+      ],
+      "Корона разума": [
+        "Шанс крит. попадания",
+        "DMG"
+      ]
+    },
+    "substat_weights": {
+      "Крит. урон": 1.0,
+      "Шанс крит. попадания": 1.0,
+      "Сила атаки %": 1.5,
+      "Сила атаки": 0.2,
+      "HP %": 0.0,
+      "HP": 0.0,
+      "Защита %": 0.0,
+      "Защита": 0.0,
+      "Восст. энергии": 2.0,
+      "Мастерство стихий": 0.0
+    },
+    "weapons": [
+      {
+        "id": "favonius_sword"
+      },
+      {
+        "id": "freedom-sworn"
+      },
+      {
+        "id": "sacrificial_sword"
+      },
+      {
+        "id": "skyward_blade"
+      },
+      {
+        "id": "festering_desire"
+      }
+    ],
+    "notes": "It is not recommended to level Elemental Skill and Burst past talent level 7 as the amount of energy generated does not increase.\n\nTraveler can provide a lot of energy and Energy Recharge to the on-field character through their Elemental Skill pick up or Elemental Burst procs. This is especially useful with a damage dealer that doesn't conflict with Traveler's element and can benefit from the abundance of energy. Due to the low damage scaling on Electro Traveler's Elemental Skill and Burst, its "
+  },
+  {
+    "char_id": "keqing",
+    "name": "Кэ Цин",
+    "build_name": "PHYSICAL DPS",
+    "element": "Электро",
+    "role": "PHYSICAL DPS",
+    "recommended": false,
+    "best_sets": [
+      "Золотая труппа"
+    ],
+    "good_set_keys": [
+      "GoldenTroupe"
+    ],
+    "main_stats": {
+      "Пески времени": [
+        "Сила атаки %"
+      ],
+      "Кубок пространства": [
+        "Физ. урон %"
+      ],
+      "Корона разума": [
+        "Шанс крит. попадания",
+        "DMG"
+      ]
+    },
+    "substat_weights": {
+      "Крит. урон": 2.0,
+      "Шанс крит. попадания": 2.0,
+      "Сила атаки %": 1.5,
+      "Сила атаки": 0.3,
+      "HP %": 0.0,
+      "HP": 0.0,
+      "Защита %": 0.0,
+      "Защита": 0.0,
+      "Восст. энергии": 0.7,
+      "Мастерство стихий": 0.0
+    },
+    "weapons": [
+      {
+        "id": "aquila_favonia"
+      },
+      {
+        "id": "primordial_jade_cutter"
+      },
+      {
+        "id": "summit_shaper"
+      },
+      {
+        "id": "haran_geppaku_futsu"
+      },
+      {
+        "id": "mistsplitter_reforged"
+      }
+    ],
+    "notes": "This section is dedicated to a playstyle where Keqing does not infuse her attacks with Electro, and instead focuses on Physical damage (white numbers). For this reason, you should be charged attacking after casting Stellar Restoration (E) instead of recasting it.\n\nRegarding Artifact Sets:\nPale Flame (4): This set is the best by far as Keqing can proc its 4 piece set bonus instantly by charge attacking after casting E.\nPale Flame (2) Bloodstained Chivalry (2):  This set should only be used until "
+  },
+  {
+    "char_id": "keqing",
+    "name": "Кэ Цин",
+    "build_name": "ELECTRO DPS",
+    "element": "Электро",
+    "role": "ELECTRO DPS",
+    "recommended": true,
+    "best_sets": [
+      "Громогласный рёв ярости",
+      "Усмиряющий гром"
+    ],
+    "good_set_keys": [
+      "ThunderingFury",
+      "Thundersoother"
+    ],
+    "main_stats": {
+      "Пески времени": [
+        "Сила атаки %"
+      ],
+      "Кубок пространства": [
+        "Электро урон %"
+      ],
+      "Корона разума": [
+        "Шанс крит. попадания",
+        "DMG"
+      ]
+    },
+    "substat_weights": {
+      "Крит. урон": 2.0,
+      "Шанс крит. попадания": 2.0,
+      "Сила атаки %": 1.5,
+      "Сила атаки": 0.2,
+      "HP %": 0.0,
+      "HP": 0.0,
+      "Защита %": 0.0,
+      "Защита": 0.0,
+      "Восст. энергии": 0.4,
+      "Мастерство стихий": 1.0
+    },
+    "weapons": [
+      {
+        "id": "mistsplitter_reforged"
+      },
+      {
+        "id": "primordial_jade_cutter"
+      },
+      {
+        "id": "haran_geppaku_futsu"
+      },
+      {
+        "id": "summit_shaper"
+      },
+      {
+        "id": "aquila_favonia"
+      }
+    ],
+    "notes": "Preferred Skill Combo: Skill (Place stiletto, don't reactivate yet) -> Burst -> Skill (Reactivation) -> Spam NA Combo (See Below) -> Repeat\n\nNA Combos:\nN1C = 1 Normal Attack followed by a Charged Attack - Highest DPS Combo, but costs a lot of stamina\nN4C = 4 Normal Attacks followed by a Charged Attack - Second best Combo, and conserves stamina.\n\nRegarding Weapon Choices: \nLion's Roar: This weapon is only recommended on Pure Electro / Electro-charged teams. In teams where the Electro Aura can be "
+  },
+  {
+    "char_id": "keqing",
+    "name": "Кэ Цин",
+    "build_name": "AGGRAVATE DPS",
+    "element": "Электро",
+    "role": "AGGRAVATE DPS",
+    "recommended": true,
+    "best_sets": [
+      "Громогласный рёв ярости",
+      "Усмиряющий гром",
+      "Позолоченные сны"
+    ],
+    "good_set_keys": [
+      "ThunderingFury",
+      "Thundersoother",
+      "GildedDreams"
+    ],
+    "main_stats": {
+      "Пески времени": [
+        "Сила атаки %",
+        "Мастерство стихий"
+      ],
+      "Кубок пространства": [
+        "Электро урон %"
+      ],
+      "Корона разума": [
+        "Шанс крит. попадания",
+        "DMG"
+      ]
+    },
+    "substat_weights": {
+      "Крит. урон": 2.0,
+      "Шанс крит. попадания": 2.0,
+      "Сила атаки %": 0.0,
+      "Сила атаки": 0.3,
+      "HP %": 0.0,
+      "HP": 0.0,
+      "Защита %": 0.0,
+      "Защита": 0.0,
+      "Восст. энергии": 0.7,
+      "Мастерство стихий": 0.0
+    },
+    "weapons": [
+      {
+        "id": "mistsplitter_reforged"
+      },
+      {
+        "id": "primordial_jade_cutter"
+      },
+      {
+        "id": "haran_geppaku_futsu"
+      },
+      {
+        "id": "freedom-sworn"
+      },
+      {
+        "id": "light_of_foliar_incision"
+      }
+    ],
+    "notes": "Regarding Weapon Choices:\nHarbinger of Dawn [R5]: This ranking assumes full uptime on the passive. If you cannnot maintain the passive, this weapon is not recommended.\nSummit Shaper: This ranking assumes Keqing is unshielded. If Keqing has a shielder, this weapon will perform better than Harbinger of Dawn [R5].\nToukabou Shigure: Eventually with high refinement Lion's Roar/The Black Sword will surpass it. But this ranking assumes [R1] for both, Iron Sting can also surpass it at equal refinement i"
+  },
+  {
+    "char_id": "raiden_shogun",
+    "name": "Райдэн",
+    "build_name": "HYPERBLOOM",
+    "element": "Электро",
+    "role": "HYPERBLOOM",
+    "recommended": false,
+    "best_sets": [
+      "Цветок потерянного рая",
+      "Позолоченные сны",
+      "Громогласный рёв ярости"
+    ],
+    "good_set_keys": [
+      "FlowerOfParadiseLost",
+      "GildedDreams",
+      "ThunderingFury"
+    ],
+    "main_stats": {
+      "Пески времени": [
+        "Мастерство стихий"
+      ],
+      "Кубок пространства": [
+        "Мастерство стихий"
+      ],
+      "Корона разума": [
+        "Мастерство стихий"
+      ]
+    },
+    "substat_weights": {
+      "Крит. урон": 0.0,
+      "Шанс крит. попадания": 0.0,
+      "Сила атаки %": 1.5,
+      "Сила атаки": 0.2,
+      "HP %": 0.0,
+      "HP": 0.0,
+      "Защита %": 0.0,
+      "Защита": 0.0,
+      "Восст. энергии": 1.0,
+      "Мастерство стихий": 2.0
+    },
+    "weapons": [
+      {
+        "id": "dragons_bane"
+      },
+      {
+        "id": "moonpiercer"
+      },
+      {
+        "id": "kitain_cross_spear"
+      }
+    ],
+    "notes": "You are aiming for between 850-1000+ Elemental mastery depending on weapon/artifact choice.\n\nIn this build Raiden is used as a Hyperbloom trigger unit in a Dendro team. She is one of the best units in the game for this role. Bringing greater energy particle generation, a faster rate of seed triggering and a team ult buff in exchange for reduced team flexibility compared to another top Hyperbloom triggering unit like Kuki.\n\nRegarding Artifact Choices:\n+80 EM set (2) / +80 EM set (2): In a team wi"
+  },
+  {
+    "char_id": "raiden_shogun",
+    "name": "Райдэн",
+    "build_name": "DPS",
+    "element": "Электро",
+    "role": "DPS",
+    "recommended": true,
+    "best_sets": [
+      "Эмблема рассечённой судьбы",
+      "Церемония древней знати",
+      "Громогласный рёв ярости",
+      "Стойкость Миллелита"
+    ],
+    "good_set_keys": [
+      "EmblemOfSeveredFate",
+      "NoblesseOblige",
+      "ThunderingFury",
+      "TenacityOfTheMillelith"
+    ],
+    "main_stats": {
+      "Пески времени": [
+        "Восст. энергии",
+        "Сила атаки %"
+      ],
+      "Кубок пространства": [
+        "Электро урон %",
+        "Сила атаки %"
+      ],
+      "Корона разума": [
+        "Шанс крит. попадания",
+        "DMG"
+      ]
+    },
+    "substat_weights": {
+      "Крит. урон": 2.0,
+      "Шанс крит. попадания": 2.0,
+      "Сила атаки %": 1.5,
+      "Сила атаки": 0.1,
+      "HP %": 0.0,
+      "HP": 0.0,
+      "Защита %": 0.0,
+      "Защита": 0.0,
+      "Восст. энергии": 1.0,
+      "Мастерство стихий": 0.7
+    },
+    "weapons": [
+      {
+        "id": "engulfing_lightning"
+      },
+      {
+        "id": "staff_of_homa"
+      },
+      {
+        "id": "primordial_jade_winged-spear"
+      },
+      {
+        "id": "staff_of_the_scarlet_sands"
+      },
+      {
+        "id": "calamity_queller"
+      }
+    ],
+    "notes": "Start your rotation with Raiden's Elemental Skill to amplify your party member's Elemental Burst damage.\n\nBurst combo :\n- Skill > Burst > 3NA + CA (3 times) > 1NA + CA (Recommended)\n- Skill > Burst > 3NA + CA (3 times) > 4NA (Optimal)\n\n*NA = Normal Attack, CA = Charged Attack\n\nThe recommended combo can be performed consistently even without attack speed buffs, the optimal combo while a tad stronger is also significantly more difficult to perform.\n\nRaiden's Elemental Burst damage depends on her t"
+  },
+  {
+    "char_id": "yae_miko",
+    "name": "Яэ Мико",
+    "build_name": "OFF-FIELD DPS",
+    "element": "Электро",
+    "role": "OFF-FIELD DPS",
+    "recommended": true,
+    "best_sets": [
+      "Эмблема рассечённой судьбы",
+      "Громогласный рёв ярости",
+      "Усмиряющий гром",
+      "Позолоченные сны",
+      "Стойкость Миллелита"
+    ],
+    "good_set_keys": [
+      "EmblemOfSeveredFate",
+      "ThunderingFury",
+      "Thundersoother",
+      "GildedDreams",
+      "TenacityOfTheMillelith"
+    ],
+    "main_stats": {
+      "Пески времени": [
+        "Восст. энергии",
+        "Сила атаки %"
+      ],
+      "Кубок пространства": [
+        "Электро урон %"
+      ],
+      "Корона разума": [
+        "Шанс крит. попадания",
+        "DMG"
+      ]
+    },
+    "substat_weights": {
+      "Крит. урон": 2.0,
+      "Шанс крит. попадания": 2.0,
+      "Сила атаки %": 1.5,
+      "Сила атаки": 0.1,
+      "HP %": 0.0,
+      "HP": 0.0,
+      "Защита %": 0.0,
+      "Защита": 0.0,
+      "Восст. энергии": 1.0,
+      "Мастерство стихий": 0.7
+    },
+    "weapons": [
+      {
+        "id": "kaguras_verity"
+      },
+      {
+        "id": "skyward_atlas"
+      },
+      {
+        "id": "lost_prayer_to_the_sacred_winds"
+      },
+      {
+        "id": "memory_of_dust"
+      },
+      {
+        "id": "solar_pearl"
+      }
+    ],
+    "notes": "Start your rotations with Yae's Elemental Skill to amplify her Elemental Burst damage. \n\nBurst combo:\n- Skill > Skill > Skill > Burst > Skill > Skill > Skill\n\n(After the first set of EEE you usually swap out and go through your buff rotation before swapping back to burst)\n\nTake note that none of Yae Miko's abilities snapshot.\n\nRegarding Weapon Choices:\nLost Prayer to the Sacred Winds: If Yae is in an Aggravate team, this weapon is better than Skyward Atlas.\nA Thousand Floating Dreams: If Yae is "
+  },
+  {
+    "char_id": "cyno",
+    "name": "Сайно",
+    "build_name": "QUICKBLOOM DPS",
+    "element": "Электро",
+    "role": "QUICKBLOOM DPS",
+    "recommended": true,
+    "best_sets": [
+      "Громогласный рёв ярости",
+      "Позолоченные сны",
+      "Конец гладиатора",
+      "Цветок потерянного рая"
+    ],
+    "good_set_keys": [
+      "ThunderingFury",
+      "GildedDreams",
+      "GladiatorsFinale",
+      "FlowerOfParadiseLost"
+    ],
+    "main_stats": {
+      "Пески времени": [
+        "Мастерство стихий"
+      ],
+      "Кубок пространства": [
+        "Электро урон %",
+        "Мастерство стихий"
+      ],
+      "Корона разума": [
+        "Шанс крит. попадания",
+        "DMG",
+        "Мастерство стихий"
+      ]
+    },
+    "substat_weights": {
+      "Крит. урон": 1.0,
+      "Шанс крит. попадания": 1.0,
+      "Сила атаки %": 0.7,
+      "Сила атаки": 0.0,
+      "HP %": 0.0,
+      "HP": 0.0,
+      "Защита %": 0.0,
+      "Защита": 0.0,
+      "Восст. энергии": 2.0,
+      "Мастерство стихий": 1.5
+    },
+    "weapons": [
+      {
+        "id": "staff_of_the_scarlet_sands"
+      },
+      {
+        "id": "dragons_bane"
+      },
+      {
+        "id": "primordial_jade_winged-spear"
+      },
+      {
+        "id": "white_tassel",
+        "refine": [
+          5
+        ]
+      },
+      {
+        "id": "missive_windspear",
+        "refine": [
+          5
+        ]
+      }
+    ],
+    "notes": "Cyno in Quickbloom focuses both on doing high personal damage, but also proccing Hyperbloom with a Hydro unit on the team. This is his highest damage setup at [C0]. However, at [C2] and above Cyno can use Aggravate or other team compositions to similar or better effectiveness.\n\n **Weapon Rankings Assuming a Significant Amount of Hydro Application from an Off Field Unit**\nRegarding Weapon Choices:\nDragon's Bane: In teams with a less consistent Hydro enabler such as Barbara, this weapon is equal t"
+  },
+  {
+    "char_id": "cyno",
+    "name": "Сайно",
+    "build_name": "AGGRAVATE DPS",
+    "element": "Электро",
+    "role": "AGGRAVATE DPS",
+    "recommended": false,
+    "best_sets": [
+      "Конец гладиатора",
+      "Громогласный рёв ярости",
+      "Позолоченные сны",
+      "Эмблема рассечённой судьбы",
+      "Усмиряющий гром"
+    ],
+    "good_set_keys": [
+      "GladiatorsFinale",
+      "ThunderingFury",
+      "GildedDreams",
+      "EmblemOfSeveredFate",
+      "Thundersoother"
+    ],
+    "main_stats": {
+      "Пески времени": [
+        "Мастерство стихий",
+        "Сила атаки %"
+      ],
+      "Кубок пространства": [
+        "Электро урон %"
+      ],
+      "Корона разума": [
+        "Шанс крит. попадания",
+        "DMG"
+      ]
+    },
+    "substat_weights": {
+      "Крит. урон": 1.5,
+      "Шанс крит. попадания": 1.5,
+      "Сила атаки %": 0.0,
+      "Сила атаки": 0.0,
+      "HP %": 0.0,
+      "HP": 0.0,
+      "Защита %": 0.0,
+      "Защита": 0.0,
+      "Восст. энергии": 2.0,
+      "Мастерство стихий": 0.0
+    },
+    "weapons": [
+      {
+        "id": "staff_of_the_scarlet_sands"
+      },
+      {
+        "id": "primordial_jade_winged-spear"
+      },
+      {
+        "id": "staff_of_homa"
+      },
+      {
+        "id": "calamity_queller"
+      },
+      {
+        "id": "deathmatch"
+      }
+    ],
+    "notes": "Rotations:\n\nNon-TF: EQ N3E N5E N5 N2E N5 N2E - 3 Endseer\nEQ N3E N5E N5 N2E N5 N2E N5 N2E - 4 Endseer\n\n4pc TF: EQ N2E N4E N4E N5E N4E N4E - 3 Endseer\nEQ N2E N4E N4E N5E N4E N4E N5E - 4 Endseer Option 1\nEQ N2E N4E N4E N5E N4E N4E N4E N4E - 4 Endseer Option 2\n\nCyno is a DPS character that uses his burst to change stance and deal Electro damage. The damage dealt during this stance is Normal Attack damage so burst damage buffs will not affect him. Cyno in Aggravate focuses solely on doing high person"
+  },
+  {
+    "char_id": "xingqiu",
+    "name": "Син Цю",
+    "build_name": "LOW ENERGY REQUIREMENTS\n(OFF-FIELD DPS)",
+    "element": "Гидро",
+    "role": "LOW ENERGY REQUIREMENTS\n(OFF-FIELD DPS)",
+    "recommended": true,
+    "best_sets": [
+      "Эмблема рассечённой судьбы",
+      "Церемония древней знати",
+      "Сон нимфы",
+      "Заблудший в метели"
+    ],
+    "good_set_keys": [
+      "EmblemOfSeveredFate",
+      "NoblesseOblige",
+      "NymphsDream",
+      "BlizzardStrayer"
+    ],
+    "main_stats": {
+      "Пески времени": [
+        "Восст. энергии",
+        "Сила атаки %"
+      ],
+      "Кубок пространства": [
+        "Гидро урон %"
+      ],
+      "Корона разума": [
+        "Шанс крит. попадания",
+        "DMG"
+      ]
+    },
+    "substat_weights": {
+      "Крит. урон": 2.0,
+      "Шанс крит. попадания": 2.0,
+      "Сила атаки %": 1.5,
+      "Сила атаки": 0.1,
+      "HP %": 0.0,
+      "HP": 0.0,
+      "Защита %": 0.0,
+      "Защита": 0.0,
+      "Восст. энергии": 1.0,
+      "Мастерство стихий": 0.7
+    },
+    "weapons": [
+      {
+        "id": "primordial_jade_cutter"
+      },
+      {
+        "id": "mistsplitter_reforged"
+      },
+      {
+        "id": "haran_geppaku_futsu"
+      },
+      {
+        "id": "light_of_foliar_incision"
+      },
+      {
+        "id": "skyward_blade"
+      }
+    ],
+    "notes": "Activating XQ's Elemental Skill or Elemental Burst applies Hydro to the on-field character with his shield. (Pyro in specific)\n\nCleansing Electro may take an additional switch for your character with the rain swords active, while Cryo would freeze you in place. \n\nIt is typicially recommended to use Xingqiu's Elemental Skill before his Burst. However, if Xingqiu is Constellation four, you may choose to use his Elemental Skill after his Burst for the increased damage. This increases his Energy Rec"
+  },
+  {
+    "char_id": "xingqiu",
+    "name": "Син Цю",
+    "build_name": "HIGH ENERGY REQUIREMENTS\n(OFF-FIELD DPS)",
+    "element": "Гидро",
+    "role": "HIGH ENERGY REQUIREMENTS\n(OFF-FIELD DPS)",
+    "recommended": false,
+    "best_sets": [
+      "Эмблема рассечённой судьбы",
+      "Церемония древней знати",
+      "Сон нимфы",
+      "Заблудший в метели"
+    ],
+    "good_set_keys": [
+      "EmblemOfSeveredFate",
+      "NoblesseOblige",
+      "NymphsDream",
+      "BlizzardStrayer"
+    ],
+    "main_stats": {
+      "Пески времени": [
+        "Восст. энергии",
+        "Сила атаки %"
+      ],
+      "Кубок пространства": [
+        "Гидро урон %"
+      ],
+      "Корона разума": [
+        "Шанс крит. попадания",
+        "DMG"
+      ]
+    },
+    "substat_weights": {
+      "Крит. урон": 2.0,
+      "Шанс крит. попадания": 2.0,
+      "Сила атаки %": 1.5,
+      "Сила атаки": 0.1,
+      "HP %": 0.0,
+      "HP": 0.0,
+      "Защита %": 0.0,
+      "Защита": 0.0,
+      "Восст. энергии": 1.0,
+      "Мастерство стихий": 0.7
+    },
+    "weapons": [
+      {
+        "id": "primordial_jade_cutter"
+      },
+      {
+        "id": "favonius_sword"
+      },
+      {
+        "id": "mistsplitter_reforged"
+      },
+      {
+        "id": "haran_geppaku_futsu"
+      },
+      {
+        "id": "skyward_blade"
+      }
+    ],
+    "notes": "Activating XQ's Elemental Skill or Elemental Burst applies Hydro to the on-field character with his shield. (Pyro in specific)\n\nCleansing Electro may take an additional switch for your character with the rain swords active, while Cryo would freeze you in place. \n\nIt is typicially recommended to use Xingqiu's Elemental Skill before his Burst. However, if Xingqiu is Constellation four, you may choose to use his Elemental Skill after his Burst for the increased damage. This increases his Energy Rec"
+  },
+  {
+    "char_id": "barbara",
+    "name": "Барбара",
+    "build_name": "SUPPORT",
+    "element": "Гидро",
+    "role": "SUPPORT",
+    "recommended": true,
+    "best_sets": [
+      "Стойкость Миллелита",
+      "Моллюск морских красок",
+      "Инструктор"
+    ],
+    "good_set_keys": [
+      "TenacityOfTheMillelith",
+      "OceanHuedClam",
+      "Instructor"
+    ],
+    "main_stats": {
+      "Пески времени": [
+        "HP %"
+      ],
+      "Кубок пространства": [
+        "HP %"
+      ],
+      "Корона разума": [
+        "Бонус лечения %"
+      ]
+    },
+    "substat_weights": {
+      "Крит. урон": 0.0,
+      "Шанс крит. попадания": 0.0,
+      "Сила атаки %": 0.0,
+      "Сила атаки": 0.0,
+      "HP %": 2.0,
+      "HP": 0.4,
+      "Защита %": 0.0,
+      "Защита": 0.0,
+      "Восст. энергии": 0.0,
+      "Мастерство стихий": 0.0
+    },
+    "weapons": [
+      {
+        "id": "thrilling_tales_of_dragon_slayers"
+      },
+      {
+        "id": "everlasting_moonglow"
+      },
+      {
+        "id": "prototype_amber"
+      },
+      {
+        "id": "favonius_codex"
+      },
+      {
+        "id": "wine_and_song"
+      }
+    ],
+    "notes": "Barbara's skill gives you a pulse of healing every 5 seconds, every pulse will imbue you with a Hydro status, that means it can be used for status-cleansing (Pyro in specific, while other elements may take more pulses).\n\nTake note that Hydro reacting with Cryo status will freeze you in place, her skill should be used in consideration of the environment\n\nUse Elemental Skill and/or Elemental Burst and immediately switch. Building ER is not recommended on Support Barbara as her burst should be used"
+  },
+  {
+    "char_id": "barbara",
+    "name": "Барбара",
+    "build_name": "BLOOM DPS",
+    "element": "Гидро",
+    "role": "BLOOM DPS",
+    "recommended": false,
+    "best_sets": [
+      "Цветок потерянного рая",
+      "Позолоченные сны",
+      "Моллюск морских красок"
+    ],
+    "good_set_keys": [
+      "FlowerOfParadiseLost",
+      "GildedDreams",
+      "OceanHuedClam"
+    ],
+    "main_stats": {
+      "Пески времени": [
+        "Мастерство стихий"
+      ],
+      "Кубок пространства": [
+        "Мастерство стихий"
+      ],
+      "Корона разума": [
+        "Мастерство стихий"
+      ]
+    },
+    "substat_weights": {
+      "Крит. урон": 0.0,
+      "Шанс крит. попадания": 0.0,
+      "Сила атаки %": 0.0,
+      "Сила атаки": 0.0,
+      "HP %": 0.0,
+      "HP": 0.0,
+      "Защита %": 0.0,
+      "Защита": 0.0,
+      "Восст. энергии": 1.5,
+      "Мастерство стихий": 2.0
+    },
+    "weapons": [
+      {
+        "id": "a_thousand_floating_dreams"
+      },
+      {
+        "id": "sacrificial_fragments"
+      },
+      {
+        "id": "magic_guide"
+      }
+    ],
+    "notes": "This build is specifically for Bloom teams where Barbara is the character intended to trigger the majority of Blooms.\n\nRegarding Aritfact Sets:\nOcean-Hued Clam (4): This set can do more damage than other options in certain situations, while also increasing Barbara's healing to deal with Bloom self-damage. However, this set is very resin inefficient and is thus not recommended to farm specifically for this set."
+  },
+  {
+    "char_id": "candace",
+    "name": "Кандакия",
+    "build_name": "SUPPORT",
+    "element": "Гидро",
+    "role": "SUPPORT",
+    "recommended": true,
+    "best_sets": [
+      "Церемония древней знати",
+      "Эмблема рассечённой судьбы"
+    ],
+    "good_set_keys": [
+      "NoblesseOblige",
+      "EmblemOfSeveredFate"
+    ],
+    "main_stats": {
+      "Пески времени": [
+        "Восст. энергии",
+        "HP %"
+      ],
+      "Кубок пространства": [
+        "HP %",
+        "Гидро урон %"
+      ],
+      "Корона разума": [
+        "HP %",
+        "Шанс крит. попадания",
+        "DMG"
+      ]
+    },
+    "substat_weights": {
+      "Крит. урон": 0.0,
+      "Шанс крит. попадания": 1.5,
+      "Сила атаки %": 0.0,
+      "Сила атаки": 0.0,
+      "HP %": 1.0,
+      "HP": 0.2,
+      "Защита %": 0.0,
+      "Защита": 0.0,
+      "Восст. энергии": 2.0,
+      "Мастерство стихий": 0.0
+    },
+    "weapons": [
+      {
+        "id": "favonius_lance"
+      },
+      {
+        "id": "black_tassel"
+      }
+    ],
+    "notes": "Candace has generally poor personal damage, and as such performs best as a low investment support.\n\nCrit Rate only if running Favonius Lance"
+  },
+  {
+    "char_id": "tartaglia",
+    "name": "Тарталья",
+    "build_name": "DPS",
+    "element": "Гидро",
+    "role": "DPS",
+    "recommended": true,
+    "best_sets": [
+      "Сердце глубин",
+      "Церемония древней знати",
+      "Воспоминания Симэнавы"
+    ],
+    "good_set_keys": [
+      "HeartOfDepth",
+      "NoblesseOblige",
+      "ShimenawasReminiscence"
+    ],
+    "main_stats": {
+      "Пески времени": [
+        "Сила атаки %"
+      ],
+      "Кубок пространства": [
+        "Гидро урон %"
+      ],
+      "Корона разума": [
+        "Шанс крит. попадания",
+        "DMG"
+      ]
+    },
+    "substat_weights": {
+      "Крит. урон": 2.0,
+      "Шанс крит. попадания": 2.0,
+      "Сила атаки %": 1.5,
+      "Сила атаки": 0.1,
+      "HP %": 0.0,
+      "HP": 0.0,
+      "Защита %": 0.0,
+      "Защита": 0.0,
+      "Восст. энергии": 0.7,
+      "Мастерство стихий": 1.0
+    },
+    "weapons": [
+      {
+        "id": "polar_star"
+      },
+      {
+        "id": "thundering_pulse"
+      },
+      {
+        "id": "hunters_path"
+      },
+      {
+        "id": "aqua_simulacra"
+      },
+      {
+        "id": "skyward_harp"
+      }
+    ],
+    "notes": "Optimal skill duration for [C0]: 7s, 9s or 12s.\nOptimal skill duration for [C1]: 9s, 11s or 14s.\n\nMelee Burst: Only to be used in situations where you need only 1 rotation to clear as the ER requirement to maintain burst uptime is quite high (170-190%), you'll always want to start your rotations with Ranged Burst since it refunds energy to maintain your rotation well.\n\nSkill Combo:\n- 2 NA + 1 CA (Optimal)\n- 3 NA + 1 CA (Recommended)\n- 5 NA + 1 CA (Recommended combo if using Rust or Thundering Pu"
+  },
+  {
+    "char_id": "mona",
+    "name": "Мона",
+    "build_name": "DPS",
+    "element": "Гидро",
+    "role": "DPS",
+    "recommended": false,
+    "best_sets": [
+      "Сердце глубин",
+      "Церемония древней знати",
+      "Странствующий ансамбль"
+    ],
+    "good_set_keys": [
+      "HeartOfDepth",
+      "NoblesseOblige",
+      "WanderersTroupe"
+    ],
+    "main_stats": {
+      "Пески времени": [
+        "Сила атаки %"
+      ],
+      "Кубок пространства": [
+        "Гидро урон %"
+      ],
+      "Корона разума": [
+        "Шанс крит. попадания",
+        "DMG"
+      ]
+    },
+    "substat_weights": {
+      "Крит. урон": 2.0,
+      "Шанс крит. попадания": 2.0,
+      "Сила атаки %": 1.5,
+      "Сила атаки": 0.2,
+      "HP %": 0.0,
+      "HP": 0.0,
+      "Защита %": 0.0,
+      "Защита": 0.0,
+      "Восст. энергии": 0.7,
+      "Мастерство стихий": 1.0
+    },
+    "weapons": [
+      {
+        "id": "skyward_atlas"
+      },
+      {
+        "id": "the_widsith"
+      },
+      {
+        "id": "lost_prayer_to_the_sacred_winds"
+      },
+      {
+        "id": "solar_pearl"
+      },
+      {
+        "id": "dodoco_tales"
+      }
+    ],
+    "notes": "This build is best utilised at [C2], but can work without it. Do note that several 4 stars will out-dps Mona, as Mona is better off as a Sub-DPS/Support."
+  },
+  {
+    "char_id": "mona",
+    "name": "Мона",
+    "build_name": "NUKE",
+    "element": "Гидро",
+    "role": "NUKE",
+    "recommended": true,
+    "best_sets": [
+      "Эмблема рассечённой судьбы",
+      "Церемония древней знати",
+      "Сердце глубин",
+      "Инструктор"
+    ],
+    "good_set_keys": [
+      "EmblemOfSeveredFate",
+      "NoblesseOblige",
+      "HeartOfDepth",
+      "Instructor"
+    ],
+    "main_stats": {
+      "Пески времени": [
+        "Сила атаки %",
+        "Восст. энергии",
+        "Мастерство стихий"
+      ],
+      "Кубок пространства": [
+        "Гидро урон %"
+      ],
+      "Корона разума": [
+        "Шанс крит. попадания",
+        "DMG"
+      ]
+    },
+    "substat_weights": {
+      "Крит. урон": 2.0,
+      "Шанс крит. попадания": 2.0,
+      "Сила атаки %": 1.0,
+      "Сила атаки": 0.2,
+      "HP %": 0.0,
+      "HP": 0.0,
+      "Защита %": 0.0,
+      "Защита": 0.0,
+      "Восст. энергии": 1.5,
+      "Мастерство стихий": 0.7
+    },
+    "weapons": [
+      {
+        "id": "the_widsith"
+      },
+      {
+        "id": "skyward_atlas"
+      },
+      {
+        "id": "memory_of_dust"
+      },
+      {
+        "id": "lost_prayer_to_the_sacred_winds"
+      },
+      {
+        "id": "solar_pearl"
+      }
+    ],
+    "notes": "To make Mona's burst damage trigger the Vaporize 2.0x multiplier:\n1. Apply Pyro on enemy\n2. Cast Burst (should react and remove Pyro status on the enemy after using Burst)\n3. Wait 2.5 seconds for Mona's burst ICD (Mona should stay on field if you have Bennett, to keep the buff)\n4. Swap to Pyro character and apply Pyro on enemy\n5. Burst will pop after enemy gets hit, applying Hydro and Vaporizing her damage.\n\nMona's Elemental Skill provides taunt and procs wet status on enemies, her Elemental Bur"
+  },
+  {
+    "char_id": "mona",
+    "name": "Мона",
+    "build_name": "FREEZE SUPPORT",
+    "element": "Гидро",
+    "role": "FREEZE SUPPORT",
+    "recommended": true,
+    "best_sets": [
+      "Церемония древней знати",
+      "Стойкость Миллелита"
+    ],
+    "good_set_keys": [
+      "NoblesseOblige",
+      "TenacityOfTheMillelith"
+    ],
+    "main_stats": {
+      "Пески времени": [
+        "Восст. энергии",
+        "Сила атаки %"
+      ],
+      "Кубок пространства": [
+        "Гидро урон %",
+        "Сила атаки %"
+      ],
+      "Корона разума": [
+        "Шанс крит. попадания"
+      ]
+    },
+    "substat_weights": {
+      "Крит. урон": 0.0,
+      "Шанс крит. попадания": 1.5,
+      "Сила атаки %": 1.0,
+      "Сила атаки": 0.2,
+      "HP %": 0.0,
+      "HP": 0.0,
+      "Защита %": 0.0,
+      "Защита": 0.0,
+      "Восст. энергии": 2.0,
+      "Мастерство стихий": 0.0
+    },
+    "weapons": [
+      {
+        "id": "thrilling_tales_of_dragon_slayers"
+      },
+      {
+        "id": "favonius_codex"
+      },
+      {
+        "id": "prototype_amber"
+      },
+      {
+        "id": "wine_and_song"
+      }
+    ],
+    "notes": "Mona's Burst applies bubble and Omen debuff upon cast, the count down timer only begins when the bubble is broken.\n\nFrozen enemies can have their bubbles preserved as long as enemies stay in a frozen state. This technique makes Mona a priority Support for Freeze DPS teams.\n\nMona's main role on a freeze team is to provide Omen debuff from her burst as it is extendable via Freeze mechanics. Note that you must apply Cryo before casting Mona's Elemental Burst for the extension to happen. Omen Freeze"
+  },
+  {
+    "char_id": "sangonomiya_kokomi",
+    "name": "Кокоми",
+    "build_name": "SUPPORT",
+    "element": "Гидро",
+    "role": "SUPPORT",
+    "recommended": true,
+    "best_sets": [
+      "Стойкость Миллелита",
+      "Моллюск морских красок"
+    ],
+    "good_set_keys": [
+      "TenacityOfTheMillelith",
+      "OceanHuedClam"
+    ],
+    "main_stats": {
+      "Пески времени": [
+        "Восст. энергии",
+        "HP %"
+      ],
+      "Кубок пространства": [
+        "HP %"
+      ],
+      "Корона разума": [
+        "Бонус лечения %",
+        "HP %"
+      ]
+    },
+    "substat_weights": {
+      "Крит. урон": 0.0,
+      "Шанс крит. попадания": 0.0,
+      "Сила атаки %": 1.0,
+      "Сила атаки": 0.1,
+      "HP %": 1.5,
+      "HP": 0.2,
+      "Защита %": 0.0,
+      "Защита": 0.0,
+      "Восст. энергии": 2.0,
+      "Мастерство стихий": 0.0
+    },
+    "weapons": [
+      {
+        "id": "thrilling_tales_of_dragon_slayers"
+      },
+      {
+        "id": "prototype_amber"
+      },
+      {
+        "id": "hakushin_ring"
+      },
+      {
+        "id": "sacrificial_fragments"
+      }
+    ],
+    "notes": "Kokomi's Elemental Burst dynamically alters her skill's damage, this means that you cannot use her Burst to snapshot the buff onto the Skill and swap out.\n\nSupport Kokomi focuses on just using her Elemental Burst before her Elemental Skill's duration ends to refresh her skill duration. This allows 100% uptime on Hydro application from her Elemental Skill for Freeze / Electro-charge teams.\n\nRegarding Weapon Choices:\nHakushin Ring: This weapon can provide Elemental DMG% for the team in Electro-cha"
+  },
+  {
+    "char_id": "sangonomiya_kokomi",
+    "name": "Кокоми",
+    "build_name": "DPS",
+    "element": "Гидро",
+    "role": "DPS",
+    "recommended": false,
+    "best_sets": [
+      "Моллюск морских красок",
+      "Сердце глубин",
+      "Стойкость Миллелита"
+    ],
+    "good_set_keys": [
+      "OceanHuedClam",
+      "HeartOfDepth",
+      "TenacityOfTheMillelith"
+    ],
+    "main_stats": {
+      "Пески времени": [
+        "HP %",
+        "Восст. энергии"
+      ],
+      "Кубок пространства": [
+        "Гидро урон %"
+      ],
+      "Корона разума": [
+        "Бонус лечения %"
+      ]
+    },
+    "substat_weights": {
+      "Крит. урон": 0.0,
+      "Шанс крит. попадания": 0.0,
+      "Сила атаки %": 0.0,
+      "Сила атаки": 0.1,
+      "HP %": 2.0,
+      "HP": 0.2,
+      "Защита %": 0.0,
+      "Защита": 0.0,
+      "Восст. энергии": 1.5,
+      "Мастерство стихий": 0.7
+    },
+    "weapons": [
+      {
+        "id": "everlasting_moonglow"
+      },
+      {
+        "id": "prototype_amber"
+      },
+      {
+        "id": "hakushin_ring"
+      },
+      {
+        "id": "thrilling_tales_of_dragon_slayers"
+      }
+    ],
+    "notes": "Due to Kokomi's high stamina cost on her Charged Attacks, her best attack strings are: \n\nAt [C0]: N2D \nAt [C1]: N3D*\n\n*N3D might result in a loss of Beidou Stormbreaker hits (DPS loss), and as such is only recommended in a Vaporize comp where the added Hydro application is favoured.\n\n*NA = Normal Attack, D = Dash\n\nDPS Kokomi aims to maximise her onfield damage during her Elemental Burst's duration. Outside of her Elemental Burst, her damage is lackluster and not worth building for.\n\nRegarding We"
+  },
+  {
+    "char_id": "sangonomiya_kokomi",
+    "name": "Кокоми",
+    "build_name": "BLOOM DPS",
+    "element": "Гидро",
+    "role": "BLOOM DPS",
+    "recommended": false,
+    "best_sets": [
+      "Цветок потерянного рая",
+      "Позолоченные сны",
+      "Моллюск морских красок"
+    ],
+    "good_set_keys": [
+      "FlowerOfParadiseLost",
+      "GildedDreams",
+      "OceanHuedClam"
+    ],
+    "main_stats": {
+      "Пески времени": [
+        "Мастерство стихий"
+      ],
+      "Кубок пространства": [
+        "Мастерство стихий"
+      ],
+      "Корона разума": [
+        "Мастерство стихий"
+      ]
+    },
+    "substat_weights": {
+      "Крит. урон": 0.0,
+      "Шанс крит. попадания": 0.0,
+      "Сила атаки %": 0.0,
+      "Сила атаки": 0.0,
+      "HP %": 1.0,
+      "HP": 0.2,
+      "Защита %": 0.0,
+      "Защита": 0.0,
+      "Восст. энергии": 1.5,
+      "Мастерство стихий": 2.0
+    },
+    "weapons": [
+      {
+        "id": "a_thousand_floating_dreams"
+      },
+      {
+        "id": "sacrificial_fragments"
+      },
+      {
+        "id": "magic_guide"
+      },
+      {
+        "id": "fruit_of_fulfillment"
+      }
+    ],
+    "notes": "This build is specifically for Bloom teams where Kokomi is the character intended to trigger the majority of Blooms.\n\nRegarding Aritfact Sets:\nOcean-Hued Clam (4): This set can do more damage than other options in certain situations, while also increasing Kokomi's healing to deal with Bloom self-damage. However, this set is very resin inefficient and is thus not recommended to farm specifically for this set."
+  },
+  {
+    "char_id": "kamisato_ayato",
+    "name": "Аято",
+    "build_name": "DPS",
+    "element": "Гидро",
+    "role": "DPS",
+    "recommended": true,
+    "best_sets": [
+      "Сердце глубин",
+      "Конец гладиатора",
+      "Заблудший в метели",
+      "Громогласный рёв ярости"
+    ],
+    "good_set_keys": [
+      "HeartOfDepth",
+      "GladiatorsFinale",
+      "BlizzardStrayer",
+      "ThunderingFury"
+    ],
+    "main_stats": {
+      "Пески времени": [
+        "Сила атаки %"
+      ],
+      "Кубок пространства": [
+        "Гидро урон %"
+      ],
+      "Корона разума": [
+        "Шанс крит. попадания",
+        "DMG"
+      ]
+    },
+    "substat_weights": {
+      "Крит. урон": 2.0,
+      "Шанс крит. попадания": 2.0,
+      "Сила атаки %": 1.5,
+      "Сила атаки": 0.1,
+      "HP %": 0.7,
+      "HP": 0.0,
+      "Защита %": 0.0,
+      "Защита": 0.0,
+      "Восст. энергии": 1.0,
+      "Мастерство стихий": 0.4
+    },
+    "weapons": [
+      {
+        "id": "haran_geppaku_futsu"
+      },
+      {
+        "id": "primordial_jade_cutter"
+      },
+      {
+        "id": "mistsplitter_reforged"
+      },
+      {
+        "id": "the_black_sword"
+      },
+      {
+        "id": "summit_shaper"
+      }
+    ],
+    "notes": "Try to activate Ayato's Elemental Burst before using his skill to maximize his Normal Attack DMG. Getting enough Energy Recharge for this is important, and varies based on team. Since the casting time is so long, it may not be worth snapshotting into buffs.\n\nThe amount of slashes Ayato can do during an Elemental Skill window is sometimes influenced by the player's set FPS.\n\nDPS Ayato focuses on doing large amounts of on-field damage with his Elemental Skill and Elemental Burst. \n\nRegarding Weapo"
+  },
+  {
+    "char_id": "yelan",
+    "name": "Е Лань",
+    "build_name": "HIGH ENERGY REQUIREMENTS\n(OFF-FIELD DPS)",
+    "element": "Гидро",
+    "role": "HIGH ENERGY REQUIREMENTS\n(OFF-FIELD DPS)",
+    "recommended": true,
+    "best_sets": [
+      "Эмблема рассечённой судьбы",
+      "Стойкость Миллелита",
+      "Сердце глубин",
+      "Церемония древней знати"
+    ],
+    "good_set_keys": [
+      "EmblemOfSeveredFate",
+      "TenacityOfTheMillelith",
+      "HeartOfDepth",
+      "NoblesseOblige"
+    ],
+    "main_stats": {
+      "Пески времени": [
+        "Восст. энергии",
+        "HP %"
+      ],
+      "Кубок пространства": [
+        "Гидро урон %",
+        "HP %"
+      ],
+      "Корона разума": [
+        "Шанс крит. попадания",
+        "Крит. урон",
+        "HP %"
+      ]
+    },
+    "substat_weights": {
+      "Крит. урон": 0.0,
+      "Шанс крит. попадания": 0.0,
+      "Сила атаки %": 0.0,
+      "Сила атаки": 0.0,
+      "HP %": 0.0,
+      "HP": 0.3,
+      "Защита %": 0.0,
+      "Защита": 0.0,
+      "Восст. энергии": 2.0,
+      "Мастерство стихий": 0.0
+    },
+    "weapons": [
+      {
+        "id": "elegy_for_the_end"
+      },
+      {
+        "id": "favonius_warbow"
+      },
+      {
+        "id": "aqua_simulacra"
+      },
+      {
+        "id": "sacrificial_bow",
+        "refine": [
+          3
+        ]
+      }
+    ],
+    "notes": "Yelan is an off-field DPS who is able to apply Hydro via her Elemental Burst, this part of her kit acts similarly to Xingqiu's Elemental Burst. Yelan mainly scales off HP%, so don't build her with ATK%. Yelan also wants a lot of Energy Recharge to be able to maintain her Elemental Burst uptime, this can decrease depending on the number of Hydro units or energy providers in the team.\n\nRegarding Weapon Choices:\nElegy for the End: This weapon is to be used only in reaction based comps such as Vape "
+  },
+  {
+    "char_id": "yelan",
+    "name": "Е Лань",
+    "build_name": "LOW ENERGY REQUIREMENTS\n(OFF-FIELD DPS)",
+    "element": "Гидро",
+    "role": "LOW ENERGY REQUIREMENTS\n(OFF-FIELD DPS)",
+    "recommended": true,
+    "best_sets": [
+      "Эмблема рассечённой судьбы",
+      "Стойкость Миллелита",
+      "Сердце глубин",
+      "Церемония древней знати"
+    ],
+    "good_set_keys": [
+      "EmblemOfSeveredFate",
+      "TenacityOfTheMillelith",
+      "HeartOfDepth",
+      "NoblesseOblige"
+    ],
+    "main_stats": {
+      "Пески времени": [
+        "Восст. энергии",
+        "HP %"
+      ],
+      "Кубок пространства": [
+        "Гидро урон %",
+        "HP %"
+      ],
+      "Корона разума": [
+        "Шанс крит. попадания",
+        "Крит. урон",
+        "HP %"
+      ]
+    },
+    "substat_weights": {
+      "Крит. урон": 0.0,
+      "Шанс крит. попадания": 0.0,
+      "Сила атаки %": 0.0,
+      "Сила атаки": 0.0,
+      "HP %": 0.0,
+      "HP": 0.3,
+      "Защита %": 0.0,
+      "Защита": 0.0,
+      "Восст. энергии": 2.0,
+      "Мастерство стихий": 0.0
+    },
+    "weapons": [
+      {
+        "id": "aqua_simulacra"
+      },
+      {
+        "id": "mouuns_moon",
+        "refine": [
+          3
+        ]
+      },
+      {
+        "id": "the_stringless",
+        "refine": [
+          3
+        ]
+      },
+      {
+        "id": "slingshot"
+      },
+      {
+        "id": "hunters_path"
+      }
+    ],
+    "notes": "Yelan is an off-field DPS who is able to apply Hydro via her Elemental Burst, this part of her kit acts similarly to Xingqiu's Elemental Burst. Yelan mainly scales off HP%, so don't build her with ATK%. Yelan also wants a lot of Energy Recharge to be able to maintain her Elemental Burst uptime, this can decrease depending on the number of Hydro units or energy providers in the team.\n\nRegarding Weapon Choices:\nElegy for the End: This weapon is to be used only in reaction based comps such as Vape "
+  },
+  {
+    "char_id": "nilou",
+    "name": "Нилу",
+    "build_name": "BLOOM SUPPORT",
+    "element": "Гидро",
+    "role": "BLOOM SUPPORT",
+    "recommended": true,
+    "best_sets": [
+      "Церемония древней знати",
+      "Воспоминания дремучего леса"
+    ],
+    "good_set_keys": [
+      "NoblesseOblige",
+      "DeepwoodMemories"
+    ],
+    "main_stats": {
+      "Пески времени": [
+        "HP %",
+        "Восст. энергии"
+      ],
+      "Кубок пространства": [
+        "HP %"
+      ],
+      "Корона разума": [
+        "HP %"
+      ]
+    },
+    "substat_weights": {
+      "Крит. урон": 0.4,
+      "Шанс крит. попадания": 0.4,
+      "Сила атаки %": 0.0,
+      "Сила атаки": 0.0,
+      "HP %": 2.0,
+      "HP": 0.4,
+      "Защита %": 0.0,
+      "Защита": 0.0,
+      "Восст. энергии": 0.0,
+      "Мастерство стихий": 0.7
+    },
+    "weapons": [
+      {
+        "id": "key_of_khaj-nisut"
+      },
+      {
+        "id": "freedom-sworn"
+      },
+      {
+        "id": "xiphos_moonlight"
+      },
+      {
+        "id": "iron_sting"
+      },
+      {
+        "id": "toukabou_shigure"
+      }
+    ],
+    "notes": "Off Field Combo\n(Q) E N3 (Sword Dance) - Minimizes her own Bloom ownership\n\n(Q) E E E E (Whirling Steps) - Primarily used when Nilou is wielding Key of Khaj-Nisut\n\nAs a Bloom Support, Nilou's role is to maximize a team's Bloom Damage in teams of strictly Hydro and Dendro characters. Level 90 is highly recommended to maximize Nilou's HP and Bloom Damage\n\nRegarding Weapon Choices:\nFavonius Sword, Festering Desire and Sacrificial Sword: Strong options if opting to Burst every rotation. Favonius can"
+  },
+  {
+    "char_id": "diona",
+    "name": "Диона",
+    "build_name": "SUPPORT",
+    "element": "Крио",
+    "role": "SUPPORT",
+    "recommended": true,
+    "best_sets": [
+      "Церемония древней знати",
+      "Эмблема рассечённой судьбы",
+      "Стойкость Миллелита",
+      "Инструктор"
+    ],
+    "good_set_keys": [
+      "NoblesseOblige",
+      "EmblemOfSeveredFate",
+      "TenacityOfTheMillelith",
+      "Instructor"
+    ],
+    "main_stats": {
+      "Пески времени": [
+        "Восст. энергии",
+        "HP %"
+      ],
+      "Кубок пространства": [
+        "HP %"
+      ],
+      "Корона разума": [
+        "HP %",
+        "Бонус лечения %"
+      ]
+    },
+    "substat_weights": {
+      "Крит. урон": 0.0,
+      "Шанс крит. попадания": 0.0,
+      "Сила атаки %": 0.0,
+      "Сила атаки": 0.0,
+      "HP %": 2.0,
+      "HP": 0.3,
+      "Защита %": 0.0,
+      "Защита": 0.0,
+      "Восст. энергии": 1.5,
+      "Мастерство стихий": 0.0
+    },
+    "weapons": [
+      {
+        "id": "favonius_warbow"
+      },
+      {
+        "id": "sacrificial_bow",
+        "refine": [
+          3
+        ]
+      },
+      {
+        "id": "sacrificial_bow",
+        "refine": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": "elegy_for_the_end"
+      },
+      {
+        "id": "recurve_bow"
+      }
+    ],
+    "notes": "Diona's Elemental Skill grants you a Cryo shield which allows cleansing. Every time you swap characters with the shield up, it applies Cryo. This acts as a cleanse.\n\nThe shielding Diona puts out should offset the need for healing from her burst. The damage boost from Noblesse Oblige (4) has more practical use. Additionally, her first constellation greatly increases her ultimate uptime, further lowering the healing needed.\n\nAs a support, Diona's typically used for three things; Shielding, Healing"
+  },
+  {
+    "char_id": "chongyun",
+    "name": "Чун Юнь",
+    "build_name": "BURST SUPPORT",
+    "element": "Крио",
+    "role": "BURST SUPPORT",
+    "recommended": true,
+    "best_sets": [
+      "Церемония древней знати",
+      "Заблудший в метели",
+      "Эмблема рассечённой судьбы"
+    ],
+    "good_set_keys": [
+      "NoblesseOblige",
+      "BlizzardStrayer",
+      "EmblemOfSeveredFate"
+    ],
+    "main_stats": {
+      "Пески времени": [
+        "Сила атаки %",
+        "Восст. энергии",
+        "Мастерство стихий"
+      ],
+      "Кубок пространства": [
+        "Крио урон %"
+      ],
+      "Корона разума": [
+        "Шанс крит. попадания",
+        "DMG"
+      ]
+    },
+    "substat_weights": {
+      "Крит. урон": 2.0,
+      "Шанс крит. попадания": 2.0,
+      "Сила атаки %": 1.5,
+      "Сила атаки": 0.1,
+      "HP %": 0.0,
+      "HP": 0.0,
+      "Защита %": 0.0,
+      "Защита": 0.0,
+      "Восст. энергии": 0.7,
+      "Мастерство стихий": 1.0
+    },
+    "weapons": [
+      {
+        "id": "wolfs_gravestone"
+      },
+      {
+        "id": "serpent_spine"
+      },
+      {
+        "id": "redhorn_stonethresher"
+      },
+      {
+        "id": "the_unforged"
+      },
+      {
+        "id": "skyward_pride"
+      }
+    ],
+    "notes": "Chongyun's Elemental Burst is calculated as Claymore damage, which means it breaks Geo Structures / Shields at a much easier rate and can proc Shatter.\n\nIt is preferred to use Chongyun as a Sub DPS / Nuke over Main DPS as his Normal Attack scalings are very low, even when including Constellation 1. His Elemental Burst on the other hand hits extremely hard on later constellations and takes a much higher total damage portion over his Normal Attack. On top of that, you can Reverse Melt all 3 hits o"
+  },
+  {
+    "char_id": "kaeya",
+    "name": "Кэйа",
+    "build_name": "FREEZE",
+    "element": "Крио",
+    "role": "FREEZE",
+    "recommended": true,
+    "best_sets": [
+      "Заблудший в метели",
+      "Конец гладиатора",
+      "Церемония древней знати"
+    ],
+    "good_set_keys": [
+      "BlizzardStrayer",
+      "GladiatorsFinale",
+      "NoblesseOblige"
+    ],
+    "main_stats": {
+      "Пески времени": [
+        "Сила атаки %"
+      ],
+      "Кубок пространства": [
+        "Крио урон %"
+      ],
+      "Корона разума": [
+        "Крит. урон"
+      ]
+    },
+    "substat_weights": {
+      "Крит. урон": 2.0,
+      "Шанс крит. попадания": 0.7,
+      "Сила атаки %": 1.5,
+      "Сила атаки": 0.1,
+      "HP %": 0.0,
+      "HP": 0.0,
+      "Защита %": 0.0,
+      "Защита": 0.0,
+      "Восст. энергии": 1.0,
+      "Мастерство стихий": 0.0
+    },
+    "weapons": [
+      {
+        "id": "mistsplitter_reforged"
+      },
+      {
+        "id": "light_of_foliar_incision"
+      },
+      {
+        "id": "haran_geppaku_futsu"
+      },
+      {
+        "id": "primordial_jade_cutter"
+      },
+      {
+        "id": "aquila_favonia"
+      }
+    ],
+    "notes": "As a Freeze DPS, he gains over 55%+ Crit Rate with the right team set up:\n- 15% from Cryo Resonance against Cryo affected enemies\n- 40% from Blizzard Strayer against Frozen enemies\n- 15% from [C1] against Cryo affected enemies\n\nKaeya Freeze is mostly used in a team with Chongyun and Xingqiu/Barbara while having Blizzard Strayer (4) equipped. In this team, Kaeya has 55% crit rate against Frozen enemies without any additional Crit stats, which means Crit Rate substats are generally prioritized les"
+  },
+  {
+    "char_id": "kaeya",
+    "name": "Кэйа",
+    "build_name": "REVERSE MELT",
+    "element": "Крио",
+    "role": "REVERSE MELT",
+    "recommended": true,
+    "best_sets": [
+      "Эмблема рассечённой судьбы",
+      "Церемония древней знати",
+      "Заблудший в метели",
+      "Инструктор"
+    ],
+    "good_set_keys": [
+      "EmblemOfSeveredFate",
+      "NoblesseOblige",
+      "BlizzardStrayer",
+      "Instructor"
+    ],
+    "main_stats": {
+      "Пески времени": [
+        "Восст. энергии",
+        "Сила атаки %"
+      ],
+      "Кубок пространства": [
+        "Крио урон %"
+      ],
+      "Корона разума": [
+        "Шанс крит. попадания",
+        "DMG"
+      ]
+    },
+    "substat_weights": {
+      "Крит. урон": 1.5,
+      "Шанс крит. попадания": 1.5,
+      "Сила атаки %": 1.0,
+      "Сила атаки": 0.1,
+      "HP %": 0.0,
+      "HP": 0.0,
+      "Защита %": 0.0,
+      "Защита": 0.0,
+      "Восст. энергии": 2.0,
+      "Мастерство стихий": 0.7
+    },
+    "weapons": [
+      {
+        "id": "primordial_jade_cutter"
+      },
+      {
+        "id": "mistsplitter_reforged"
+      },
+      {
+        "id": "light_of_foliar_incision"
+      },
+      {
+        "id": "freedom-sworn"
+      },
+      {
+        "id": "skyward_blade"
+      }
+    ],
+    "notes": "Kaeya's Elemental Burst makes him an excellent source of Cryo application for characters that often stay in melee range, although his burst can't be fully utilized with Reverse Melt teams due to how his Cryo damage is split into a barrage of attacks.\n\nRegarding Weapon Choices:\nSkyward Blade: In teams with a 2nd Cryo unit generating energy, this weapon would have a lower priority as the Energy Recharge stat would mostly be wasted.\nLion's Roar / The Alley Flash / Iron Sting: At [R5], these weapons"
+  },
+  {
+    "char_id": "rosaria",
+    "name": "Розария",
+    "build_name": "REVERSE\nMELT",
+    "element": "Крио",
+    "role": "REVERSE\nMELT",
+    "recommended": true,
+    "best_sets": [
+      "Ступающий по лаве",
+      "Позолоченные сны",
+      "Эмблема рассечённой судьбы",
+      "Заблудший в метели",
+      "Церемония древней знати"
+    ],
+    "good_set_keys": [
+      "Lavawalker",
+      "GildedDreams",
+      "EmblemOfSeveredFate",
+      "BlizzardStrayer",
+      "NoblesseOblige"
+    ],
+    "main_stats": {
+      "Пески времени": [
+        "Мастерство стихий",
+        "Сила атаки %"
+      ],
+      "Кубок пространства": [
+        "Крио урон %"
+      ],
+      "Корона разума": [
+        "Шанс крит. попадания",
+        "DMG"
+      ]
+    },
+    "substat_weights": {
+      "Крит. урон": 1.5,
+      "Шанс крит. попадания": 2.0,
+      "Сила атаки %": 0.0,
+      "Сила атаки": 0.1,
+      "HP %": 0.0,
+      "HP": 0.0,
+      "Защита %": 0.0,
+      "Защита": 0.0,
+      "Восст. энергии": 0.7,
+      "Мастерство стихий": 0.0
+    },
+    "weapons": [
+      {
+        "id": "staff_of_the_scarlet_sands"
+      },
+      {
+        "id": "staff_of_homa"
+      },
+      {
+        "id": "primordial_jade_winged-spear"
+      },
+      {
+        "id": "calamity_queller"
+      },
+      {
+        "id": "vortex_vanquisher"
+      }
+    ],
+    "notes": "T\nThis build capitalizes on the fact Rosaria's skill and burst dont have an ICD, allowing her to Melt all Skill and Burst procs. Which in combination with snapshotting buffs onto her burst makes it one of her highest personal damage builds.\n\nRegarding Weapon Choices:\nFor more details see the sheet here\nVortex Vanquisher: The ranking assumes you are unshielded. If you use a shield, it can surpass Calamity Queller.\nDragon's Bane: At high refinement [R4-R5] this performs a tad better than Primordia"
+  },
+  {
+    "char_id": "rosaria",
+    "name": "Розария",
+    "build_name": "FREEZE",
+    "element": "Крио",
+    "role": "FREEZE",
+    "recommended": true,
+    "best_sets": [
+      "Заблудший в метели",
+      "Церемония древней знати"
+    ],
+    "good_set_keys": [
+      "BlizzardStrayer",
+      "NoblesseOblige"
+    ],
+    "main_stats": {
+      "Пески времени": [
+        "Сила атаки %"
+      ],
+      "Кубок пространства": [
+        "Крио урон %"
+      ],
+      "Корона разума": [
+        "Крит. урон"
+      ]
+    },
+    "substat_weights": {
+      "Крит. урон": 2.0,
+      "Шанс крит. попадания": 0.7,
+      "Сила атаки %": 1.5,
+      "Сила атаки": 0.1,
+      "HP %": 0.0,
+      "HP": 0.0,
+      "Защита %": 0.0,
+      "Защита": 0.0,
+      "Восст. энергии": 1.0,
+      "Мастерство стихий": 0.0
+    },
+    "weapons": [
+      {
+        "id": "staff_of_homa"
+      },
+      {
+        "id": "wavebreakers_fin"
+      },
+      {
+        "id": "vortex_vanquisher"
+      },
+      {
+        "id": "primordial_jade_winged-spear"
+      },
+      {
+        "id": "blackcliff_pole"
+      }
+    ],
+    "notes": "If Rosaria is being used with Chongyun to infuse her normal attacks with Cryo, her Normal Attack talent will have higher priority than Skill.\n\nThis build can be used on both a quickswap/sub-dps and perma-freeze dps Rosaria. If played as a perma-freeze dps, Rosaria has the same team comp as Freeze Kaeya. Check Kaeya's ability tips section for teamcomp setup.\n\nRegarding Substats: \nRosaria does not need much Energy Recharge if paired with Kaeya. If paired with another Cryo unit such as Chongyun or "
+  },
+  {
+    "char_id": "rosaria",
+    "name": "Розария",
+    "build_name": "SUPPORT",
+    "element": "Крио",
+    "role": "SUPPORT",
+    "recommended": false,
+    "best_sets": [
+      "Церемония древней знати",
+      "Инструктор"
+    ],
+    "good_set_keys": [
+      "NoblesseOblige",
+      "Instructor"
+    ],
+    "main_stats": {
+      "Пески времени": [
+        "Сила атаки %",
+        "Восст. энергии"
+      ],
+      "Кубок пространства": [
+        "Крио урон %"
+      ],
+      "Корона разума": [
+        "Шанс крит. попадания"
+      ]
+    },
+    "substat_weights": {
+      "Крит. урон": 1.0,
+      "Шанс крит. попадания": 2.0,
+      "Сила атаки %": 0.7,
+      "Сила атаки": 0.1,
+      "HP %": 0.0,
+      "HP": 0.0,
+      "Защита %": 0.0,
+      "Защита": 0.0,
+      "Восст. энергии": 1.5,
+      "Мастерство стихий": 0.0
+    },
+    "weapons": [
+      {
+        "id": "favonius_lance"
+      },
+      {
+        "id": "staff_of_the_scarlet_sands"
+      },
+      {
+        "id": "deathmatch"
+      },
+      {
+        "id": "primordial_jade_winged-spear"
+      },
+      {
+        "id": "engulfing_lightning"
+      }
+    ],
+    "notes": "Be sure to cast skill before burst as Crit Rate granted by the Ascension 1 Talent will be included with Ascension 4 Talent Bonus as well.\n\nRosaria's Elemental Skill and Elemental Burst can be Reverse Melted (1.5x) with another Pyro applier for some quick and powerful damage.\n\nThis Build focuses on her Buffing/Energy generation/Cryo application capabilities. Though it does not mean that you dont invest in her personal damage, only that it's a lower priority overall.\n\nRegarding Weapon Choices:\nFav"
+  },
+  {
+    "char_id": "layla",
+    "name": "Лайла",
+    "build_name": "SUPPORT",
+    "element": "Крио",
+    "role": "SUPPORT",
+    "recommended": true,
+    "best_sets": [
+      "Стойкость Миллелита",
+      "Церемония древней знати",
+      "Заблудший в метели",
+      "Эмблема рассечённой судьбы"
+    ],
+    "good_set_keys": [
+      "TenacityOfTheMillelith",
+      "NoblesseOblige",
+      "BlizzardStrayer",
+      "EmblemOfSeveredFate"
+    ],
+    "main_stats": {
+      "Пески времени": [
+        "HP %",
+        "Восст. энергии"
+      ],
+      "Кубок пространства": [
+        "HP %",
+        "Крио урон %"
+      ],
+      "Корона разума": [
+        "HP %",
+        "Шанс крит. попадания",
+        "DMG"
+      ]
+    },
+    "substat_weights": {
+      "Крит. урон": 1.0,
+      "Шанс крит. попадания": 1.0,
+      "Сила атаки %": 0.0,
+      "Сила атаки": 0.0,
+      "HP %": 2.0,
+      "HP": 0.2,
+      "Защита %": 0.0,
+      "Защита": 0.0,
+      "Восст. энергии": 1.5,
+      "Мастерство стихий": 0.0
+    },
+    "weapons": [
+      {
+        "id": "key_of_khaj-nisut"
+      },
+      {
+        "id": "primordial_jade_cutter"
+      },
+      {
+        "id": "favonius_sword"
+      },
+      {
+        "id": "freedom-sworn"
+      },
+      {
+        "id": "harbinger_of_dawn"
+      }
+    ],
+    "notes": "The goal of this build is to prioritize Layla's shield, and increase her damage where possible.\n\nRegarding Weapon Choices:\nFreedom-Sworn: This weapon can be a good option in teams where Layla can consistently trigger reactions.\n\nRegarding Artifact Choices:\nBlizzard Strayer (4) and Emblem of Severed Fate (4): These sets are primarily for increasing Layla's personal damage."
+  },
+  {
+    "char_id": "mika",
+    "name": "Мика",
+    "build_name": "SUPPORT",
+    "element": "Крио",
+    "role": "SUPPORT",
+    "recommended": true,
+    "best_sets": [
+      "Церемония древней знати",
+      "Моллюск морских красок",
+      "Эмблема рассечённой судьбы"
+    ],
+    "good_set_keys": [
+      "NoblesseOblige",
+      "OceanHuedClam",
+      "EmblemOfSeveredFate"
+    ],
+    "main_stats": {
+      "Пески времени": [
+        "Восст. энергии",
+        "HP %"
+      ],
+      "Кубок пространства": [
+        "HP %"
+      ],
+      "Корона разума": [
+        "Бонус лечения %",
+        "Crit Rate%"
+      ]
+    },
+    "substat_weights": {
+      "Крит. урон": 0.0,
+      "Шанс крит. попадания": 0.0,
+      "Сила атаки %": 0.0,
+      "Сила атаки": 0.0,
+      "HP %": 1.5,
+      "HP": 0.3,
+      "Защита %": 0.0,
+      "Защита": 0.0,
+      "Восст. энергии": 2.0,
+      "Мастерство стихий": 0.0
+    },
+    "weapons": [
+      {
+        "id": "favonius_lance"
+      },
+      {
+        "id": "black_tassel"
+      },
+      {
+        "id": "engulfing_lightning"
+      },
+      {
+        "id": "prototype_starglitter"
+      },
+      {
+        "id": "the_catch"
+      }
+    ],
+    "notes": "is a placeholder section, finalized information will be added soon**\n\nPrioritize Mika's Burst if you value healing"
+  },
+  {
+    "char_id": "qiqi",
+    "name": "Ци Ци",
+    "build_name": "SUPPORT",
+    "element": "Крио",
+    "role": "SUPPORT",
+    "recommended": true,
+    "best_sets": [
+      "Стойкость Миллелита",
+      "Моллюск морских красок",
+      "Церемония древней знати",
+      "Эмблема рассечённой судьбы"
+    ],
+    "good_set_keys": [
+      "TenacityOfTheMillelith",
+      "OceanHuedClam",
+      "NoblesseOblige",
+      "EmblemOfSeveredFate"
+    ],
+    "main_stats": {
+      "Пески времени": [
+        "Сила атаки %",
+        "Восст. энергии"
+      ],
+      "Кубок пространства": [
+        "Сила атаки %"
+      ],
+      "Корона разума": [
+        "Бонус лечения %",
+        "Сила атаки %"
+      ]
+    },
+    "substat_weights": {
+      "Крит. урон": 0.0,
+      "Шанс крит. попадания": 0.0,
+      "Сила атаки %": 2.0,
+      "Сила атаки": 0.3,
+      "HP %": 0.0,
+      "HP": 0.0,
+      "Защита %": 0.0,
+      "Защита": 0.0,
+      "Восст. энергии": 1.5,
+      "Мастерство стихий": 0.0
+    },
+    "weapons": [
+      {
+        "id": "sacrificial_sword"
+      },
+      {
+        "id": "skyward_blade"
+      },
+      {
+        "id": "kagotsurube_isshin"
+      },
+      {
+        "id": "the_flute"
+      },
+      {
+        "id": "favonius_sword"
+      }
+    ],
+    "notes": "Qiqi's Burst has an 80 energy cost with her skill not generating any energy until [C1]. Energy Recharge will greatly benefit Qiqi, while her Burst should be kept as a last resort.\nQiqi's Burst allows other characters to maximize DPS field time while offering healing from being off-field. At Ascension 4, her Normal Attack applies the healing talisman onto an enemy with a cooldown of 30 seconds.\n\nRegarding Weapon and Artifact Choices:\nSacrificial Sword and Tenacity of the Millelith (4): Using Tena"
+  },
+  {
+    "char_id": "ganyu",
+    "name": "Гань Юй",
+    "build_name": "MELT DPS",
+    "element": "Крио",
+    "role": "MELT DPS",
+    "recommended": true,
+    "best_sets": [
+      "Воспоминания Симэнавы",
+      "Странствующий ансамбль",
+      "Заблудший в метели"
+    ],
+    "good_set_keys": [
+      "ShimenawasReminiscence",
+      "WanderersTroupe",
+      "BlizzardStrayer"
+    ],
+    "main_stats": {
+      "Пески времени": [
+        "Мастерство стихий",
+        "Сила атаки %"
+      ],
+      "Кубок пространства": [
+        "Крио урон %"
+      ],
+      "Корона разума": [
+        "Шанс крит. попадания",
+        "DMG"
+      ]
+    },
+    "substat_weights": {
+      "Крит. урон": 2.0,
+      "Шанс крит. попадания": 2.0,
+      "Сила атаки %": 1.0,
+      "Сила атаки": 0.2,
+      "HP %": 0.0,
+      "HP": 0.0,
+      "Защита %": 0.0,
+      "Защита": 0.0,
+      "Восст. энергии": 0.0,
+      "Мастерство стихий": 1.5
+    },
+    "weapons": [
+      {
+        "id": "hunters_path"
+      },
+      {
+        "id": "amos_bow"
+      },
+      {
+        "id": "aqua_simulacra"
+      },
+      {
+        "id": "polar_star"
+      },
+      {
+        "id": "skyward_harp"
+      }
+    ],
+    "notes": "In some teams and situations, using Ganyu's Elemental Burst can be detrimental to overall damage due to stealing Pyro aura, thus reducing the amount of CAs melting.\n\nGanyu's Level 2 Charged Shot applies two instances Cryo as they do not share the same ICD, which allows you to trigger Melt reaction twice for both damage instances. Charged Attack will be the majority of her damage output while neglecting her Skill/Burst damage contribution for most scenarios.\n\nRegarding Weapon Choices:\nAmos' Bow: "
+  },
+  {
+    "char_id": "ganyu",
+    "name": "Гань Юй",
+    "build_name": "FREEZE DPS",
+    "element": "Крио",
+    "role": "FREEZE DPS",
+    "recommended": true,
+    "best_sets": [
+      "Заблудший в метели"
+    ],
+    "good_set_keys": [
+      "BlizzardStrayer"
+    ],
+    "main_stats": {
+      "Пески времени": [
+        "Сила атаки %"
+      ],
+      "Кубок пространства": [
+        "Крио урон %"
+      ],
+      "Корона разума": [
+        "Крит. урон"
+      ]
+    },
+    "substat_weights": {
+      "Крит. урон": 2.0,
+      "Шанс крит. попадания": 2.0,
+      "Сила атаки %": 1.5,
+      "Сила атаки": 0.2,
+      "HP %": 0.0,
+      "HP": 0.0,
+      "Защита %": 0.0,
+      "Защита": 0.0,
+      "Восст. энергии": 1.0,
+      "Мастерство стихий": 0.0
+    },
+    "weapons": [
+      {
+        "id": "polar_star"
+      },
+      {
+        "id": "aqua_simulacra"
+      },
+      {
+        "id": "thundering_pulse"
+      },
+      {
+        "id": "skyward_harp"
+      },
+      {
+        "id": "amos_bow"
+      }
+    ],
+    "notes": "Try to not overcap on Crit Rate (within the range of 25%-45% Crit Rate) since Ganyu's A1 passive only affects her Charged Shot and subsequent Blooms.\n\nFreeze Ganyu gives a lot of i-frames since you would be spamming Elemental Burst from all of your party members off cooldown. Ganyu's Elemental Burst can deal a ton of damage based on how grouped the enemies are, due to the quadratic scaling on her Elemental Burst.\n\nRegarding Weapon Choices: \nPolar Star: This weapon is much harder to optimize with"
+  },
+  {
+    "char_id": "ganyu",
+    "name": "Гань Юй",
+    "build_name": "OFF-FIELD DPS",
+    "element": "Крио",
+    "role": "OFF-FIELD DPS",
+    "recommended": false,
+    "best_sets": [
+      "Заблудший в метели",
+      "Церемония древней знати",
+      "Эмблема рассечённой судьбы"
+    ],
+    "good_set_keys": [
+      "BlizzardStrayer",
+      "NoblesseOblige",
+      "EmblemOfSeveredFate"
+    ],
+    "main_stats": {
+      "Пески времени": [
+        "Сила атаки %",
+        "Восст. энергии"
+      ],
+      "Кубок пространства": [
+        "Крио урон %"
+      ],
+      "Корона разума": [
+        "Шанс крит. попадания",
+        "DMG"
+      ]
+    },
+    "substat_weights": {
+      "Крит. урон": 1.5,
+      "Шанс крит. попадания": 1.5,
+      "Сила атаки %": 1.0,
+      "Сила атаки": 0.1,
+      "HP %": 0.0,
+      "HP": 0.0,
+      "Защита %": 0.0,
+      "Защита": 0.0,
+      "Восст. энергии": 0.0,
+      "Мастерство стихий": 0.0
+    },
+    "weapons": [
+      {
+        "id": "thundering_pulse"
+      },
+      {
+        "id": "skyward_harp"
+      },
+      {
+        "id": "polar_star"
+      },
+      {
+        "id": "amos_bow"
+      },
+      {
+        "id": "alley_hunter"
+      }
+    ],
+    "notes": "When using her Elemental Burst, place her Elemental Skill in the AoE to taunt and keep enemies inside the zone for constant damage.\n\nMake sure to hit enemies with her skill's initial damage and her explosion damage as they both regen energy for her ult.\n\nAn Off-field DPS Ganyu shines brightly on a Freeze comp as she has 100% Elemental Burst uptime and her Elemental Burst buffs party members' Cryo Damage. \n\nRegarding Weapon Choices:\nPrototype Crescent: This weapon might pull ahead of some of the "
+  },
+  {
+    "char_id": "eula",
+    "name": "Эола",
+    "build_name": "DPS",
+    "element": "Крио",
+    "role": "DPS",
+    "recommended": true,
+    "best_sets": [
+      "Конец гладиатора"
+    ],
+    "good_set_keys": [
+      "GladiatorsFinale"
+    ],
+    "main_stats": {
+      "Пески времени": [
+        "Сила атаки %"
+      ],
+      "Кубок пространства": [
+        "Физ. урон %"
+      ],
+      "Корона разума": [
+        "Шанс крит. попадания",
+        "DMG"
+      ]
+    },
+    "substat_weights": {
+      "Крит. урон": 2.0,
+      "Шанс крит. попадания": 2.0,
+      "Сила атаки %": 1.0,
+      "Сила атаки": 0.2,
+      "HP %": 0.0,
+      "HP": 0.0,
+      "Защита %": 0.0,
+      "Защита": 0.0,
+      "Восст. энергии": 1.5,
+      "Мастерство стихий": 0.0
+    },
+    "weapons": [
+      {
+        "id": "song_of_broken_pines"
+      },
+      {
+        "id": "wolfs_gravestone"
+      },
+      {
+        "id": "redhorn_stonethresher"
+      },
+      {
+        "id": "the_unforged"
+      },
+      {
+        "id": "skyward_pride"
+      }
+    ],
+    "notes": "Normal combo while no Burst:\nNA Spam > Tap Skill > NA Spam > Tap Skill\n\nBurst combo:\nTap Skill > Burst > 4 NA > Hold Skill > 4 NA\n\nBurst combo that generates more energy at the cost of slightly less DPS:\nTap Skill > Burst > Tap Skill > 4 NA > Dash Cancel > 2 NA > Hold Skill > 2 NA\n\n*NA = Normal Attack\n\nEula's weapon rankings assume that you're running her with a Cryo battery (i.e. Diona) instead of Bennett. She would usually need Energy Recharge from substats depending on what team and Cryo batt"
+  },
+  {
+    "char_id": "kamisato_ayaka",
+    "name": "Аяка",
+    "build_name": "DPS",
+    "element": "Крио",
+    "role": "DPS",
+    "recommended": true,
+    "best_sets": [
+      "Заблудший в метели",
+      "Церемония древней знати"
+    ],
+    "good_set_keys": [
+      "BlizzardStrayer",
+      "NoblesseOblige"
+    ],
+    "main_stats": {
+      "Пески времени": [
+        "Сила атаки %"
+      ],
+      "Кубок пространства": [
+        "Крио урон %"
+      ],
+      "Корона разума": [
+        "Крит. урон",
+        "Сила атаки %"
+      ]
+    },
+    "substat_weights": {
+      "Крит. урон": 2.0,
+      "Шанс крит. попадания": 0.7,
+      "Сила атаки %": 1.5,
+      "Сила атаки": 0.1,
+      "HP %": 0.0,
+      "HP": 0.0,
+      "Защита %": 0.0,
+      "Защита": 0.0,
+      "Восст. энергии": 1.0,
+      "Мастерство стихий": 0.0
+    },
+    "weapons": [
+      {
+        "id": "mistsplitter_reforged"
+      },
+      {
+        "id": "haran_geppaku_futsu"
+      },
+      {
+        "id": "light_of_foliar_incision"
+      },
+      {
+        "id": "primordial_jade_cutter"
+      },
+      {
+        "id": "summit_shaper"
+      }
+    ],
+    "notes": "Ayaka's Charged Attack, Elemental Skill and Elemental Burst is able to hit enemies inside sucked inside Venti's Elemental Burst.\n\nHer Elemental Burst also stays in place on frozen enemies and slightly knocks enemies away when they're not frozen.\n\nKamisato Ayaka is a pretty straightforward DPS that deals most of her damage from her Elemental Burst. She has very high scalings on her burst at the cost of it being 80 energy. You will likely need another Cryo battery on the team to provide energy for"
+  },
+  {
+    "char_id": "aloy",
+    "name": "Элой",
+    "build_name": "BURST SUPPORT",
+    "element": "Крио",
+    "role": "BURST SUPPORT",
+    "recommended": true,
+    "best_sets": [
+      "Заблудший в метели",
+      "Церемония древней знати",
+      "Эмблема рассечённой судьбы"
+    ],
+    "good_set_keys": [
+      "BlizzardStrayer",
+      "NoblesseOblige",
+      "EmblemOfSeveredFate"
+    ],
+    "main_stats": {
+      "Пески времени": [
+        "Сила атаки %",
+        "Мастерство стихий"
+      ],
+      "Кубок пространства": [
+        "Крио урон %"
+      ],
+      "Корона разума": [
+        "Шанс крит. попадания",
+        "DMG"
+      ]
+    },
+    "substat_weights": {
+      "Крит. урон": 2.0,
+      "Шанс крит. попадания": 2.0,
+      "Сила атаки %": 1.5,
+      "Сила атаки": 0.1,
+      "HP %": 0.0,
+      "HP": 0.0,
+      "Защита %": 0.0,
+      "Защита": 0.0,
+      "Восст. энергии": 0.7,
+      "Мастерство стихий": 1.0
+    },
+    "weapons": [
+      {
+        "id": "thundering_pulse"
+      },
+      {
+        "id": "polar_star"
+      },
+      {
+        "id": "skyward_harp"
+      },
+      {
+        "id": "the_stringless"
+      },
+      {
+        "id": "amos_bow"
+      }
+    ],
+    "notes": "Aloy is much preferred as a Burst Support over Main DPS as getting coil stacks for her Cryo infusion can be quite unreliable. Aloy needs 4 coil stacks to get the Cryo infusion and you can only get 1 stack every 0.1 seconds which is quite hard to do considering the Bomblets are scattered all over the place. One thing to note regarding Aloy's coil stacks is that she can still get coil stacks even when she's off-field.\n\nAloy is very niche as she only performs well in certain comps and even then, sh"
+  },
+  {
+    "char_id": "shenhe",
+    "name": "Шэнь Хэ",
+    "build_name": "SUPPORT",
+    "element": "Крио",
+    "role": "SUPPORT",
+    "recommended": true,
+    "best_sets": [
+      "Церемония древней знати",
+      "Эмблема рассечённой судьбы"
+    ],
+    "good_set_keys": [
+      "NoblesseOblige",
+      "EmblemOfSeveredFate"
+    ],
+    "main_stats": {
+      "Пески времени": [
+        "Сила атаки %",
+        "Восст. энергии"
+      ],
+      "Кубок пространства": [
+        "Сила атаки %"
+      ],
+      "Корона разума": [
+        "Сила атаки %"
+      ]
+    },
+    "substat_weights": {
+      "Крит. урон": 1.0,
+      "Шанс крит. попадания": 1.0,
+      "Сила атаки %": 2.0,
+      "Сила атаки": 0.2,
+      "HP %": 0.0,
+      "HP": 0.0,
+      "Защита %": 0.0,
+      "Защита": 0.0,
+      "Восст. энергии": 1.5,
+      "Мастерство стихий": 0.0
+    },
+    "weapons": [
+      {
+        "id": "calamity_queller"
+      },
+      {
+        "id": "engulfing_lightning"
+      },
+      {
+        "id": "vortex_vanquisher"
+      },
+      {
+        "id": "skyward_spine"
+      },
+      {
+        "id": "favonius_lance"
+      }
+    ],
+    "notes": "Shenhe is a Support for Cryo characters, capable of providing damage buffs from her Elemental Skill and dealing damage while providing Cryo and Physical resistance shred from her Elemental Burst. Her Elemental Skill gives a few stacks of additional flat damage bonus to all nearby party members (5 stacks on Tap and 7 stacks on Hold). This additional flat damage bonus only works on Cryo attacks, so characters who don't use Cryo attacks don't benefit from Shenhe's Elemental Skill, do note that Cryo"
+  },
+  {
+    "char_id": "sucrose",
+    "name": "Сахароза",
+    "build_name": "EM BUILD",
+    "element": "Анемо",
+    "role": "EM BUILD",
+    "recommended": true,
+    "best_sets": [
+      "Изумрудная тень",
+      "Инструктор"
+    ],
+    "good_set_keys": [
+      "ViridescentVenerer",
+      "Instructor"
+    ],
+    "main_stats": {
+      "Пески времени": [
+        "Мастерство стихий"
+      ],
+      "Кубок пространства": [
+        "Мастерство стихий"
+      ],
+      "Корона разума": [
+        "Мастерство стихий"
+      ]
+    },
+    "substat_weights": {
+      "Крит. урон": 0.7,
+      "Шанс крит. попадания": 0.7,
+      "Сила атаки %": 1.0,
+      "Сила атаки": 0.2,
+      "HP %": 0.0,
+      "HP": 0.0,
+      "Защита %": 0.0,
+      "Защита": 0.0,
+      "Восст. энергии": 1.5,
+      "Мастерство стихий": 2.0
+    },
+    "weapons": [
+      {
+        "id": "a_thousand_floating_dreams"
+      },
+      {
+        "id": "sacrificial_fragments"
+      },
+      {
+        "id": "thrilling_tales_of_dragon_slayers"
+      },
+      {
+        "id": "hakushin_ring"
+      },
+      {
+        "id": "magic_guide"
+      }
+    ],
+    "notes": "When utilized as a Viridescent Venerer (4) artifact set holder, make sure you don't immediately swap away after casting Skill/Burst, you need to be on-field when the swirl reaction happens for you to trigger the 4-set effect.\n\nSucrose's Ascension 4 Talent boosts the entire team's EM by 20% of Sucrose's total EM, this is why you want to stack as much Elemental Mastery as possible in her artifacts. As a support, most of Sucrose's value lies on her Ascension 1 and 4 talents, hence leveling her othe"
+  },
+  {
+    "char_id": "sayu",
+    "name": "Саю",
+    "build_name": "SUPPORT",
+    "element": "Анемо",
+    "role": "SUPPORT",
+    "recommended": true,
+    "best_sets": [
+      "Изумрудная тень",
+      "Церемония древней знати",
+      "Эмблема рассечённой судьбы"
+    ],
+    "good_set_keys": [
+      "ViridescentVenerer",
+      "NoblesseOblige",
+      "EmblemOfSeveredFate"
+    ],
+    "main_stats": {
+      "Пески времени": [
+        "Восст. энергии",
+        "Мастерство стихий"
+      ],
+      "Кубок пространства": [
+        "Мастерство стихий",
+        "Сила атаки %"
+      ],
+      "Корона разума": [
+        "Бонус лечения %",
+        "Мастерство стихий"
+      ]
+    },
+    "substat_weights": {
+      "Крит. урон": 0.0,
+      "Шанс крит. попадания": 0.0,
+      "Сила атаки %": 1.0,
+      "Сила атаки": 0.2,
+      "HP %": 0.0,
+      "HP": 0.0,
+      "Защита %": 0.0,
+      "Защита": 0.0,
+      "Восст. энергии": 2.0,
+      "Мастерство стихий": 1.5
+    },
+    "weapons": [
+      {
+        "id": "wolfs_gravestone"
+      },
+      {
+        "id": "favonius_greatsword"
+      },
+      {
+        "id": "katsuragikiri_nagamasa"
+      },
+      {
+        "id": "sacrificial_greatsword"
+      },
+      {
+        "id": "forest_regalia"
+      }
+    ],
+    "notes": "Use hold Skill then immediately press it to generate more particles.\n\nSayu does more damage with EM builds and heals more with ATK hybrid builds, Healing Bonus circlet's can be used for better heals while maintaining respectable damage. Note that Sayu wants a large amount of Energy Recharge when used as the only Anemo slot on the team.\n\nRegarding Weapon Choices:\nWolf's Gravestone: This is a universal claymore that is capable of buffing your teammates along with providing more healing in Sayu's c"
+  },
+  {
+    "char_id": "shikanoin_heizou",
+    "name": "Хэйдзо",
+    "build_name": "ANEMO DPS",
+    "element": "Анемо",
+    "role": "ANEMO DPS",
+    "recommended": true,
+    "best_sets": [
+      "Изумрудная тень",
+      "Хроники Чертогов в пустыне"
+    ],
+    "good_set_keys": [
+      "ViridescentVenerer",
+      "DesertPavilionChronicle"
+    ],
+    "main_stats": {
+      "Пески времени": [
+        "Сила атаки %"
+      ],
+      "Кубок пространства": [
+        "Анемо урон %"
+      ],
+      "Корона разума": [
+        "Шанс крит. попадания",
+        "Крит. урон"
+      ]
+    },
+    "substat_weights": {
+      "Крит. урон": 2.0,
+      "Шанс крит. попадания": 2.0,
+      "Сила атаки %": 1.5,
+      "Сила атаки": 0.2,
+      "HP %": 0.0,
+      "HP": 0.0,
+      "Защита %": 0.0,
+      "Защита": 0.0,
+      "Восст. энергии": 1.0,
+      "Мастерство стихий": 0.7
+    },
+    "weapons": [
+      {
+        "id": "kaguras_verity"
+      },
+      {
+        "id": "skyward_atlas"
+      },
+      {
+        "id": "lost_prayer_to_the_sacred_winds"
+      },
+      {
+        "id": "memory_of_dust"
+      },
+      {
+        "id": "sacrificial_fragments"
+      }
+    ],
+    "notes": "Shikanoin Heizou's Anemo DPS build is roughly equal to his Elemental Mastery build assuming he isn't being used in an Electro-Charged team, He has very low Energy Recharge needs. At [C4] he can run 100% Energy Recharge.\n\nRegarding Weapon Choices:\nLost Prayer to the Sacred Winds: In teams where Shikanoin Heizou and Bennett are used in the same team, this weapon is better than Skyward Atlas.\n\nRegarding Artifact Sets:\nViridescent Venerer (4): This is both Shikanoin Heizou's best personal damage set"
+  },
+  {
+    "char_id": "shikanoin_heizou",
+    "name": "Хэйдзо",
+    "build_name": "EM DPS",
+    "element": "Анемо",
+    "role": "EM DPS",
+    "recommended": true,
+    "best_sets": [
+      "Изумрудная тень",
+      "Церемония древней знати"
+    ],
+    "good_set_keys": [
+      "ViridescentVenerer",
+      "NoblesseOblige"
+    ],
+    "main_stats": {
+      "Пески времени": [
+        "Мастерство стихий"
+      ],
+      "Кубок пространства": [
+        "Мастерство стихий"
+      ],
+      "Корона разума": [
+        "Мастерство стихий"
+      ]
+    },
+    "substat_weights": {
+      "Крит. урон": 0.0,
+      "Шанс крит. попадания": 0.7,
+      "Сила атаки %": 1.5,
+      "Сила атаки": 0.2,
+      "HP %": 0.0,
+      "HP": 0.0,
+      "Защита %": 0.0,
+      "Защита": 0.0,
+      "Восст. энергии": 1.0,
+      "Мастерство стихий": 2.0
+    },
+    "weapons": [
+      {
+        "id": "skyward_atlas"
+      },
+      {
+        "id": "sacrificial_fragments"
+      },
+      {
+        "id": "kaguras_verity"
+      },
+      {
+        "id": "lost_prayer_to_the_sacred_winds"
+      },
+      {
+        "id": "memory_of_dust"
+      }
+    ],
+    "notes": "Shikanoin Heizou does not get the same benefits from an EM build as other anemo users do. He still has to level his talents, and allocate substats into offensive substats such as attack and crit to equal Anemo DPS. However it is notiably better than Anemo DPS build if used in Electro-Charged teams.\n\nRegarding Artifact Sets:\nNoblesse Oblige (4): Only use this set if you already have a Viridescent Venerer (4) user on your team"
+  },
+  {
+    "char_id": "shikanoin_heizou",
+    "name": "Хэйдзо",
+    "build_name": "SUPPORT",
+    "element": "Анемо",
+    "role": "SUPPORT",
+    "recommended": false,
+    "best_sets": [
+      "Изумрудная тень",
+      "Инструктор",
+      "Церемония древней знати"
+    ],
+    "good_set_keys": [
+      "ViridescentVenerer",
+      "Instructor",
+      "NoblesseOblige"
+    ],
+    "main_stats": {
+      "Пески времени": [
+        "Сила атаки %",
+        "Мастерство стихий"
+      ],
+      "Кубок пространства": [
+        "Анемо урон %",
+        "Мастерство стихий"
+      ],
+      "Корона разума": [
+        "Шанс крит. попадания",
+        "DMG",
+        "Мастерство стихий"
+      ]
+    },
+    "substat_weights": {
+      "Крит. урон": 0.0,
+      "Шанс крит. попадания": 0.7,
+      "Сила атаки %": 1.5,
+      "Сила атаки": 0.2,
+      "HP %": 0.0,
+      "HP": 0.0,
+      "Защита %": 0.0,
+      "Защита": 0.0,
+      "Восст. энергии": 1.0,
+      "Мастерство стихий": 2.0
+    },
+    "weapons": [
+      {
+        "id": "thrilling_tales_of_dragon_slayers"
+      },
+      {
+        "id": "hakushin_ring"
+      },
+      {
+        "id": "prototype_amber"
+      }
+    ],
+    "notes": "Support Shikanoin Heizou forgoes his personal damage for support capabilites. However, none of Heizou's support abilities are dependant on his stats and instead comes in the form of a flat 80 Elemental Mastery to all party members. He can run any artifacts to help his DPS.\n\nRegarding Weapon Choices:\nHakushin Ring: In Electro-Charged teams, this can be used to buff both Anemo and Electro damage, and scales well with refines. It is recommended to run Anemo DMG based artifacts on this build.\nProtot"
+  },
+  {
+    "char_id": "faruzan",
+    "name": "Фарузан",
+    "build_name": "SUPPORT",
+    "element": "Анемо",
+    "role": "SUPPORT",
+    "recommended": true,
+    "best_sets": [
+      "Изумрудная тень",
+      "Церемония древней знати",
+      "Эмблема рассечённой судьбы",
+      "Стойкость Миллелита"
+    ],
+    "good_set_keys": [
+      "ViridescentVenerer",
+      "NoblesseOblige",
+      "EmblemOfSeveredFate",
+      "TenacityOfTheMillelith"
+    ],
+    "main_stats": {
+      "Пески времени": [
+        "Восст. энергии"
+      ],
+      "Кубок пространства": [
+        "Анемо урон %"
+      ],
+      "Корона разума": [
+        "Шанс крит. попадания",
+        "DMG"
+      ]
+    },
+    "substat_weights": {
+      "Крит. урон": 1.0,
+      "Шанс крит. попадания": 1.5,
+      "Сила атаки %": 0.7,
+      "Сила атаки": 0.1,
+      "HP %": 0.0,
+      "HP": 0.0,
+      "Защита %": 0.0,
+      "Защита": 0.0,
+      "Восст. энергии": 2.0,
+      "Мастерство стихий": 0.0
+    },
+    "weapons": [
+      {
+        "id": "favonius_warbow"
+      },
+      {
+        "id": "elegy_for_the_end"
+      },
+      {
+        "id": "end_of_the_line"
+      },
+      {
+        "id": "fading_twilight"
+      },
+      {
+        "id": "sacrificial_bow"
+      }
+    ],
+    "notes": "Regarding Optimal Rotations\n\nFor funneling particles to Faruzan:\nSkill --> Charged Shot --> Burst\n\nFor funneling particles to other units:\nSkill --> Burst --> Charged Shot\n\nAt C6 bear in mind the Charged shot portion of the rotation no longer becomes necessary since your burst will start activating the Pressurized Collapses instead.\n\nAs the premier Anemo support unit for Anemo dps based teams, Faruzan combines both high Anemo damage buffing with Anemo resistance shredding to become a cornerstone"
+  },
+  {
+    "char_id": "traveler_anemo",
+    "name": "Traveler (Anemo)",
+    "build_name": "ANEMO DPS",
+    "element": "Анемо",
+    "role": "ANEMO DPS",
+    "recommended": true,
+    "best_sets": [
+      "Изумрудная тень",
+      "Церемония древней знати"
+    ],
+    "good_set_keys": [
+      "ViridescentVenerer",
+      "NoblesseOblige"
+    ],
+    "main_stats": {
+      "Пески времени": [
+        "Мастерство стихий",
+        "Сила атаки %",
+        "Восст. энергии"
+      ],
+      "Кубок пространства": [
+        "Мастерство стихий",
+        "Анемо урон %"
+      ],
+      "Корона разума": [
+        "Мастерство стихий",
+        "Шанс крит. попадания",
+        "DMG"
+      ]
+    },
+    "substat_weights": {
+      "Крит. урон": 0.7,
+      "Шанс крит. попадания": 0.7,
+      "Сила атаки %": 1.0,
+      "Сила атаки": 0.1,
+      "HP %": 0.0,
+      "HP": 0.0,
+      "Защита %": 0.0,
+      "Защита": 0.0,
+      "Восст. энергии": 1.5,
+      "Мастерство стихий": 2.0
+    },
+    "weapons": [
+      {
+        "id": "freedom-sworn"
+      },
+      {
+        "id": "primordial_jade_cutter"
+      },
+      {
+        "id": "mistsplitter_reforged"
+      },
+      {
+        "id": "sacrificial_sword"
+      },
+      {
+        "id": "iron_sting"
+      }
+    ],
+    "notes": "This section is dedicated to utilising the Anemo Traveler's Elemental Skill / Burst. Due to how little field time this playstyle takes, the Traveler can also fulfill the role of a quickswap style Sub-DPS.\nAnemo Traveler can require a significant amount of Energy Recharge.\n\nRegarding Weapon Choices:\nAnemo Traveler can either go for a full Elemental Mastery build or a full ATK/Crit build without much difference in damage. The weapon rankings listed here will not change much between the two builds."
+  },
+  {
+    "char_id": "jean",
+    "name": "Джинн",
+    "build_name": "BURST SUPPORT",
+    "element": "Анемо",
+    "role": "BURST SUPPORT",
+    "recommended": true,
+    "best_sets": [
+      "Изумрудная тень",
+      "Церемония древней знати",
+      "Моллюск морских красок",
+      "Эмблема рассечённой судьбы"
+    ],
+    "good_set_keys": [
+      "ViridescentVenerer",
+      "NoblesseOblige",
+      "OceanHuedClam",
+      "EmblemOfSeveredFate"
+    ],
+    "main_stats": {
+      "Пески времени": [
+        "Сила атаки %",
+        "Восст. энергии",
+        "Мастерство стихий"
+      ],
+      "Кубок пространства": [
+        "Anemo Damage",
+        "Мастерство стихий"
+      ],
+      "Корона разума": [
+        "Шанс крит. попадания",
+        "DMG",
+        "Мастерство стихий"
+      ]
+    },
+    "substat_weights": {
+      "Крит. урон": 2.0,
+      "Шанс крит. попадания": 2.0,
+      "Сила атаки %": 1.5,
+      "Сила атаки": 0.1,
+      "HP %": 0.0,
+      "HP": 0.0,
+      "Защита %": 0.0,
+      "Защита": 0.0,
+      "Восст. энергии": 1.0,
+      "Мастерство стихий": 0.7
+    },
+    "weapons": [
+      {
+        "id": "primordial_jade_cutter"
+      },
+      {
+        "id": "mistsplitter_reforged"
+      },
+      {
+        "id": "summit_shaper",
+        "stack": 5
+      },
+      {
+        "id": "skyward_blade"
+      },
+      {
+        "id": "festering_desire",
+        "refine": [
+          5
+        ]
+      }
+    ],
+    "notes": "Jean's Elemental Skill can be used to fling smaller mobs into the air to deal fall damage, and to stagger bigger ones. Her healing scales with ATK.\n\nRegarding Weapon Choices:\nAmenoma Kageuchi: This weapon can lower your ER% requirements, depending on the number of stacks on the passive and the refinement of this weapon. As such, at higher refines / more stacks on the passive, this weapon can perform better than Skyward Blade, while at lower refines / less stacks, it can perform worse.\nFreedom-Sw"
+  },
+  {
+    "char_id": "venti",
+    "name": "Венти",
+    "build_name": "OFF-FIELD DPS",
+    "element": "Анемо",
+    "role": "OFF-FIELD DPS",
+    "recommended": true,
+    "best_sets": [
+      "Изумрудная тень",
+      "Церемония древней знати"
+    ],
+    "good_set_keys": [
+      "ViridescentVenerer",
+      "NoblesseOblige"
+    ],
+    "main_stats": {
+      "Пески времени": [
+        "Мастерство стихий"
+      ],
+      "Кубок пространства": [
+        "Мастерство стихий"
+      ],
+      "Корона разума": [
+        "Мастерство стихий"
+      ]
+    },
+    "substat_weights": {
+      "Крит. урон": 0.7,
+      "Шанс крит. попадания": 0.7,
+      "Сила атаки %": 1.0,
+      "Сила атаки": 0.1,
+      "HP %": 0.0,
+      "HP": 0.0,
+      "Защита %": 0.0,
+      "Защита": 0.0,
+      "Восст. энергии": 1.5,
+      "Мастерство стихий": 2.0
+    },
+    "weapons": [
+      {
+        "id": "elegy_for_the_end"
+      },
+      {
+        "id": "the_stringless"
+      },
+      {
+        "id": "windblume_ode",
+        "refine": [
+          5
+        ]
+      },
+      {
+        "id": "alley_hunter",
+        "refine": [
+          5
+        ]
+      },
+      {
+        "id": "favonius_warbow"
+      }
+    ],
+    "notes": "Make sure you don't immediately swap away after casting Burst, you need to be on-field for VV 4-set perk to proc on Swirl first.(E > Q to avoid this issue)\n\nYou can infuse elements onto Venti's Burst if you walk up with an element status on you. (e.g. Bennett Burst > Venti Burst > Walk up to infuse Pyro)\n\nCheck out  this link  to see which characters can hit the enemies sucked and ragdolled in Venti's burst.\n\nThis build focuses on damage over ER because of his ER ascension stat. This weapon orde"
+  },
+  {
+    "char_id": "xiao",
+    "name": "Сяо",
+    "build_name": "DPS",
+    "element": "Анемо",
+    "role": "DPS",
+    "recommended": true,
+    "best_sets": [
+      "Хроники Чертогов в пустыне"
+    ],
+    "good_set_keys": [
+      "DesertPavilionChronicle"
+    ],
+    "main_stats": {
+      "Пески времени": [
+        "Сила атаки %"
+      ],
+      "Кубок пространства": [
+        "Анемо урон %",
+        "Сила атаки %"
+      ],
+      "Корона разума": [
+        "Шанс крит. попадания",
+        "DMG"
+      ]
+    },
+    "substat_weights": {
+      "Крит. урон": 2.0,
+      "Шанс крит. попадания": 2.0,
+      "Сила атаки %": 1.5,
+      "Сила атаки": 0.1,
+      "HP %": 0.0,
+      "HP": 0.0,
+      "Защита %": 0.0,
+      "Защита": 0.0,
+      "Восст. энергии": 1.0,
+      "Мастерство стихий": 0.7
+    },
+    "weapons": [
+      {
+        "id": "primordial_jade_winged-spear"
+      },
+      {
+        "id": "staff_of_homa"
+      },
+      {
+        "id": "vortex_vanquisher"
+      },
+      {
+        "id": "calamity_queller"
+      },
+      {
+        "id": "staff_of_the_scarlet_sands"
+      }
+    ],
+    "notes": "Regarding Xiao's Optimal Skill Rotation:\nSkill -> Skill -> Burst -> Plunge Combo\n\nRegarding Xiao's Plunge Combo:\nBest combo for Xiao when fighting a single target:\nPlunge -> Normal Attack -> Charged Attack -> Plunge\n\nBest combo for Xiao when fighting multiple enemies:\nPlunge -> Normal Attack -> Plunge\n\nXiao has issues with Energy regeneration because he cannot generate any particles with his Elemental Skill while his Burst is active, so it is not suggested to use his Elemental Skill during Eleme"
+  },
+  {
+    "char_id": "kaedehara_kazuha",
+    "name": "Кадзуха",
+    "build_name": "EM BUILD",
+    "element": "Анемо",
+    "role": "EM BUILD",
+    "recommended": true,
+    "best_sets": [
+      "Изумрудная тень",
+      "Инструктор",
+      "Громогласный рёв ярости"
+    ],
+    "good_set_keys": [
+      "ViridescentVenerer",
+      "Instructor",
+      "ThunderingFury"
+    ],
+    "main_stats": {
+      "Пески времени": [
+        "Мастерство стихий",
+        "Восст. энергии"
+      ],
+      "Кубок пространства": [
+        "Мастерство стихий"
+      ],
+      "Корона разума": [
+        "Мастерство стихий"
+      ]
+    },
+    "substat_weights": {
+      "Крит. урон": 0.7,
+      "Шанс крит. попадания": 0.7,
+      "Сила атаки %": 1.0,
+      "Сила атаки": 0.2,
+      "HP %": 0.0,
+      "HP": 0.0,
+      "Защита %": 0.0,
+      "Защита": 0.0,
+      "Восст. энергии": 1.5,
+      "Мастерство стихий": 2.0
+    },
+    "weapons": [
+      {
+        "id": "freedom-sworn"
+      },
+      {
+        "id": "favonius_sword"
+      },
+      {
+        "id": "xiphos_moonlight"
+      },
+      {
+        "id": "sacrificial_sword"
+      },
+      {
+        "id": "skyward_blade"
+      }
+    ],
+    "notes": "The element which is absorbed by Kazuha's elemental burst follows the priority of Pyro > Hydro > Electro > Cryo, and can be absorbed from both the active character and enemies. (i.e. Standing in Bennett 's Elemental Burst will result in Kazuha's Elemental Burst infusing Pyro as Bennett's Elemental Burst applies Pyro to the active character)\n\nKazuha's 4th Ascension Passive encourages players to maximise Elemental Mastery in order to maximise his utility. \n\nSimilar to Venti, due to the EM buffs, a"
+  },
+  {
+    "char_id": "wanderer",
+    "name": "Странник",
+    "build_name": "DPS (WITHOUT BENNETT)",
+    "element": "Анемо",
+    "role": "DPS (WITHOUT BENNETT)",
+    "recommended": true,
+    "best_sets": [
+      "Хроники Чертогов в пустыне",
+      "Воспоминания Симэнавы",
+      "Заблудший в метели",
+      "Ступающий по лаве",
+      "Изумрудная тень"
+    ],
+    "good_set_keys": [
+      "DesertPavilionChronicle",
+      "ShimenawasReminiscence",
+      "BlizzardStrayer",
+      "Lavawalker",
+      "ViridescentVenerer"
+    ],
+    "main_stats": {
+      "Пески времени": [
+        "Сила атаки %"
+      ],
+      "Кубок пространства": [
+        "Анемо урон %"
+      ],
+      "Корона разума": [
+        "Шанс крит. попадания",
+        "DMG"
+      ]
+    },
+    "substat_weights": {
+      "Крит. урон": 2.0,
+      "Шанс крит. попадания": 2.0,
+      "Сила атаки %": 1.5,
+      "Сила атаки": 0.3,
+      "HP %": 0.0,
+      "HP": 0.0,
+      "Защита %": 0.0,
+      "Защита": 0.0,
+      "Восст. энергии": 0.4,
+      "Мастерство стихий": 0.7
+    },
+    "weapons": [
+      {
+        "id": "tulaytullahs_remembrance"
+      },
+      {
+        "id": "memory_of_dust"
+      },
+      {
+        "id": "skyward_atlas"
+      },
+      {
+        "id": "lost_prayer_to_the_sacred_winds"
+      },
+      {
+        "id": "dodoco_tales",
+        "refine": [
+          5
+        ]
+      }
+    ],
+    "notes": "Desert Pavilion and Signature Weapon Rotation: (Q) E CA (N3 repeat)\nSignature Weapon Rotation (non Desert Pavillion): (Q) E (N3 repeat) \nDesert Pavillion Rotation: (Q) E CA (N2C repeat)\nOther Artifact Sets Rotation: (Q) E (N2C repeat)\nShimenawa's Reminiscence Rotation: E (N2C repeat) (Q)\nSwirl Driver Rotation: E (N3C repeat)\n\nWanderer focuses on doing damage by activating his elemental skill and performing boosted normal attacks. It should be noted that in this state, he does not have knockback "
+  },
+  {
+    "char_id": "wanderer",
+    "name": "Странник",
+    "build_name": "DPS (WITH BENNETT)",
+    "element": "Анемо",
+    "role": "DPS (WITH BENNETT)",
+    "recommended": true,
+    "best_sets": [
+      "Хроники Чертогов в пустыне",
+      "Воспоминания Симэнавы",
+      "Заблудший в метели",
+      "Ступающий по лаве",
+      "Изумрудная тень"
+    ],
+    "good_set_keys": [
+      "DesertPavilionChronicle",
+      "ShimenawasReminiscence",
+      "BlizzardStrayer",
+      "Lavawalker",
+      "ViridescentVenerer"
+    ],
+    "main_stats": {
+      "Пески времени": [
+        "Сила атаки %"
+      ],
+      "Кубок пространства": [
+        "Анемо урон %"
+      ],
+      "Корона разума": [
+        "Шанс крит. попадания",
+        "DMG"
+      ]
+    },
+    "substat_weights": {
+      "Крит. урон": 2.0,
+      "Шанс крит. попадания": 2.0,
+      "Сила атаки %": 1.5,
+      "Сила атаки": 0.3,
+      "HP %": 0.0,
+      "HP": 0.0,
+      "Защита %": 0.0,
+      "Защита": 0.0,
+      "Восст. энергии": 0.4,
+      "Мастерство стихий": 0.7
+    },
+    "weapons": [
+      {
+        "id": "tulaytullahs_remembrance"
+      },
+      {
+        "id": "lost_prayer_to_the_sacred_winds"
+      },
+      {
+        "id": "skyward_atlas"
+      },
+      {
+        "id": "the_widsith"
+      },
+      {
+        "id": "kaguras_verity"
+      }
+    ],
+    "notes": "Desert Pavilion and Signature Weapon Rotation: (Q) E CA (N3 repeat)\nSignature Weapon Rotation (non Desert Pavillion): (Q) E (N3 repeat) \nDesert Pavillion Rotation: (Q) E CA (N2C repeat)\nOther Artifact Sets Rotation: (Q) E (N2C repeat)\nShimenawa's Reminiscence Rotation: E (N2C repeat) (Q)\nSwirl Driver Rotation: E (N3C repeat)\n\nWanderer focuses on doing damage by activating his elemental skill and performing boosted normal attacks. It should be noted that in this state, he does not have knockback "
+  },
+  {
+    "char_id": "ningguang",
+    "name": "Нин Гуан",
+    "build_name": "DPS",
+    "element": "Гео",
+    "role": "DPS",
+    "recommended": true,
+    "best_sets": [
+      "Церемония древней знати",
+      "Эмблема рассечённой судьбы",
+      "Усмиряющий гром",
+      "Ступающий по лаве",
+      "Кокон сладких грёз"
+    ],
+    "good_set_keys": [
+      "NoblesseOblige",
+      "EmblemOfSeveredFate",
+      "Thundersoother",
+      "Lavawalker",
+      "HuskOfOpulentDreams"
+    ],
+    "main_stats": {
+      "Пески времени": [
+        "Сила атаки %"
+      ],
+      "Кубок пространства": [
+        "Гео урон %"
+      ],
+      "Корона разума": [
+        "Шанс крит. попадания",
+        "DMG"
+      ]
+    },
+    "substat_weights": {
+      "Крит. урон": 2.0,
+      "Шанс крит. попадания": 2.0,
+      "Сила атаки %": 1.5,
+      "Сила атаки": 0.2,
+      "HP %": 0.0,
+      "HP": 0.0,
+      "Защита %": 0.0,
+      "Защита": 0.0,
+      "Восст. энергии": 1.0,
+      "Мастерство стихий": 0.0
+    },
+    "weapons": [
+      {
+        "id": "lost_prayer_to_the_sacred_winds"
+      },
+      {
+        "id": "kaguras_verity"
+      },
+      {
+        "id": "skyward_atlas"
+      },
+      {
+        "id": "memory_of_dust"
+      },
+      {
+        "id": "solar_pearl"
+      }
+    ],
+    "notes": "Ningguang's Elemental Skill has a 6 second internal cooldown on generating energy, so for the sake of maintaining Elemental Burst uptime, wait 6 seconds to cast again if you need energy. It also breaks when casted on top of another Geo Structure, you can intentionally use a structure to break your first screen.\n\nDue to Ningguang having a really low Base ATK and no ATK conversion mechanics, external ATK buffers such as Bennett is recommended as a support for Ningguang to bump up her ATK stat.\n\nRe"
+  },
+  {
+    "char_id": "noelle",
+    "name": "Ноэлль",
+    "build_name": "DPS",
+    "element": "Гео",
+    "role": "DPS",
+    "recommended": true,
+    "best_sets": [
+      "Кокон сладких грёз",
+      "Конец гладиатора"
+    ],
+    "good_set_keys": [
+      "HuskOfOpulentDreams",
+      "GladiatorsFinale"
+    ],
+    "main_stats": {
+      "Пески времени": [
+        "Защита %",
+        "Сила атаки %"
+      ],
+      "Кубок пространства": [
+        "Гео урон %"
+      ],
+      "Корона разума": [
+        "Шанс крит. попадания",
+        "DMG"
+      ]
+    },
+    "substat_weights": {
+      "Крит. урон": 2.0,
+      "Шанс крит. попадания": 2.0,
+      "Сила атаки %": 0.0,
+      "Сила атаки": 0.0,
+      "HP %": 0.0,
+      "HP": 0.0,
+      "Защита %": 1.0,
+      "Защита": 0.2,
+      "Восст. энергии": 1.5,
+      "Мастерство стихий": 0.0
+    },
+    "weapons": [
+      {
+        "id": "redhorn_stonethresher"
+      },
+      {
+        "id": "serpent_spine"
+      },
+      {
+        "id": "skyward_pride"
+      },
+      {
+        "id": "whiteblind"
+      },
+      {
+        "id": "favonius_greatsword"
+      }
+    ],
+    "notes": "Optimal attack rotation is N1>N2>N3>N4>dash/hop, where N refers to each normal attack in her 4 hit combo. This isn't always feasible due to cast time and N4 covers a lesser AoE than N1-3 (as well as knockback issues), so the recommended rotation is N1>N2>N3>dash/hop.\n\nIt's recommended to avoid building a DPS Noelle if she's not [C5+].\nNoelle DPS is best optimized at [C6] where she converts an additional 50% DEF into ATK. Her ability to sustain her team with shields, heals and AoE damage makes fo"
+  },
+  {
+    "char_id": "gorou",
+    "name": "Горо",
+    "build_name": "SUPPORT",
+    "element": "Гео",
+    "role": "SUPPORT",
+    "recommended": true,
+    "best_sets": [
+      "Церемония древней знати",
+      "Эмблема рассечённой судьбы"
+    ],
+    "good_set_keys": [
+      "NoblesseOblige",
+      "EmblemOfSeveredFate"
+    ],
+    "main_stats": {
+      "Пески времени": [
+        "Восст. энергии"
+      ],
+      "Кубок пространства": [
+        "Гео урон %",
+        "Защита %"
+      ],
+      "Корона разума": [
+        "Шанс крит. попадания",
+        "Защита %",
+        "Healing Bonus*"
+      ]
+    },
+    "substat_weights": {
+      "Крит. урон": 0.0,
+      "Шанс крит. попадания": 1.0,
+      "Сила атаки %": 0.0,
+      "Сила атаки": 0.0,
+      "HP %": 0.0,
+      "HP": 0.0,
+      "Защита %": 1.5,
+      "Защита": 0.2,
+      "Восст. энергии": 2.0,
+      "Мастерство стихий": 0.0
+    },
+    "weapons": [
+      {
+        "id": "favonius_warbow"
+      },
+      {
+        "id": "sacrificial_bow"
+      },
+      {
+        "id": "elegy_for_the_end"
+      }
+    ],
+    "notes": "[C2] extends the duration of Gorou's Elemental Burst from 9 seconds to 12 seconds if you can obtain the required Crystallize shields. This allows his teammates to gain the 3 Geo 15% Geo DMG% bonus for a longer duration, so it's preferable to use Burst as your last ability before swapping into your DPS.\n\nGorou is a Support character that can give increasing buffs to your party members from his Elemental Skill and Elemental Burst based on the number of Geo characters in your team (capped at 3). Ca"
+  },
+  {
+    "char_id": "yun_jin",
+    "name": "Юнь Цзинь",
+    "build_name": "SUPPORT",
+    "element": "Гео",
+    "role": "SUPPORT",
+    "recommended": true,
+    "best_sets": [
+      "Кокон сладких грёз",
+      "Эмблема рассечённой судьбы",
+      "Церемония древней знати"
+    ],
+    "good_set_keys": [
+      "HuskOfOpulentDreams",
+      "EmblemOfSeveredFate",
+      "NoblesseOblige"
+    ],
+    "main_stats": {
+      "Пески времени": [
+        "Защита %",
+        "Восст. энергии"
+      ],
+      "Кубок пространства": [
+        "Защита %"
+      ],
+      "Корона разума": [
+        "Защита %",
+        "Шанс крит. попадания"
+      ]
+    },
+    "substat_weights": {
+      "Крит. урон": 0.0,
+      "Шанс крит. попадания": 0.7,
+      "Сила атаки %": 0.0,
+      "Сила атаки": 0.0,
+      "HP %": 0.0,
+      "HP": 0.0,
+      "Защита %": 2.0,
+      "Защита": 0.3,
+      "Восст. энергии": 1.5,
+      "Мастерство стихий": 0.0
+    },
+    "weapons": [
+      {
+        "id": "favonius_lance"
+      },
+      {
+        "id": "engulfing_lightning"
+      },
+      {
+        "id": "the_catch"
+      },
+      {
+        "id": "prototype_starglitter"
+      },
+      {
+        "id": "kitain_cross_spear"
+      }
+    ],
+    "notes": "Yun Jin is a Support character for Normal Attack focused characters who can deal off-field damage via her Elemental Burst. Yun Jin's Elemental Burst grants nearby party members 30 stacks of additional flat damage bonus on Normal Attacks which scales with Yun Jin's current DEF. This means that external DEF buffs like from Gorou's Elemental Skill and/or Burst doesn't provide much to Yun Jin since it only buffs active characters and not off-field ones.\n\nRegarding Weapon Choices:\nFavonius Lance: Wit"
+  },
+  {
+    "char_id": "traveler_geo",
+    "name": "Traveler (Geo)",
+    "build_name": "GEO DPS",
+    "element": "Гео",
+    "role": "GEO DPS",
+    "recommended": true,
+    "best_sets": [
+      "Церемония древней знати",
+      "Эмблема рассечённой судьбы",
+      "Усмиряющий гром",
+      "Ступающий по лаве"
+    ],
+    "good_set_keys": [
+      "NoblesseOblige",
+      "EmblemOfSeveredFate",
+      "Thundersoother",
+      "Lavawalker"
+    ],
+    "main_stats": {
+      "Пески времени": [
+        "Сила атаки %"
+      ],
+      "Кубок пространства": [
+        "Гео урон %"
+      ],
+      "Корона разума": [
+        "Шанс крит. попадания",
+        "DMG"
+      ]
+    },
+    "substat_weights": {
+      "Крит. урон": 2.0,
+      "Шанс крит. попадания": 2.0,
+      "Сила атаки %": 1.5,
+      "Сила атаки": 0.2,
+      "HP %": 0.0,
+      "HP": 0.0,
+      "Защита %": 0.0,
+      "Защита": 0.0,
+      "Восст. энергии": 1.0,
+      "Мастерство стихий": 0.0
+    },
+    "weapons": [
+      {
+        "id": "primordial_jade_cutter"
+      },
+      {
+        "id": "mistsplitter_reforged"
+      },
+      {
+        "id": "haran_geppaku_futsu"
+      },
+      {
+        "id": "summit_shaper"
+      },
+      {
+        "id": "aquila_favonia"
+      }
+    ],
+    "notes": "This section is dedicated to utilising the Geo Traveler's Geo Burst damage capabilities. As their Elemental Skill and Burst have high multipliers, short cooldowns, and require very little field time, the Traveler is recommended to be played as a quickswap style Sub-DPS.\nThe weapon ranking is considering KQM standard with Geo Resonance and Noblesse Oblige (4) buff. Read the In-depth Guide for more insight on different scenarios.\nRegarding Weapon Choices: \nSummit Shaper: As this weapon gives so mu"
+  },
+  {
+    "char_id": "zhongli",
+    "name": "Чжун Ли",
+    "build_name": "PHYSICAL DPS",
+    "element": "Гео",
+    "role": "PHYSICAL DPS",
+    "recommended": false,
+    "best_sets": [
+      "Конец гладиатора"
+    ],
+    "good_set_keys": [
+      "GladiatorsFinale"
+    ],
+    "main_stats": {
+      "Пески времени": [
+        "Сила атаки %",
+        "HP %"
+      ],
+      "Кубок пространства": [
+        "Физ. урон %"
+      ],
+      "Корона разума": [
+        "Шанс крит. попадания",
+        "DMG"
+      ]
+    },
+    "substat_weights": {
+      "Крит. урон": 2.0,
+      "Шанс крит. попадания": 2.0,
+      "Сила атаки %": 1.5,
+      "Сила атаки": 0.1,
+      "HP %": 1.0,
+      "HP": 0.2,
+      "Защита %": 0.0,
+      "Защита": 0.0,
+      "Восст. энергии": 0.7,
+      "Мастерство стихий": 0.0
+    },
+    "weapons": [
+      {
+        "id": "crescent_pike"
+      },
+      {
+        "id": "primordial_jade_winged-spear"
+      },
+      {
+        "id": "staff_of_homa"
+      },
+      {
+        "id": "vortex_vanquisher"
+      },
+      {
+        "id": "deathmatch"
+      }
+    ],
+    "notes": "Optimal Physical Rotation:\nNormal Attack until Spear Kick -> Dodge/Jump Cancel -> Repeat"
+  },
+  {
+    "char_id": "zhongli",
+    "name": "Чжун Ли",
+    "build_name": "SHIELD SUPPORT",
+    "element": "Гео",
+    "role": "SHIELD SUPPORT",
+    "recommended": true,
+    "best_sets": [
+      "Стойкость Миллелита",
+      "Воспоминания дремучего леса",
+      "Инструктор"
+    ],
+    "good_set_keys": [
+      "TenacityOfTheMillelith",
+      "DeepwoodMemories",
+      "Instructor"
+    ],
+    "main_stats": {
+      "Пески времени": [
+        "HP %"
+      ],
+      "Кубок пространства": [
+        "HP %"
+      ],
+      "Корона разума": [
+        "HP %",
+        "Шанс крит. попадания"
+      ]
+    },
+    "substat_weights": {
+      "Крит. урон": 0.0,
+      "Шанс крит. попадания": 0.0,
+      "Сила атаки %": 0.0,
+      "Сила атаки": 0.0,
+      "HP %": 2.0,
+      "HP": 0.4,
+      "Защита %": 0.0,
+      "Защита": 0.0,
+      "Восст. энергии": 1.0,
+      "Мастерство стихий": 0.0
+    },
+    "weapons": [
+      {
+        "id": "black_tassel"
+      },
+      {
+        "id": "favonius_lance"
+      }
+    ],
+    "notes": "This kind of playstyle is very straightforward; stack as much HP as possible. Prioritize HP scaling polearms such as Black Tassel and artifact sets such as Tenacity of the Millelith (4) to capitalize on Zhongli's Shield. Most of the time, especially on a HP-focused Zhongli, casting Elemental Burst is a DPS loss due to the cast time, which is why you'd only want to cast Elemental Burst for the Crowd Control it offers, and not for damage.\n\nNote that if paired with Xingqiu and/or Beidou, the damage"
+  },
+  {
+    "char_id": "zhongli",
+    "name": "Чжун Ли",
+    "build_name": "BURST SUPPORT",
+    "element": "Гео",
+    "role": "BURST SUPPORT",
+    "recommended": true,
+    "best_sets": [
+      "Эмблема рассечённой судьбы",
+      "Церемония древней знати",
+      "Стойкость Миллелита"
+    ],
+    "good_set_keys": [
+      "EmblemOfSeveredFate",
+      "NoblesseOblige",
+      "TenacityOfTheMillelith"
+    ],
+    "main_stats": {
+      "Пески времени": [
+        "Сила атаки %",
+        "HP %"
+      ],
+      "Кубок пространства": [
+        "Гео урон %"
+      ],
+      "Корона разума": [
+        "Шанс крит. попадания",
+        "DMG"
+      ]
+    },
+    "substat_weights": {
+      "Крит. урон": 2.0,
+      "Шанс крит. попадания": 2.0,
+      "Сила атаки %": 1.5,
+      "Сила атаки": 0.1,
+      "HP %": 1.0,
+      "HP": 0.1,
+      "Защита %": 0.0,
+      "Защита": 0.0,
+      "Восст. энергии": 0.7,
+      "Мастерство стихий": 0.0
+    },
+    "weapons": [
+      {
+        "id": "staff_of_homa"
+      },
+      {
+        "id": "primordial_jade_winged-spear"
+      },
+      {
+        "id": "skyward_spine"
+      },
+      {
+        "id": "vortex_vanquisher"
+      },
+      {
+        "id": "calamity_queller"
+      }
+    ],
+    "notes": "Zhongli can be utilized as a Geo Burst damage dealer due to his short Elemental Burst cooldown (12s) and low energy cost (40 Energy). His Elemental Skill Hold Cast (Shield) scales with HP and at Ascension 4, you would unlock a talent that allows your Elemental Burst to scale with 33% of Zhongli's Max HP, making him a great source of Shield and damage. Though in certain teams without either very high investment into his damage or enough time in the rotation to burst without extending rotation tim"
+  },
+  {
+    "char_id": "albedo",
+    "name": "Альбедо",
+    "build_name": "OFF-FIELD DPS",
+    "element": "Гео",
+    "role": "OFF-FIELD DPS",
+    "recommended": true,
+    "best_sets": [
+      "Кокон сладких грёз",
+      "Церемония древней знати",
+      "Стойкость Миллелита"
+    ],
+    "good_set_keys": [
+      "HuskOfOpulentDreams",
+      "NoblesseOblige",
+      "TenacityOfTheMillelith"
+    ],
+    "main_stats": {
+      "Пески времени": [
+        "Защита %"
+      ],
+      "Кубок пространства": [
+        "Гео урон %"
+      ],
+      "Корона разума": [
+        "Шанс крит. попадания",
+        "DMG",
+        "Защита %"
+      ]
+    },
+    "substat_weights": {
+      "Крит. урон": 2.0,
+      "Шанс крит. попадания": 2.0,
+      "Сила атаки %": 1.0,
+      "Сила атаки": 0.1,
+      "HP %": 0.0,
+      "HP": 0.0,
+      "Защита %": 1.5,
+      "Защита": 0.1,
+      "Восст. энергии": 0.7,
+      "Мастерство стихий": 0.0
+    },
+    "weapons": [
+      {
+        "id": "cinnabar_spindle",
+        "refine": [
+          5
+        ]
+      },
+      {
+        "id": "harbinger_of_dawn"
+      },
+      {
+        "id": "primordial_jade_cutter"
+      },
+      {
+        "id": "mistsplitter_reforged"
+      },
+      {
+        "id": "freedom-sworn"
+      }
+    ],
+    "notes": "Albedo's Elemental Skill particle generation is completely RNG like Zhongli, but with better odds.\n\nAlbedo is a character that can summon a Geo Construct from his Elemental Skill which deals damage on a 2 second interval whenever enemies in the field are damaged. His Elemental Burst provides 125 EM to the party, which is good on teams that rely on amplification reactions, such as Vaporize. It is worth noting that since his stat priority is focused on DEF (Elemental Skill scaling), you might want"
+  },
+  {
+    "char_id": "arataki_itto",
+    "name": "Итто",
+    "build_name": "DPS",
+    "element": "Гео",
+    "role": "DPS",
+    "recommended": true,
+    "best_sets": [
+      "Кокон сладких грёз",
+      "Хроники Чертогов в пустыне",
+      "Эмблема рассечённой судьбы"
+    ],
+    "good_set_keys": [
+      "HuskOfOpulentDreams",
+      "DesertPavilionChronicle",
+      "EmblemOfSeveredFate"
+    ],
+    "main_stats": {
+      "Пески времени": [
+        "Защита %"
+      ],
+      "Кубок пространства": [
+        "Гео урон %"
+      ],
+      "Корона разума": [
+        "Шанс крит. попадания",
+        "DMG"
+      ]
+    },
+    "substat_weights": {
+      "Крит. урон": 2.0,
+      "Шанс крит. попадания": 2.0,
+      "Сила атаки %": 0.7,
+      "Сила атаки": 0.1,
+      "HP %": 0.0,
+      "HP": 0.0,
+      "Защита %": 1.5,
+      "Защита": 0.1,
+      "Восст. энергии": 1.0,
+      "Мастерство стихий": 0.0
+    },
+    "weapons": [
+      {
+        "id": "redhorn_stonethresher"
+      },
+      {
+        "id": "serpent_spine"
+      },
+      {
+        "id": "skyward_pride"
+      },
+      {
+        "id": "whiteblind"
+      }
+    ],
+    "notes": "Arataki Itto is a Geo DPS Character who takes advantage of his Elemental Burst's ATK boost and Geo infusion to deal significant damage during its uptime. His combos involve stacking and unleashing his Charged Attacks, named Arataki Kesagiri. Arataki Kesagiri consumes no stamina and can be casted continuously as long as he has Superlative Superstrength stacks. Superlative Superstrength is capped at 5 stacks at any given time, and Itto gets those stacks when his 2nd and 4th Normal Attack string hi"
+  },
+  {
+    "char_id": "collei",
+    "name": "Коллеи",
+    "build_name": "SUPPORT",
+    "element": "Дендро",
+    "role": "SUPPORT",
+    "recommended": true,
+    "best_sets": [
+      "Воспоминания дремучего леса",
+      "Церемония древней знати",
+      "Стойкость Миллелита",
+      "Инструктор",
+      "Позолоченные сны"
+    ],
+    "good_set_keys": [
+      "DeepwoodMemories",
+      "NoblesseOblige",
+      "TenacityOfTheMillelith",
+      "Instructor",
+      "GildedDreams"
+    ],
+    "main_stats": {
+      "Пески времени": [
+        "Восст. энергии",
+        "Сила атаки %",
+        "Мастерство стихий"
+      ],
+      "Кубок пространства": [
+        "Дендро урон %",
+        "Мастерство стихий"
+      ],
+      "Корона разума": [
+        "Шанс крит. попадания",
+        "DMG",
+        "Мастерство стихий"
+      ]
+    },
+    "substat_weights": {
+      "Крит. урон": 1.5,
+      "Шанс крит. попадания": 1.5,
+      "Сила атаки %": 0.0,
+      "Сила атаки": 0.0,
+      "HP %": 0.0,
+      "HP": 0.0,
+      "Защита %": 0.0,
+      "Защита": 0.0,
+      "Восст. энергии": 2.0,
+      "Мастерство стихий": 0.0
+    },
+    "weapons": [
+      {
+        "id": "elegy_for_the_end"
+      },
+      {
+        "id": "polar_star"
+      },
+      {
+        "id": "sacrificial_bow",
+        "refine": [
+          4
+        ]
+      },
+      {
+        "id": "favonius_warbow"
+      }
+    ],
+    "notes": "Typical Collei Rotation: \nSkill > Burst > Swap\nRotation with Polar Star:\nN1 > tap Charged Attack > Skill > Burst > Swap\n\nCollei is a Bow User who provides off-field support in Dendro application and damage.\n\nRegarding Weapon Choices:\nPolar Star: While this weapon provides the highest personal damage, it is generally not recommended as team buffs provide more teamwide damage over a small increase in personal damage. \nSacrificial Bow: Not recommended below [R4] due to it delaying rotation, possibl"
+  },
+  {
+    "char_id": "yaoyao",
+    "name": "Яо Яо",
+    "build_name": "SUPPORT",
+    "element": "Дендро",
+    "role": "SUPPORT",
+    "recommended": true,
+    "best_sets": [
+      "Воспоминания дремучего леса",
+      "Стойкость Миллелита",
+      "Инструктор"
+    ],
+    "good_set_keys": [
+      "DeepwoodMemories",
+      "TenacityOfTheMillelith",
+      "Instructor"
+    ],
+    "main_stats": {
+      "Пески времени": [
+        "HP %",
+        "Energy Recharge%"
+      ],
+      "Кубок пространства": [
+        "HP %"
+      ],
+      "Корона разума": [
+        "Healing Bonus%"
+      ]
+    },
+    "substat_weights": {
+      "Крит. урон": 0.0,
+      "Шанс крит. попадания": 0.0,
+      "Сила атаки %": 0.0,
+      "Сила атаки": 0.0,
+      "HP %": 2.0,
+      "HP": 0.3,
+      "Защита %": 0.0,
+      "Защита": 0.0,
+      "Восст. энергии": 0.0,
+      "Мастерство стихий": 0.0
+    },
+    "weapons": [
+      {
+        "id": "favonius_lance"
+      },
+      {
+        "id": "black_tassel"
+      },
+      {
+        "id": "moonpiercer"
+      },
+      {
+        "id": "kitain_cross_spear"
+      }
+    ],
+    "notes": "The additional Yueguis summoned by the Burst are removed when Yaoyao leaves the field.\n\n:\nYaoyao focuses on healing and applying Dendro with her Elemental Skill and Burst.\n\nRegarding Weapon Choices:\nKitain Cross Spear: This weapon is better than Favonius Lance in teams where she actively procs the Bloom reaction.\n\nRegarding Mainstat Choices:\nIn a Bloom team where Yaoyao procs Bloom, Elemental Mastery is preferred as a mainstat on all pieces.\n\nPrioritize her Elemental Skill if you do not use Yaoy"
+  },
+  {
+    "char_id": "kaveh",
+    "name": "Кавех",
+    "build_name": "BLOOM DRIVER",
+    "element": "Дендро",
+    "role": "BLOOM DRIVER",
+    "recommended": true,
+    "best_sets": [
+      "Воспоминания дремучего леса",
+      "Моллюск морских красок",
+      "Цветок потерянного рая",
+      "Инструктор",
+      "Позолоченные сны"
+    ],
+    "good_set_keys": [
+      "DeepwoodMemories",
+      "OceanHuedClam",
+      "FlowerOfParadiseLost",
+      "Instructor",
+      "GildedDreams"
+    ],
+    "main_stats": {
+      "Пески времени": [
+        "Восст. энергии",
+        "Мастерство стихий"
+      ],
+      "Кубок пространства": [
+        "Мастерство стихий"
+      ],
+      "Корона разума": [
+        "Мастерство стихий",
+        "Шанс крит. попадания"
+      ]
+    },
+    "substat_weights": {
+      "Крит. урон": 0.0,
+      "Шанс крит. попадания": 1.0,
+      "Сила атаки %": 0.0,
+      "Сила атаки": 0.0,
+      "HP %": 0.0,
+      "HP": 0.0,
+      "Защита %": 0.0,
+      "Защита": 0.0,
+      "Восст. энергии": 2.0,
+      "Мастерство стихий": 1.5
+    },
+    "weapons": [
+      {
+        "id": "favonius_greatsword"
+      },
+      {
+        "id": "sacrificial_greatsword"
+      },
+      {
+        "id": "mailed_flower",
+        "refine": [
+          5
+        ]
+      },
+      {
+        "id": "wolfs_gravestone"
+      },
+      {
+        "id": "song_of_broken_pines"
+      }
+    ],
+    "notes": "Kaveh's best combo is N3D, which is 3 Normal Attacks canceled at the end with a Dash.\n\nKaveh section is filled with placeholder content, it is not a finalized section.*\n\nSUPPORT:\nKaveh focuses on being the onfield unit for Bloom teams, boosting their damage with his Elemental Burst, and applying Dendro to create Bloom Cores.\n\nRegarding Weapon Choices:\nWolf's Gravestone and Song of Broken Pines: In teams where the teamwide ATK% from the passive is not significant for team damage, it is advised no"
+  },
+  {
+    "char_id": "traveler_dendro",
+    "name": "Traveler (Dendro)",
+    "build_name": "SUPPORT",
+    "element": "Дендро",
+    "role": "SUPPORT",
+    "recommended": true,
+    "best_sets": [
+      "Воспоминания дремучего леса",
+      "Церемония древней знати",
+      "Инструктор",
+      "Позолоченные сны"
+    ],
+    "good_set_keys": [
+      "DeepwoodMemories",
+      "NoblesseOblige",
+      "Instructor",
+      "GildedDreams"
+    ],
+    "main_stats": {
+      "Пески времени": [
+        "Восст. энергии",
+        "Сила атаки %",
+        "Мастерство стихий"
+      ],
+      "Кубок пространства": [
+        "Дендро урон %",
+        "Мастерство стихий"
+      ],
+      "Корона разума": [
+        "Шанс крит. попадания",
+        "Крит. урон",
+        "Мастерство стихий"
+      ]
+    },
+    "substat_weights": {
+      "Крит. урон": 1.5,
+      "Шанс крит. попадания": 1.5,
+      "Сила атаки %": 0.0,
+      "Сила атаки": 0.0,
+      "HP %": 0.0,
+      "HP": 0.0,
+      "Защита %": 0.0,
+      "Защита": 0.0,
+      "Восст. энергии": 2.0,
+      "Мастерство стихий": 0.0
+    },
+    "weapons": [
+      {
+        "id": "freedom-sworn"
+      },
+      {
+        "id": "favonius_sword"
+      },
+      {
+        "id": "sacrificial_sword"
+      },
+      {
+        "id": "sapwood_blade"
+      }
+    ],
+    "notes": "Regarding Main Stats:\nPrioritize maintaining their burst uptime, the ER needs for Dendro Traveler would be a lot greater if they are the only Dendro unit in the team.\n\nRegarding Weapons:\nSacrificial Sword: Prioritized due to Dendro Traveler's exceedingly high Energy Recharge requirements for burst uptime consistency.\n\nRegarding Artifacts:\nNoblesse Oblige (4): This option would generally be better than Deepwood Memories (4) if Dendro Traveler is used in an Aggravate focused team.\nThe Exile (4): A"
+  },
+  {
+    "char_id": "tighnari",
+    "name": "Тигнари",
+    "build_name": "QUICK SWAP DPS",
+    "element": "Дендро",
+    "role": "QUICK SWAP DPS",
+    "recommended": true,
+    "best_sets": [
+      "Странствующий ансамбль",
+      "Позолоченные сны",
+      "Воспоминания дремучего леса"
+    ],
+    "good_set_keys": [
+      "WanderersTroupe",
+      "GildedDreams",
+      "DeepwoodMemories"
+    ],
+    "main_stats": {
+      "Пески времени": [
+        "Сила атаки %",
+        "Мастерство стихий"
+      ],
+      "Кубок пространства": [
+        "Дендро урон %"
+      ],
+      "Корона разума": [
+        "Шанс крит. попадания",
+        "DMG"
+      ]
+    },
+    "substat_weights": {
+      "Крит. урон": 2.0,
+      "Шанс крит. попадания": 2.0,
+      "Сила атаки %": 1.0,
+      "Сила атаки": 0.2,
+      "HP %": 0.0,
+      "HP": 0.0,
+      "Защита %": 0.0,
+      "Защита": 0.0,
+      "Восст. энергии": 0.7,
+      "Мастерство стихий": 1.5
+    },
+    "weapons": [
+      {
+        "id": "hunters_path"
+      },
+      {
+        "id": "elegy_for_the_end"
+      },
+      {
+        "id": "aqua_simulacra"
+      },
+      {
+        "id": "polar_star"
+      },
+      {
+        "id": "skyward_harp"
+      }
+    ],
+    "notes": "There are three recommended combos that Tighnari can perform:\n1. Skill -> Charged Attack -> Burst -> Charged Attack (x2) - This is the most mechanically difficult combo. However, this combo allows Tighnari to have both his Burst effected by A1 and funnel particles from his Skill to his next Burst.\n2. Skill -> Charged Attack (x3) -> Burst - Allows Tighnari's Burst to benefit from A1. However, this combo doesn't allow Tighnari to funnel particles from his Skill into his next Burst.\n3. Skill -> Bur"
+  },
+  {
+    "char_id": "nahida",
+    "name": "Нахида",
+    "build_name": "BLOOM",
+    "element": "Дендро",
+    "role": "BLOOM",
+    "recommended": true,
+    "best_sets": [
+      "Воспоминания дремучего леса",
+      "Позолоченные сны"
+    ],
+    "good_set_keys": [
+      "DeepwoodMemories",
+      "GildedDreams"
+    ],
+    "main_stats": {
+      "Пески времени": [
+        "Мастерство стихий"
+      ],
+      "Кубок пространства": [
+        "Мастерство стихий",
+        "Дендро урон %"
+      ],
+      "Корона разума": [
+        "Мастерство стихий",
+        "Шанс крит. попадания",
+        "DMG"
+      ]
+    },
+    "substat_weights": {
+      "Крит. урон": 0.0,
+      "Шанс крит. попадания": 0.0,
+      "Сила атаки %": 1.0,
+      "Сила атаки": 0.2,
+      "HP %": 0.0,
+      "HP": 0.0,
+      "Защита %": 0.0,
+      "Защита": 0.0,
+      "Восст. энергии": 0.0,
+      "Мастерство стихий": 0.0
+    },
+    "weapons": [
+      {
+        "id": "a_thousand_floating_dreams"
+      },
+      {
+        "id": "kaguras_verity"
+      },
+      {
+        "id": "the_widsith"
+      },
+      {
+        "id": "skyward_atlas"
+      },
+      {
+        "id": "lost_prayer_to_the_sacred_winds"
+      }
+    ],
+    "notes": "Regarding Weapon Choices:\nThe Widsith: At [R5], this weapon performs similarly to Kagura's Verity [R1].\nWandering Evenstar: At [R5], this weapon performs similarly to The Widsith [R1].\n\nRegarding Artifact Sets:\nDeepwood Memories (4): This is her best set if no one else is wearing this set."
+  },
+  {
+    "char_id": "nahida",
+    "name": "Нахида",
+    "build_name": "QUICKEN / HYPERBLOOM / BURGEON",
+    "element": "Дендро",
+    "role": "QUICKEN / HYPERBLOOM / BURGEON",
+    "recommended": true,
+    "best_sets": [
+      "Воспоминания дремучего леса",
+      "Позолоченные сны"
+    ],
+    "good_set_keys": [
+      "DeepwoodMemories",
+      "GildedDreams"
+    ],
+    "main_stats": {
+      "Пески времени": [
+        "Мастерство стихий"
+      ],
+      "Кубок пространства": [
+        "Дендро урон %",
+        "Мастерство стихий"
+      ],
+      "Корона разума": [
+        "Шанс крит. попадания",
+        "DMG",
+        "Мастерство стихий"
+      ]
+    },
+    "substat_weights": {
+      "Крит. урон": 0.0,
+      "Шанс крит. попадания": 0.0,
+      "Сила атаки %": 0.7,
+      "Сила атаки": 0.0,
+      "HP %": 0.0,
+      "HP": 0.0,
+      "Защита %": 0.0,
+      "Защита": 0.0,
+      "Восст. энергии": 0.0,
+      "Мастерство стихий": 1.0
+    },
+    "weapons": [
+      {
+        "id": "a_thousand_floating_dreams"
+      },
+      {
+        "id": "kaguras_verity"
+      },
+      {
+        "id": "the_widsith"
+      },
+      {
+        "id": "lost_prayer_to_the_sacred_winds"
+      },
+      {
+        "id": "sacrificial_fragments"
+      }
+    ],
+    "notes": "Regarding Weapon Choices:\nThe Widsith: At [R5], this weapon performs similarly to Kagura's Verity [R1].\nMagic Guide: At 100% uptime, this weapon performs better than The Widsith [R1]. This, however, is not realistic in many cases.\nWandering Evenstar: This weapon provides buffs to the entire team, potentially allowing it to outperform higher ranking weapons.\nMappa Mare: At [R5], this weapon performs similarly to The Widsith [R1].\nHakushin Ring: This weapon is not as strong as other options for Na"
+  },
+  {
+    "char_id": "alhaitham",
+    "name": "Аль-Хайтам",
+    "build_name": "SPREAD DPS",
+    "element": "Дендро",
+    "role": "SPREAD DPS",
+    "recommended": true,
+    "best_sets": [
+      "Позолоченные сны",
+      "Воспоминания дремучего леса",
+      "Эмблема рассечённой судьбы"
+    ],
+    "good_set_keys": [
+      "GildedDreams",
+      "DeepwoodMemories",
+      "EmblemOfSeveredFate"
+    ],
+    "main_stats": {
+      "Пески времени": [
+        "Мастерство стихий",
+        "Сила атаки %"
+      ],
+      "Кубок пространства": [
+        "Дендро урон %"
+      ],
+      "Корона разума": [
+        "Шанс крит. попадания",
+        "DMG"
+      ]
+    },
+    "substat_weights": {
+      "Крит. урон": 1.5,
+      "Шанс крит. попадания": 1.5,
+      "Сила атаки %": 0.7,
+      "Сила атаки": 0.1,
+      "HP %": 0.0,
+      "HP": 0.0,
+      "Защита %": 0.0,
+      "Защита": 0.0,
+      "Восст. энергии": 0.0,
+      "Мастерство стихий": 1.0
+    },
+    "weapons": [
+      {
+        "id": "light_of_foliar_incision"
+      },
+      {
+        "id": "primordial_jade_cutter"
+      },
+      {
+        "id": "mistsplitter_reforged"
+      },
+      {
+        "id": "haran_geppaku_futsu"
+      },
+      {
+        "id": "freedom-sworn"
+      }
+    ],
+    "notes": "Basic Rotations:\n\nBurst up = Q > E > N2D + 2N3D + N1C + 2N2C\n\nBurst down = E > N1C + 5N2C + N1\n\nThis playstyle makes the best use of Alhaitham's kit. Since both Spread reactions, his skill (the primary source of his damage) and burst scale heavily off Elemental Mastery. Further enhanced by his high rate of on-field Dendro application. All of this combined with his flexible teams and rotations makes him one of the best Spread DPS currently released. Lastly bear in mind that a large part of his da"
+  },
+  {
+    "char_id": "baizhu",
+    "name": "Бай Чжу",
+    "build_name": "SUPPORT",
+    "element": "Дендро",
+    "role": "SUPPORT",
+    "recommended": true,
+    "best_sets": [
+      "Воспоминания дремучего леса",
+      "Моллюск морских красок",
+      "Инструктор",
+      "Церемония древней знати",
+      "Стойкость Миллелита",
+      "Сияние Вурукаши",
+      "Эмблема рассечённой судьбы"
+    ],
+    "good_set_keys": [
+      "DeepwoodMemories",
+      "OceanHuedClam",
+      "Instructor",
+      "NoblesseOblige",
+      "TenacityOfTheMillelith",
+      "VourukashasGlow",
+      "EmblemOfSeveredFate"
+    ],
+    "main_stats": {
+      "Пески времени": [
+        "HP %",
+        "Восст. энергии"
+      ],
+      "Кубок пространства": [
+        "HP %"
+      ],
+      "Корона разума": [
+        "HP %"
+      ]
+    },
+    "substat_weights": {
+      "Крит. урон": 0.0,
+      "Шанс крит. попадания": 0.0,
+      "Сила атаки %": 0.0,
+      "Сила атаки": 0.0,
+      "HP %": 1.5,
+      "HP": 0.3,
+      "Защита %": 0.0,
+      "Защита": 0.0,
+      "Восст. энергии": 0.0,
+      "Мастерство стихий": 0.0
+    },
+    "weapons": [
+      {
+        "id": "jadefalls_splendor"
+      },
+      {
+        "id": "prototype_amber",
+        "refine": [
+          5
+        ]
+      },
+      {
+        "id": "favonius_codex"
+      },
+      {
+        "id": "hakushin_ring"
+      },
+      {
+        "id": "thrilling_tales_of_dragon_slayers"
+      }
+    ],
+    "notes": "His Elemental Skill has a 2-3 second delay between cast time and heal received, keep this in mind when swapping to low HP allies after Baizhu's rotation.\n\nBaizhu provides teamwide healing through the use of his Elementall Skill and Burst; the shield applied from his Burst should be considered as interrupt resistance as opposed to a reliable form of damage mitigation for non Bloom reaction related damage sources.\n\nRegarding Weapon Choices:\nHakushin Ring: This weapon is best used in Quicken teams "
+  }
+]

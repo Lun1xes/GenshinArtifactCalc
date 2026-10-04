@@ -1,0 +1,1296 @@
+{
+  "albedo": {
+    "GOOD": "Albedo",
+    "ConstellationName": [
+      "Princeps Cretaceus"
+    ],
+    "ConstellationOrder": [
+      "skill",
+      "burst"
+    ],
+    "Element": [
+      "geo"
+    ],
+    "WeaponType": 0
+  },
+  "alhaitham": {
+    "GOOD": "Alhaitham",
+    "ConstellationName": [
+      "Vultur Volans"
+    ],
+    "ConstellationOrder": [
+      "skill",
+      "burst"
+    ],
+    "Element": [
+      "dendro"
+    ],
+    "WeaponType": 0
+  },
+  "aloy": {
+    "GOOD": "Aloy",
+    "ConstellationName": [
+      "Nora Fortis"
+    ],
+    "ConstellationOrder": [
+      "burst",
+      "skill"
+    ],
+    "Element": [
+      "cryo"
+    ],
+    "WeaponType": 3
+  },
+  "amber": {
+    "GOOD": "Amber",
+    "ConstellationName": [
+      "Lepus"
+    ],
+    "ConstellationOrder": [
+      "burst",
+      "skill"
+    ],
+    "Element": [
+      "pyro"
+    ],
+    "WeaponType": 3
+  },
+  "aratakiitto": {
+    "GOOD": "AratakiItto",
+    "ConstellationName": [
+      "Taurus Iracundus"
+    ],
+    "ConstellationOrder": [
+      "skill",
+      "burst"
+    ],
+    "Element": [
+      "geo"
+    ],
+    "WeaponType": 1
+  },
+  "arlecchino": {
+    "GOOD": "Arlecchino",
+    "ConstellationName": [
+      "Ignis Purgatorius"
+    ],
+    "ConstellationOrder": [
+      "burst",
+      "skill"
+    ],
+    "Element": [
+      "pyro"
+    ],
+    "WeaponType": 2
+  },
+  "baizhu": {
+    "GOOD": "Baizhu",
+    "ConstellationName": [
+      "Lagenaria"
+    ],
+    "ConstellationOrder": [
+      "burst",
+      "skill"
+    ],
+    "Element": [
+      "dendro"
+    ],
+    "WeaponType": 4
+  },
+  "barbara": {
+    "GOOD": "Barbara",
+    "ConstellationName": [
+      "Crater"
+    ],
+    "ConstellationOrder": [
+      "burst",
+      "skill"
+    ],
+    "Element": [
+      "hydro"
+    ],
+    "WeaponType": 4
+  },
+  "beidou": {
+    "GOOD": "Beidou",
+    "ConstellationName": [
+      "Victor Mare"
+    ],
+    "ConstellationOrder": [
+      "skill",
+      "burst"
+    ],
+    "Element": [
+      "electro"
+    ],
+    "WeaponType": 1
+  },
+  "bennett": {
+    "GOOD": "Bennett",
+    "ConstellationName": [
+      "Rota Calamitas"
+    ],
+    "ConstellationOrder": [
+      "skill",
+      "burst"
+    ],
+    "Element": [
+      "pyro"
+    ],
+    "WeaponType": 0
+  },
+  "candace": {
+    "GOOD": "Candace",
+    "ConstellationName": [
+      "Sagitta Scutum"
+    ],
+    "ConstellationOrder": [
+      "burst",
+      "skill"
+    ],
+    "Element": [
+      "hydro"
+    ],
+    "WeaponType": 2
+  },
+  "charlotte": {
+    "GOOD": "Charlotte",
+    "ConstellationName": [
+      "Hualina Veritas"
+    ],
+    "ConstellationOrder": [
+      "burst",
+      "skill"
+    ],
+    "Element": [
+      "cryo"
+    ],
+    "WeaponType": 4
+  },
+  "chasca": {
+    "GOOD": "Chasca",
+    "ConstellationName": [
+      "Vultur Gryphus"
+    ],
+    "ConstellationOrder": [
+      "skill",
+      "burst"
+    ],
+    "Element": [
+      "anemo"
+    ],
+    "WeaponType": 3
+  },
+  "chevreuse": {
+    "GOOD": "Chevreuse",
+    "ConstellationName": [
+      "Sclopetum Ensiferum"
+    ],
+    "ConstellationOrder": [
+      "skill",
+      "burst"
+    ],
+    "Element": [
+      "pyro"
+    ],
+    "WeaponType": 2
+  },
+  "chiori": {
+    "GOOD": "Chiori",
+    "ConstellationName": [
+      "Cisoria"
+    ],
+    "ConstellationOrder": [
+      "skill",
+      "burst"
+    ],
+    "Element": [
+      "geo"
+    ],
+    "WeaponType": 0
+  },
+  "chongyun": {
+    "GOOD": "Chongyun",
+    "ConstellationName": [
+      "Nubis Caesor"
+    ],
+    "ConstellationOrder": [
+      "burst",
+      "skill"
+    ],
+    "Element": [
+      "cryo"
+    ],
+    "WeaponType": 1
+  },
+  "clorinde": {
+    "GOOD": "Clorinde",
+    "ConstellationName": [
+      "Rapperia"
+    ],
+    "ConstellationOrder": [
+      "skill",
+      "burst"
+    ],
+    "Element": [
+      "electro"
+    ],
+    "WeaponType": 0
+  },
+  "collei": {
+    "GOOD": "Collei",
+    "ConstellationName": [
+      "Leptailurus Cervarius"
+    ],
+    "ConstellationOrder": [
+      "skill",
+      "burst"
+    ],
+    "Element": [
+      "dendro"
+    ],
+    "WeaponType": 3
+  },
+  "cyno": {
+    "GOOD": "Cyno",
+    "ConstellationName": [
+      "Lupus Aureus"
+    ],
+    "ConstellationOrder": [
+      "burst",
+      "skill"
+    ],
+    "Element": [
+      "electro"
+    ],
+    "WeaponType": 2
+  },
+  "dehya": {
+    "GOOD": "Dehya",
+    "ConstellationName": [
+      "Mantichora"
+    ],
+    "ConstellationOrder": [
+      "burst",
+      "skill"
+    ],
+    "Element": [
+      "pyro"
+    ],
+    "WeaponType": 1
+  },
+  "diluc": {
+    "GOOD": "Diluc",
+    "ConstellationName": [
+      "Noctua"
+    ],
+    "ConstellationOrder": [
+      "skill",
+      "burst"
+    ],
+    "Element": [
+      "pyro"
+    ],
+    "WeaponType": 1
+  },
+  "diona": {
+    "GOOD": "Diona",
+    "ConstellationName": [
+      "Feles"
+    ],
+    "ConstellationOrder": [
+      "burst",
+      "skill"
+    ],
+    "Element": [
+      "cryo"
+    ],
+    "WeaponType": 3
+  },
+  "dori": {
+    "GOOD": "Dori",
+    "ConstellationName": [
+      "Magicae Lucerna"
+    ],
+    "ConstellationOrder": [
+      "burst",
+      "skill"
+    ],
+    "Element": [
+      "electro"
+    ],
+    "WeaponType": 1
+  },
+  "emilie": {
+    "GOOD": "Emilie",
+    "ConstellationName": [
+      "Pomum de Ambra"
+    ],
+    "ConstellationOrder": [
+      "skill",
+      "burst"
+    ],
+    "Element": [
+      "dendro"
+    ],
+    "WeaponType": 2
+  },
+  "eula": {
+    "GOOD": "Eula",
+    "ConstellationName": [
+      "Aphros Delos"
+    ],
+    "ConstellationOrder": [
+      "burst",
+      "skill"
+    ],
+    "Element": [
+      "cryo"
+    ],
+    "WeaponType": 1
+  },
+  "faruzan": {
+    "GOOD": "Faruzan",
+    "ConstellationName": [
+      "Flosculi Implexi"
+    ],
+    "ConstellationOrder": [
+      "skill",
+      "burst"
+    ],
+    "Element": [
+      "anemo"
+    ],
+    "WeaponType": 3
+  },
+  "fischl": {
+    "GOOD": "Fischl",
+    "ConstellationName": [
+      "Corvus"
+    ],
+    "ConstellationOrder": [
+      "skill",
+      "burst"
+    ],
+    "Element": [
+      "electro"
+    ],
+    "WeaponType": 3
+  },
+  "freminet": {
+    "GOOD": "Freminet",
+    "ConstellationName": [
+      "Automaton"
+    ],
+    "ConstellationOrder": [
+      "burst",
+      "skill"
+    ],
+    "Element": [
+      "cryo"
+    ],
+    "WeaponType": 1
+  },
+  "furina": {
+    "GOOD": "Furina",
+    "ConstellationName": [
+      "Animula Choragi"
+    ],
+    "ConstellationOrder": [
+      "burst",
+      "skill"
+    ],
+    "Element": [
+      "hydro"
+    ],
+    "WeaponType": 0
+  },
+  "gaming": {
+    "GOOD": "Gaming",
+    "ConstellationName": [
+      "Leo Expergiscens"
+    ],
+    "ConstellationOrder": [
+      "skill",
+      "burst"
+    ],
+    "Element": [
+      "pyro"
+    ],
+    "WeaponType": 1
+  },
+  "ganyu": {
+    "GOOD": "Ganyu",
+    "ConstellationName": [
+      "Sinae Unicornis"
+    ],
+    "ConstellationOrder": [
+      "burst",
+      "skill"
+    ],
+    "Element": [
+      "cryo"
+    ],
+    "WeaponType": 3
+  },
+  "gorou": {
+    "GOOD": "Gorou",
+    "ConstellationName": [
+      "Canis Bellatoris"
+    ],
+    "ConstellationOrder": [
+      "skill",
+      "burst"
+    ],
+    "Element": [
+      "geo"
+    ],
+    "WeaponType": 3
+  },
+  "hutao": {
+    "GOOD": "HuTao",
+    "ConstellationName": [
+      "Papilio Charontis"
+    ],
+    "ConstellationOrder": [
+      "skill",
+      "burst"
+    ],
+    "Element": [
+      "pyro"
+    ],
+    "WeaponType": 2
+  },
+  "jean": {
+    "GOOD": "Jean",
+    "ConstellationName": [
+      "Leo Minor"
+    ],
+    "ConstellationOrder": [
+      "burst",
+      "skill"
+    ],
+    "Element": [
+      "anemo"
+    ],
+    "WeaponType": 0
+  },
+  "kachina": {
+    "GOOD": "Kachina",
+    "ConstellationName": [
+      "Ochotona Princeps"
+    ],
+    "ConstellationOrder": [
+      "skill",
+      "burst"
+    ],
+    "Element": [
+      "geo"
+    ],
+    "WeaponType": 2
+  },
+  "kaedeharakazuha": {
+    "GOOD": "KaedeharaKazuha",
+    "ConstellationName": [
+      "Acer Palmatum"
+    ],
+    "ConstellationOrder": [
+      "skill",
+      "burst"
+    ],
+    "Element": [
+      "anemo"
+    ],
+    "WeaponType": 0
+  },
+  "kaeya": {
+    "GOOD": "Kaeya",
+    "ConstellationName": [
+      "Pavo Ocellus"
+    ],
+    "ConstellationOrder": [
+      "skill",
+      "burst"
+    ],
+    "Element": [
+      "cryo"
+    ],
+    "WeaponType": 0
+  },
+  "kamisatoayaka": {
+    "GOOD": "KamisatoAyaka",
+    "ConstellationName": [
+      "Grus Nivis"
+    ],
+    "ConstellationOrder": [
+      "burst",
+      "skill"
+    ],
+    "Element": [
+      "cryo"
+    ],
+    "WeaponType": 0
+  },
+  "kamisatoayato": {
+    "GOOD": "KamisatoAyato",
+    "ConstellationName": [
+      "Cypressus Custos"
+    ],
+    "ConstellationOrder": [
+      "skill",
+      "burst"
+    ],
+    "Element": [
+      "hydro"
+    ],
+    "WeaponType": 0
+  },
+  "kaveh": {
+    "GOOD": "Kaveh",
+    "ConstellationName": [
+      "Paradisaea"
+    ],
+    "ConstellationOrder": [
+      "burst",
+      "skill"
+    ],
+    "Element": [
+      "dendro"
+    ],
+    "WeaponType": 1
+  },
+  "keqing": {
+    "GOOD": "Keqing",
+    "ConstellationName": [
+      "Trulla Cementarii"
+    ],
+    "ConstellationOrder": [
+      "burst",
+      "skill"
+    ],
+    "Element": [
+      "electro"
+    ],
+    "WeaponType": 0
+  },
+  "kinich": {
+    "GOOD": "Kinich",
+    "ConstellationName": [
+      "Chimaera Alebriius"
+    ],
+    "ConstellationOrder": [
+      "skill",
+      "burst"
+    ],
+    "Element": [
+      "dendro"
+    ],
+    "WeaponType": 1
+  },
+  "kirara": {
+    "GOOD": "Kirara",
+    "ConstellationName": [
+      "Arcella"
+    ],
+    "ConstellationOrder": [
+      "skill",
+      "burst"
+    ],
+    "Element": [
+      "dendro"
+    ],
+    "WeaponType": 0
+  },
+  "klee": {
+    "GOOD": "Klee",
+    "ConstellationName": [
+      "Trifolium"
+    ],
+    "ConstellationOrder": [
+      "skill",
+      "burst"
+    ],
+    "Element": [
+      "pyro"
+    ],
+    "WeaponType": 4
+  },
+  "kujousara": {
+    "GOOD": "KujouSara",
+    "ConstellationName": [
+      "Flabellum"
+    ],
+    "ConstellationOrder": [
+      "burst",
+      "skill"
+    ],
+    "Element": [
+      "electro"
+    ],
+    "WeaponType": 3
+  },
+  "kukishinobu": {
+    "GOOD": "KukiShinobu",
+    "ConstellationName": [
+      "Tribulatio Demptio"
+    ],
+    "ConstellationOrder": [
+      "skill",
+      "burst"
+    ],
+    "Element": [
+      "electro"
+    ],
+    "WeaponType": 0
+  },
+  "layla": {
+    "GOOD": "Layla",
+    "ConstellationName": [
+      "Luscinia"
+    ],
+    "ConstellationOrder": [
+      "skill",
+      "burst"
+    ],
+    "Element": [
+      "cryo"
+    ],
+    "WeaponType": 0
+  },
+  "lisa": {
+    "GOOD": "Lisa",
+    "ConstellationName": [
+      "Tempus Fugit"
+    ],
+    "ConstellationOrder": [
+      "burst",
+      "skill"
+    ],
+    "Element": [
+      "electro"
+    ],
+    "WeaponType": 4
+  },
+  "lynette": {
+    "GOOD": "Lynette",
+    "ConstellationName": [
+      "Felis Alba"
+    ],
+    "ConstellationOrder": [
+      "burst",
+      "skill"
+    ],
+    "Element": [
+      "anemo"
+    ],
+    "WeaponType": 0
+  },
+  "lyney": {
+    "GOOD": "Lyney",
+    "ConstellationName": [
+      "Felis Fuscus"
+    ],
+    "ConstellationOrder": [
+      "burst",
+      "skill"
+    ],
+    "Element": [
+      "pyro"
+    ],
+    "WeaponType": 3
+  },
+  "mika": {
+    "GOOD": "Mika",
+    "ConstellationName": [
+      "Palumbus"
+    ],
+    "ConstellationOrder": [
+      "burst",
+      "skill"
+    ],
+    "Element": [
+      "cryo"
+    ],
+    "WeaponType": 2
+  },
+  "mona": {
+    "GOOD": "Mona",
+    "ConstellationName": [
+      "Astrolabos"
+    ],
+    "ConstellationOrder": [
+      "burst",
+      "skill"
+    ],
+    "Element": [
+      "hydro"
+    ],
+    "WeaponType": 4
+  },
+  "mualani": {
+    "GOOD": "Mualani",
+    "ConstellationName": [
+      "Phoca Neomonachus"
+    ],
+    "ConstellationOrder": [
+      "skill",
+      "burst"
+    ],
+    "Element": [
+      "hydro"
+    ],
+    "WeaponType": 4
+  },
+  "nahida": {
+    "GOOD": "Nahida",
+    "ConstellationName": [
+      "Sapientia Oromasdis"
+    ],
+    "ConstellationOrder": [
+      "skill",
+      "burst"
+    ],
+    "Element": [
+      "dendro"
+    ],
+    "WeaponType": 4
+  },
+  "navia": {
+    "GOOD": "Navia",
+    "ConstellationName": [
+      "Rosa Multiflora"
+    ],
+    "ConstellationOrder": [
+      "skill",
+      "burst"
+    ],
+    "Element": [
+      "geo"
+    ],
+    "WeaponType": 1
+  },
+  "neuvillette": {
+    "GOOD": "Neuvillette",
+    "ConstellationName": [
+      "???"
+    ],
+    "ConstellationOrder": [
+      "burst",
+      "skill"
+    ],
+    "Element": [
+      "hydro"
+    ],
+    "WeaponType": 4
+  },
+  "nilou": {
+    "GOOD": "Nilou",
+    "ConstellationName": [
+      "Lotos Somno"
+    ],
+    "ConstellationOrder": [
+      "burst",
+      "skill"
+    ],
+    "Element": [
+      "hydro"
+    ],
+    "WeaponType": 0
+  },
+  "ningguang": {
+    "GOOD": "Ningguang",
+    "ConstellationName": [
+      "Opus Aequilibrium"
+    ],
+    "ConstellationOrder": [
+      "burst",
+      "skill"
+    ],
+    "Element": [
+      "geo"
+    ],
+    "WeaponType": 4
+  },
+  "noelle": {
+    "GOOD": "Noelle",
+    "ConstellationName": [
+      "Parma Cordis"
+    ],
+    "ConstellationOrder": [
+      "skill",
+      "burst"
+    ],
+    "Element": [
+      "geo"
+    ],
+    "WeaponType": 1
+  },
+  "ororon": {
+    "GOOD": "Ororon",
+    "ConstellationName": [
+      "Vampyrum Spectrum"
+    ],
+    "ConstellationOrder": [
+      "burst",
+      "skill"
+    ],
+    "Element": [
+      "electro"
+    ],
+    "WeaponType": 3
+  },
+  "qiqi": {
+    "GOOD": "Qiqi",
+    "ConstellationName": [
+      "Pristina Nola"
+    ],
+    "ConstellationOrder": [
+      "burst",
+      "skill"
+    ],
+    "Element": [
+      "cryo"
+    ],
+    "WeaponType": 0
+  },
+  "raidenshogun": {
+    "GOOD": "RaidenShogun",
+    "ConstellationName": [
+      "Imperatrix Umbrosa"
+    ],
+    "ConstellationOrder": [
+      "burst",
+      "skill"
+    ],
+    "Element": [
+      "electro"
+    ],
+    "WeaponType": 2
+  },
+  "razor": {
+    "GOOD": "Razor",
+    "ConstellationName": [
+      "Lupus Minor"
+    ],
+    "ConstellationOrder": [
+      "burst",
+      "skill"
+    ],
+    "Element": [
+      "electro"
+    ],
+    "WeaponType": 1
+  },
+  "rosaria": {
+    "GOOD": "Rosaria",
+    "ConstellationName": [
+      "Spinea Corona"
+    ],
+    "ConstellationOrder": [
+      "skill",
+      "burst"
+    ],
+    "Element": [
+      "cryo"
+    ],
+    "WeaponType": 2
+  },
+  "sangonomiyakokomi": {
+    "GOOD": "SangonomiyaKokomi",
+    "ConstellationName": [
+      "Dracaena Somnolenta"
+    ],
+    "ConstellationOrder": [
+      "burst",
+      "skill"
+    ],
+    "Element": [
+      "hydro"
+    ],
+    "WeaponType": 4
+  },
+  "sayu": {
+    "GOOD": "Sayu",
+    "ConstellationName": [
+      "Nyctereutes Minor"
+    ],
+    "ConstellationOrder": [
+      "burst",
+      "skill"
+    ],
+    "Element": [
+      "anemo"
+    ],
+    "WeaponType": 1
+  },
+  "sethos": {
+    "GOOD": "Sethos",
+    "ConstellationName": [
+      "Basileos Delta"
+    ],
+    "ConstellationOrder": [
+      "burst",
+      "skill"
+    ],
+    "Element": [
+      "electro"
+    ],
+    "WeaponType": 3
+  },
+  "shenhe": {
+    "GOOD": "Shenhe",
+    "ConstellationName": [
+      "Crista Doloris"
+    ],
+    "ConstellationOrder": [
+      "skill",
+      "burst"
+    ],
+    "Element": [
+      "cryo"
+    ],
+    "WeaponType": 2
+  },
+  "shikanoinheizou": {
+    "GOOD": "ShikanoinHeizou",
+    "ConstellationName": [
+      "Cervus Minor"
+    ],
+    "ConstellationOrder": [
+      "skill",
+      "burst"
+    ],
+    "Element": [
+      "anemo"
+    ],
+    "WeaponType": 4
+  },
+  "sigewinne": {
+    "GOOD": "Sigewinne",
+    "ConstellationName": [
+      "Nereides"
+    ],
+    "ConstellationOrder": [
+      "skill",
+      "burst"
+    ],
+    "Element": [
+      "hydro"
+    ],
+    "WeaponType": 3
+  },
+  "sucrose": {
+    "GOOD": "Sucrose",
+    "ConstellationName": [
+      "Ampulla"
+    ],
+    "ConstellationOrder": [
+      "skill",
+      "burst"
+    ],
+    "Element": [
+      "anemo"
+    ],
+    "WeaponType": 4
+  },
+  "tartaglia": {
+    "GOOD": "Tartaglia",
+    "ConstellationName": [
+      "Monoceros Caeli"
+    ],
+    "ConstellationOrder": [
+      "skill",
+      "burst"
+    ],
+    "Element": [
+      "hydro"
+    ],
+    "WeaponType": 3
+  },
+  "thoma": {
+    "GOOD": "Thoma",
+    "ConstellationName": [
+      "Rubeum Scutum"
+    ],
+    "ConstellationOrder": [
+      "skill",
+      "burst"
+    ],
+    "Element": [
+      "pyro"
+    ],
+    "WeaponType": 2
+  },
+  "tighnari": {
+    "GOOD": "Tighnari",
+    "ConstellationName": [
+      "Vulpes Zerda"
+    ],
+    "ConstellationOrder": [
+      "burst",
+      "skill"
+    ],
+    "Element": [
+      "dendro"
+    ],
+    "WeaponType": 3
+  },
+  "traveler": {
+    "GOOD": "Traveler",
+    "Element": [
+      "electro",
+      "pyro",
+      "dendro",
+      "geo",
+      "hydro",
+      "anemo"
+    ],
+    "ConstellationOrder": {
+      "electro": [
+        "burst",
+        "skill"
+      ],
+      "dendro": [
+        "skill",
+        "burst"
+      ],
+      "geo": [
+        "burst",
+        "skill"
+      ],
+      "hydro": [
+        "skill",
+        "burst"
+      ],
+      "anemo": [
+        "burst",
+        "skill"
+      ]
+    },
+    "WeaponType": 0
+  },
+  "venti": {
+    "GOOD": "Venti",
+    "ConstellationName": [
+      "Carmen Dei"
+    ],
+    "ConstellationOrder": [
+      "burst",
+      "skill"
+    ],
+    "Element": [
+      "anemo"
+    ],
+    "WeaponType": 3
+  },
+  "wanderer": {
+    "GOOD": "Wanderer",
+    "ConstellationName": [
+      "Peregrinus"
+    ],
+    "ConstellationOrder": [
+      "burst",
+      "skill"
+    ],
+    "Element": [
+      "anemo"
+    ],
+    "WeaponType": 4
+  },
+  "wriothesley": {
+    "GOOD": "Wriothesley",
+    "ConstellationName": [
+      "Cerberus"
+    ],
+    "ConstellationOrder": [
+      "burst",
+      "skill"
+    ],
+    "Element": [
+      "cryo"
+    ],
+    "WeaponType": 4
+  },
+  "xiangling": {
+    "GOOD": "Xiangling",
+    "ConstellationName": [
+      "Trulla"
+    ],
+    "ConstellationOrder": [
+      "burst",
+      "skill"
+    ],
+    "Element": [
+      "pyro"
+    ],
+    "WeaponType": 2
+  },
+  "xianyun": {
+    "GOOD": "Xianyun",
+    "ConstellationName": [
+      "Grus Serena"
+    ],
+    "ConstellationOrder": [
+      "burst",
+      "skill"
+    ],
+    "Element": [
+      "anemo"
+    ],
+    "WeaponType": 4
+  },
+  "xiao": {
+    "GOOD": "Xiao",
+    "ConstellationName": [
+      "Alatus Nemeseos"
+    ],
+    "ConstellationOrder": [
+      "skill",
+      "burst"
+    ],
+    "Element": [
+      "anemo"
+    ],
+    "WeaponType": 2
+  },
+  "xilonen": {
+    "GOOD": "Xilonen",
+    "ConstellationName": [
+      "Panthera Ocelota"
+    ],
+    "ConstellationOrder": [
+      "skill",
+      "burst"
+    ],
+    "Element": [
+      "geo"
+    ],
+    "WeaponType": 0
+  },
+  "xingqiu": {
+    "GOOD": "Xingqiu",
+    "ConstellationName": [
+      "Fabulae Textile"
+    ],
+    "ConstellationOrder": [
+      "burst",
+      "skill"
+    ],
+    "Element": [
+      "hydro"
+    ],
+    "WeaponType": 0
+  },
+  "xinyan": {
+    "GOOD": "Xinyan",
+    "ConstellationName": [
+      "Fila Ignium"
+    ],
+    "ConstellationOrder": [
+      "skill",
+      "burst"
+    ],
+    "Element": [
+      "pyro"
+    ],
+    "WeaponType": 1
+  },
+  "yaemiko": {
+    "GOOD": "YaeMiko",
+    "ConstellationName": [
+      "Divina Vulpes"
+    ],
+    "ConstellationOrder": [
+      "skill",
+      "burst"
+    ],
+    "Element": [
+      "electro"
+    ],
+    "WeaponType": 4
+  },
+  "yanfei": {
+    "GOOD": "Yanfei",
+    "ConstellationName": [
+      "Bestia Iustitia"
+    ],
+    "ConstellationOrder": [
+      "skill",
+      "burst"
+    ],
+    "Element": [
+      "pyro"
+    ],
+    "WeaponType": 4
+  },
+  "yaoyao": {
+    "GOOD": "Yaoyao",
+    "ConstellationName": [
+      "Osmanthus"
+    ],
+    "ConstellationOrder": [
+      "skill",
+      "burst"
+    ],
+    "Element": [
+      "dendro"
+    ],
+    "WeaponType": 2
+  },
+  "yelan": {
+    "GOOD": "Yelan",
+    "ConstellationName": [
+      "Umbrabilis Orchis"
+    ],
+    "ConstellationOrder": [
+      "burst",
+      "skill"
+    ],
+    "Element": [
+      "hydro"
+    ],
+    "WeaponType": 3
+  },
+  "yoimiya": {
+    "GOOD": "Yoimiya",
+    "ConstellationName": [
+      "Carassius Auratus"
+    ],
+    "ConstellationOrder": [
+      "skill",
+      "burst"
+    ],
+    "Element": [
+      "pyro"
+    ],
+    "WeaponType": 3
+  },
+  "yunjin": {
+    "GOOD": "YunJin",
+    "ConstellationName": [
+      "Opera Grandis"
+    ],
+    "ConstellationOrder": [
+      "burst",
+      "skill"
+    ],
+    "Element": [
+      "geo"
+    ],
+    "WeaponType": 2
+  },
+  "zhongli": {
+    "GOOD": "Zhongli",
+    "ConstellationName": [
+      "???"
+    ],
+    "ConstellationOrder": [
+      "skill",
+      "burst"
+    ],
+    "Element": [
+      "geo"
+    ],
+    "WeaponType": 2
+  }
+}

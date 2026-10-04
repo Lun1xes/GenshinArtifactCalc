@@ -1,0 +1,452 @@
+{
+  "Adaycarvedfromrisingwinds": {
+    "good_key": "Adaycarvedfromrisingwinds",
+    "name_ru": "День восходящих ветров",
+    "description": "Комплект артефактов «День восходящих ветров»"
+  },
+  "Adventurer": {
+    "good_key": "Adventurer",
+    "name_ru": "Искатель приключений",
+    "description": "Комплект артефактов «Искатель приключений»"
+  },
+  "Archaicpetra": {
+    "good_key": "Archaicpetra",
+    "name_ru": "Архаичный камень",
+    "description": "Комплект артефактов «Архаичный камень»"
+  },
+  "Aubadeofmorningstarandmoon": {
+    "good_key": "Aubadeofmorningstarandmoon",
+    "name_ru": "Рассветная песнь звезды и луны",
+    "description": "Комплект артефактов «Рассветная песнь звезды и луны»"
+  },
+  "Berserker": {
+    "good_key": "Berserker",
+    "name_ru": "Берсерк",
+    "description": "Комплект артефактов «Берсерк»"
+  },
+  "Blizzardstrayer": {
+    "good_key": "Blizzardstrayer",
+    "name_ru": "Заблудший в метели",
+    "description": "Комплект артефактов «Заблудший в метели»"
+  },
+  "Bloodstainedchivalry": {
+    "good_key": "Bloodstainedchivalry",
+    "name_ru": "Рыцарь крови",
+    "description": "Комплект артефактов «Рыцарь крови»"
+  },
+  "Braveheart": {
+    "good_key": "Braveheart",
+    "name_ru": "Душа храбреца",
+    "description": "Комплект артефактов «Душа храбреца»"
+  },
+  "Celestialgift": {
+    "good_key": "Celestialgift",
+    "name_ru": "Дар небес",
+    "description": "Комплект артефактов «Дар небес»"
+  },
+  "Crimsonwitchofflames": {
+    "good_key": "Crimsonwitchofflames",
+    "name_ru": "Горящая алая ведьма",
+    "description": "Комплект артефактов «Горящая алая ведьма»"
+  },
+  "Deepwoodmemories": {
+    "good_key": "Deepwoodmemories",
+    "name_ru": "Воспоминания дремучего леса",
+    "description": "Комплект артефактов «Воспоминания дремучего леса»"
+  },
+  "Defenderswill": {
+    "good_key": "Defenderswill",
+    "name_ru": "Воля защитника",
+    "description": "Комплект артефактов «Воля защитника»"
+  },
+  "Desertpavilionchronicle": {
+    "good_key": "Desertpavilionchronicle",
+    "name_ru": "Хроники Чертогов в пустыне",
+    "description": "Комплект артефактов «Хроники Чертогов в пустыне»"
+  },
+  "Disenchantmentindeepshadow": {
+    "good_key": "Disenchantmentindeepshadow",
+    "name_ru": "Застывшее в тени разочарование",
+    "description": "Комплект артефактов «Застывшее в тени разочарование»"
+  },
+  "Echoesofanoffering": {
+    "good_key": "Echoesofanoffering",
+    "name_ru": "Отголоски подношения",
+    "description": "Комплект артефактов «Отголоски подношения»"
+  },
+  "Emblemofseveredfate": {
+    "good_key": "Emblemofseveredfate",
+    "name_ru": "Эмблема рассечённой судьбы",
+    "description": "Комплект артефактов «Эмблема рассечённой судьбы»"
+  },
+  "Finaleofthedeepgalleries": {
+    "good_key": "Finaleofthedeepgalleries",
+    "name_ru": "Финал галерей глубин",
+    "description": "Комплект артефактов «Финал галерей глубин»"
+  },
+  "Flowerofparadiselost": {
+    "good_key": "Flowerofparadiselost",
+    "name_ru": "Цветок потерянного рая",
+    "description": "Комплект артефактов «Цветок потерянного рая»"
+  },
+  "Fragmentofharmonicwhimsy": {
+    "good_key": "Fragmentofharmonicwhimsy",
+    "name_ru": "Фрагмент гармонической фантазии",
+    "description": "Комплект артефактов «Фрагмент гармонической фантазии»"
+  },
+  "Gambler": {
+    "good_key": "Gambler",
+    "name_ru": "Азартный игрок",
+    "description": "Комплект артефактов «Азартный игрок»"
+  },
+  "Gildeddreams": {
+    "good_key": "Gildeddreams",
+    "name_ru": "Позолоченные сны",
+    "description": "Комплект артефактов «Позолоченные сны»"
+  },
+  "Gladiatorsfinale": {
+    "good_key": "Gladiatorsfinale",
+    "name_ru": "Конец гладиатора",
+    "description": "Комплект артефактов «Конец гладиатора»"
+  },
+  "Goldentroupe": {
+    "good_key": "Goldentroupe",
+    "name_ru": "Золотая труппа",
+    "description": "Комплект артефактов «Золотая труппа»"
+  },
+  "Heartofdepth": {
+    "good_key": "Heartofdepth",
+    "name_ru": "Сердце глубин",
+    "description": "Комплект артефактов «Сердце глубин»"
+  },
+  "Heartofthefurnace": {
+    "good_key": "Heartofthefurnace",
+    "name_ru": "Сердце горна",
+    "description": "Комплект артефактов «Сердце горна»"
+  },
+  "Huskofopulentdreams": {
+    "good_key": "Huskofopulentdreams",
+    "name_ru": "Кокон сладких грёз",
+    "description": "Комплект артефактов «Кокон сладких грёз»"
+  },
+  "Instructor": {
+    "good_key": "Instructor",
+    "name_ru": "Инструктор",
+    "description": "Комплект артефактов «Инструктор»"
+  },
+  "Lavawalker": {
+    "good_key": "Lavawalker",
+    "name_ru": "Ступающий по лаве",
+    "description": "Комплект артефактов «Ступающий по лаве»"
+  },
+  "Longnightsoath": {
+    "good_key": "Longnightsoath",
+    "name_ru": "Клятва долгой ночи",
+    "description": "Комплект артефактов «Клятва долгой ночи»"
+  },
+  "Luckydog": {
+    "good_key": "Luckydog",
+    "name_ru": "Везунчик",
+    "description": "Комплект артефактов «Везунчик»"
+  },
+  "Maidenbeloved": {
+    "good_key": "Maidenbeloved",
+    "name_ru": "Возлюбленная юная дева",
+    "description": "Комплект артефактов «Возлюбленная юная дева»"
+  },
+  "Marechausseehunter": {
+    "good_key": "Marechausseehunter",
+    "name_ru": "Охотник Сумеречного двора",
+    "description": "Комплект артефактов «Охотник Сумеречного двора»"
+  },
+  "Martialartist": {
+    "good_key": "Martialartist",
+    "name_ru": "Воин",
+    "description": "Комплект артефактов «Воин»"
+  },
+  "Nightoftheskysunveiling": {
+    "good_key": "Nightoftheskysunveiling",
+    "name_ru": "Ночь открытия неба",
+    "description": "Комплект артефактов «Ночь открытия неба»"
+  },
+  "Nighttimewhispersintheechoingwoods": {
+    "good_key": "Nighttimewhispersintheechoingwoods",
+    "name_ru": "Ночной шёпот в Лесу откликающегося эха",
+    "description": "Комплект артефактов «Ночной шёпот в Лесу откликающегося эха»"
+  },
+  "Noblesseoblige": {
+    "good_key": "Noblesseoblige",
+    "name_ru": "Церемония древней знати",
+    "description": "Комплект артефактов «Церемония древней знати»"
+  },
+  "Nymphsdream": {
+    "good_key": "Nymphsdream",
+    "name_ru": "Сон нимфы",
+    "description": "Комплект артефактов «Сон нимфы»"
+  },
+  "Obsidiancodex": {
+    "good_key": "Obsidiancodex",
+    "name_ru": "Обсидиановый фолиант",
+    "description": "Комплект артефактов «Обсидиановый фолиант»"
+  },
+  "Oceanhuedclam": {
+    "good_key": "Oceanhuedclam",
+    "name_ru": "Моллюск морских красок",
+    "description": "Комплект артефактов «Моллюск морских красок»"
+  },
+  "Paleflame": {
+    "good_key": "Paleflame",
+    "name_ru": "Бледный огонь",
+    "description": "Комплект артефактов «Бледный огонь»"
+  },
+  "Prayersfordestiny": {
+    "good_key": "Prayersfordestiny",
+    "name_ru": "Шаман воды",
+    "description": "Комплект артефактов «Шаман воды»"
+  },
+  "Prayersforillumination": {
+    "good_key": "Prayersforillumination",
+    "name_ru": "Шаман огня",
+    "description": "Комплект артефактов «Шаман огня»"
+  },
+  "Prayersforwisdom": {
+    "good_key": "Prayersforwisdom",
+    "name_ru": "Шаман молнии",
+    "description": "Комплект артефактов «Шаман молнии»"
+  },
+  "Prayerstospringtime": {
+    "good_key": "Prayerstospringtime",
+    "name_ru": "Шаман льда",
+    "description": "Комплект артефактов «Шаман льда»"
+  },
+  "Resolutionofsojourner": {
+    "good_key": "Resolutionofsojourner",
+    "name_ru": "Решимость временщика",
+    "description": "Комплект артефактов «Решимость временщика»"
+  },
+  "Retracingbolide": {
+    "good_key": "Retracingbolide",
+    "name_ru": "Встречная комета",
+    "description": "Комплект артефактов «Встречная комета»"
+  },
+  "Scarletproof": {
+    "good_key": "Scarletproof",
+    "name_ru": "Багряное доказательство",
+    "description": "Комплект артефактов «Багряное доказательство»"
+  },
+  "Scholar": {
+    "good_key": "Scholar",
+    "name_ru": "Учёный",
+    "description": "Комплект артефактов «Учёный»"
+  },
+  "Scrolloftheheroofcindercity": {
+    "good_key": "Scrolloftheheroofcindercity",
+    "name_ru": "Свиток героя сожжённого города",
+    "description": "Комплект артефактов «Свиток героя сожжённого города»"
+  },
+  "Shimenawasreminiscence": {
+    "good_key": "Shimenawasreminiscence",
+    "name_ru": "Воспоминания Симэнавы",
+    "description": "Комплект артефактов «Воспоминания Симэнавы»"
+  },
+  "Silkenmoonsserenade": {
+    "good_key": "Silkenmoonsserenade",
+    "name_ru": "Серенада шёлковой луны",
+    "description": "Комплект артефактов «Серенада шёлковой луны»"
+  },
+  "Songofdayspast": {
+    "good_key": "Songofdayspast",
+    "name_ru": "Песнь былых времён",
+    "description": "Комплект артефактов «Песнь былых времён»"
+  },
+  "Tenacityofthemillelith": {
+    "good_key": "Tenacityofthemillelith",
+    "name_ru": "Стойкость Миллелита",
+    "description": "Комплект артефактов «Стойкость Миллелита»"
+  },
+  "Theexile": {
+    "good_key": "Theexile",
+    "name_ru": "Изгнанник",
+    "description": "Комплект артефактов «Изгнанник»"
+  },
+  "Thunderingfury": {
+    "good_key": "Thunderingfury",
+    "name_ru": "Громогласный рёв ярости",
+    "description": "Комплект артефактов «Громогласный рёв ярости»"
+  },
+  "Thundersoother": {
+    "good_key": "Thundersoother",
+    "name_ru": "Усмиряющий гром",
+    "description": "Комплект артефактов «Усмиряющий гром»"
+  },
+  "Tinymiracle": {
+    "good_key": "Tinymiracle",
+    "name_ru": "Маленькое чудо",
+    "description": "Комплект артефактов «Маленькое чудо»"
+  },
+  "Travelingdoctor": {
+    "good_key": "Travelingdoctor",
+    "name_ru": "Целитель",
+    "description": "Комплект артефактов «Целитель»"
+  },
+  "Unfinishedreverie": {
+    "good_key": "Unfinishedreverie",
+    "name_ru": "Незаконченные грёзы",
+    "description": "Комплект артефактов «Незаконченные грёзы»"
+  },
+  "Vermillionhereafter": {
+    "good_key": "Vermillionhereafter",
+    "name_ru": "Киноварное загробье",
+    "description": "Комплект артефактов «Киноварное загробье»"
+  },
+  "Viridescentvenerer": {
+    "good_key": "Viridescentvenerer",
+    "name_ru": "Изумрудная тень",
+    "description": "Комплект артефактов «Изумрудная тень»"
+  },
+  "Vourukashasglow": {
+    "good_key": "Vourukashasglow",
+    "name_ru": "Сияние Вурукаши",
+    "description": "Комплект артефактов «Сияние Вурукаши»"
+  },
+  "Wandererstroupe": {
+    "good_key": "Wandererstroupe",
+    "name_ru": "Странствующий ансамбль",
+    "description": "Комплект артефактов «Странствующий ансамбль»"
+  },
+  "GoldenTroupe": {
+    "good_key": "GoldenTroupe",
+    "name_ru": "Золотая труппа",
+    "description": "+20% / +70% урона элементального навыка из кармана"
+  },
+  "MarechausseeHunter": {
+    "good_key": "MarechausseeHunter",
+    "name_ru": "Охотник Сумеречного двора",
+    "description": "+15% обычных атак и до +36% шанса крита при изменении HP"
+  },
+  "EmblemOfSeveredFate": {
+    "good_key": "EmblemOfSeveredFate",
+    "name_ru": "Эмблема рассечённой судьбы",
+    "description": "+20% ВЭ и увеличение урона взрыва стихий до +75% от ВЭ"
+  },
+  "DeepwoodMemories": {
+    "good_key": "DeepwoodMemories",
+    "name_ru": "Воспоминания дремучего леса",
+    "description": "+15% Дендро урона и -30% Дендро сопротивления врагов"
+  },
+  "GildedDreams": {
+    "good_key": "GildedDreams",
+    "name_ru": "Позолоченные сны",
+    "description": "Бонус МС (+80 / +150) и силы атаки (+14% / +28%) от элементов отряда"
+  },
+  "ViridescentVenerer": {
+    "good_key": "ViridescentVenerer",
+    "name_ru": "Изумрудная тень",
+    "description": "+15% Анемо урона и -40% сопротивления рассеянного элемента"
+  },
+  "ObsidianCodex": {
+    "good_key": "ObsidianCodex",
+    "name_ru": "Обсидиановый фолиант",
+    "description": "+15% урона в Ночном духе и +40% шанса крита при расходе очков"
+  },
+  "ScrollOfTheHeroOfCinderCity": {
+    "good_key": "ScrollOfTheHeroOfCinderCity",
+    "name_ru": "Свиток героя сожжённого города",
+    "description": "Восстанавливает энергию и даёт до +40% элементального урона всему отряду"
+  },
+  "CrimsonWitchOfFlames": {
+    "good_key": "CrimsonWitchOfFlames",
+    "name_ru": "Горящая алая ведьма",
+    "description": "+15% Пиро урона и усиление реакций Пар/Таяние (+15%) и Горение/Перегрузка"
+  },
+  "BlizzardStrayer": {
+    "good_key": "BlizzardStrayer",
+    "name_ru": "Заблудший в метели",
+    "description": "+15% Крио урона и до +40% шанса крита по замороженным врагам"
+  },
+  "TenacityOfTheMillelith": {
+    "good_key": "TenacityOfTheMillelith",
+    "name_ru": "Стойкость Миллелита",
+    "description": "+20% HP, при попадании Е-шки даёт +20% силы атаки и +30% прочности щита отряду"
+  },
+  "NoblesseOblige": {
+    "good_key": "NoblesseOblige",
+    "name_ru": "Церемония древней знати",
+    "description": "+20% урона ульты и +20% силы атаки всему отряду на 12 сек."
+  },
+  "OceanHuedClam": {
+    "good_key": "OceanHuedClam",
+    "name_ru": "Моллюск морских красок",
+    "description": "+15% лечения и пузыри урона до 30 000 физ. урона от лечения"
+  },
+  "SongOfDaysPast": {
+    "good_key": "SongOfDaysPast",
+    "name_ru": "Песнь былых времён",
+    "description": "+15% лечения и плоский бафф урона союзникам от объёма лечения"
+  },
+  "FlowerOfParadiseLost": {
+    "good_key": "FlowerOfParadiseLost",
+    "name_ru": "Цветок потерянного рая",
+    "description": "+80 МС и до +140% урона реакций Бутонизация, Вегетация, Цветение"
+  },
+  "DesertPavilionChronicle": {
+    "good_key": "DesertPavilionChronicle",
+    "name_ru": "Хроники Чертогов в пустыне",
+    "description": "+15% Анемо урона и +40% урона обычных/заряженных атак после заряженной"
+  },
+  "NymphsDream": {
+    "good_key": "NymphsDream",
+    "name_ru": "Сон нимфы",
+    "description": "+15% Гидро урона и до +25% силы атаки / +15% Гидро урона за стаки"
+  },
+  "VourukashasGlow": {
+    "good_key": "VourukashasGlow",
+    "name_ru": "Сияние Вурукаши",
+    "description": "+20% HP и до +50% урона навыка и ульты при получении урона"
+  },
+  "FragmentOfHarmonicWhimsy": {
+    "good_key": "FragmentOfHarmonicWhimsy",
+    "name_ru": "Фрагмент гармонической фантазии",
+    "description": "+18% силы атаки и до +54% наносимого урона при изменении Долга жизни"
+  },
+  "UnfinishedReverie": {
+    "good_key": "UnfinishedReverie",
+    "name_ru": "Незаконченные грёзы",
+    "description": "+18% силы атаки и до +50% наносимого урона при наличии Горения"
+  },
+  "HuskOfOpulentDreams": {
+    "good_key": "HuskOfOpulentDreams",
+    "name_ru": "Кокон сладких грёз",
+    "description": "До +54% защиты и +24% Гео урона от стаков любопытства"
+  },
+  "ShimenawasReminiscence": {
+    "good_key": "ShimenawasReminiscence",
+    "name_ru": "Воспоминания Симэнавы",
+    "description": "+18% силы атаки и +50% урона обычных/заряженных атак ценой 15 энергии"
+  },
+  "GladiatorsFinale": {
+    "good_key": "GladiatorsFinale",
+    "name_ru": "Конец гладиатора",
+    "description": "+18% силы атаки и +35% урона обычных атак для мечников и копейщиков"
+  },
+  "WanderersTroupe": {
+    "good_key": "WanderersTroupe",
+    "name_ru": "Странствующий ансамбль",
+    "description": "+80 МС и +35% урона заряженных атак для лучников и каталистов"
+  },
+  "HeartOfDepth": {
+    "good_key": "HeartOfDepth",
+    "name_ru": "Сердце глубин",
+    "description": "+15% Гидро урона и +30% урона обычных/заряженных атак после Е-шки"
+  },
+  "ThunderingFury": {
+    "good_key": "ThunderingFury",
+    "name_ru": "Громогласный рёв ярости",
+    "description": "+15% Электро урона и снижение отката Е-шки при реакциях"
+  },
+  "NighttimeWhispersInTheEchoingWoods": {
+    "good_key": "NighttimeWhispersInTheEchoingWoods",
+    "name_ru": "Ночной шёпот в Эхолесье",
+    "description": "+18% силы атаки и до +50% Гео урона при наличии щита Кристаллизации"
+  }
+}

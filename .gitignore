@@ -3,3 +3,23 @@ __pycache__/
 *.pyo
 *.pyd
 .pytest_cache/
+
+# Runtime data
+artifact_history.json
+.cache/
+kamera/GenshinData/
+kamera/logging/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Agent metadata
+.agents/
+conductor/
+skills-lock.json
+
+# Temporary files
+temp/
