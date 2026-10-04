@@ -10,7 +10,7 @@ import json
 import os
 import threading
 import urllib.request
-from typing import Callable, Optional, Tuple
+from typing import Callable, Optional, Tuple, Any
 
 try:
     from PIL import Image, ImageDraw, ImageOps

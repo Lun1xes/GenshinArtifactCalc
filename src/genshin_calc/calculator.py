@@ -10,7 +10,7 @@ import os
 import threading
 import tkinter as tk
 from datetime import datetime
-from typing import Any
+from typing import Any, Optional, List, Dict, Union, Tuple, Callable
 
 import customtkinter as ctk
 
