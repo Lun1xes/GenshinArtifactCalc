@@ -57,8 +57,10 @@ def find_kamera_executable(search_dirs: Optional[Sequence[str | Path]] = None) -
                     return sub
         return None
 
+    from genshin_calc.utils import get_project_root
+    root = Path(get_project_root())
     for rel_path in DEFAULT_SEARCH_PATHS:
-        p = Path(rel_path)
+        p = root / rel_path
         if p.is_file():
             return p
 
@@ -78,8 +80,10 @@ def get_kamera_output_dirs(search_dirs: Optional[Sequence[str | Path]] = None) -
                 results.append(p)
         return results
 
+    from genshin_calc.utils import get_project_root
+    root = Path(get_project_root())
     for rel in DEFAULT_OUTPUT_DIRS:
-        p = Path(rel).resolve()
+        p = (root / rel).resolve()
         if p not in seen:
             seen.add(p)
             results.append(p)

@@ -1,0 +1,46 @@
+name: Build and Release
+
+on:
+  push:
+    tags:
+      - 'v*' # Trigger only when pushing tags that start with v, e.g. v1.0.0
+
+jobs:
+  build:
+    runs-on: windows-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+          
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install pyinstaller
+          
+      - name: Build executable with PyInstaller
+        run: |
+          pyinstaller --name "GenshinArtifactCalc" --onefile --windowed --collect-all customtkinter main.py
+          
+      - name: Package Release ZIP
+        run: |
+          mkdir release_package
+          Copy-Item "dist\GenshinArtifactCalc.exe" -Destination "release_package\"
+          Copy-Item "data" -Destination "release_package\data" -Recurse
+          Copy-Item "kamera" -Destination "release_package\kamera" -Recurse
+          Compress-Archive -Path "release_package\*" -DestinationPath "GenshinArtifactCalc-Windows.zip"
+          
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: GenshinArtifactCalc-Windows.zip
+          generate_release_notes: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

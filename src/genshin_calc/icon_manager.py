@@ -19,7 +19,9 @@ try:
 except Exception:
     HAS_GUI_LIBS = False
 
-ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
+from genshin_calc.utils import get_project_root
+
+ROOT_DIR = get_project_root()
 CACHE_DIR = os.path.join(ROOT_DIR, ".cache", "icons")
 DATA_DIR = os.path.join(ROOT_DIR, "data")
 

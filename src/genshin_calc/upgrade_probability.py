@@ -17,7 +17,9 @@ from typing import Any, Mapping, Sequence
 import artifact_logic as al
 from artifact_logic import D, STATS_DB, SUBSTAT_SPAWN_WEIGHT
 
-ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
+from genshin_calc.utils import get_project_root
+
+ROOT_DIR = get_project_root()
 MATH_FILE = os.path.join(ROOT_DIR, "data", "relic_math.json")
 
 
