@@ -426,3 +426,10 @@ def describe_rolls(counts: tuple[int, ...]) -> str:
     return f"{counts[0]}–{counts[-1]} ролл."
 
 SLOT_EMOJI = {'Цветок жизни': '🌺', 'Перо смерти': '✒️', 'Пески времени': '⏳', 'Кубок пространства': '🍷', 'Корона разума': '👑'}
+
+RANK_THRESHOLDS = [(90.0, 'SSS', '#e040fb'), (80.0, 'SS', '#4488ff'), (70.0, 'S', '#69f0ae'), (50.0, 'A', '#ffd700'), (30.0, 'B', '#ff8c00'), (0.0, 'C', '#ff5252')]
+
+def get_rank(pct: float) -> tuple[str, str]:
+    for threshold, name, color in RANK_THRESHOLDS:
+        if pct >= threshold: return name, color
+    return 'C', '#EF4444'

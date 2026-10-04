@@ -11,13 +11,11 @@ class CalculatorView(ctk.CTkFrame):
         self._build_ui()
         
     def _build_ui(self):
-        self.stat_inputs = StatInputs(self, on_artifact_changed=self._on_artifact_changed)
-        self.stat_inputs.grid(row=0, column=0, sticky="nsew", padx=5, pady=5)
-        
         self.forecast_panel = ForecastPanel(self)
+        self.stat_inputs = StatInputs(self, on_artifact_changed=self._on_artifact_changed)
+        
+        self.stat_inputs.grid(row=0, column=0, sticky="nsew", padx=5, pady=5)
         self.forecast_panel.grid(row=0, column=1, sticky="nsew", padx=5, pady=5)
         
     def _on_artifact_changed(self, artifact_data: dict):
-        # Passes data to ForecastPanel (to be implemented)
-        # print("Artifact changed:", artifact_data)
-        pass
+        self.forecast_panel.update_forecast(artifact_data)

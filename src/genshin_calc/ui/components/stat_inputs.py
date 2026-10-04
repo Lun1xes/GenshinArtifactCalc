@@ -14,7 +14,7 @@ class StatInputs(ctk.CTkScrollableFrame):
         self.on_artifact_changed = on_artifact_changed
         
         # Variables
-        self.slot_var = ctk.StringVar(value="flower")
+        self.slot_var = ctk.StringVar(value=ARTIFACT_SLOTS[0])
         self.set_var = ctk.StringVar(value="(Не выбран)")
         self.main_stat_var = ctk.StringVar(value="HP")
         self.level_var = ctk.IntVar(value=20)
