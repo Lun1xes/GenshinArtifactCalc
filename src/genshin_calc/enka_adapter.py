@@ -14,7 +14,10 @@ from dataclasses import dataclass
 from decimal import Decimal
 from typing import Any, Mapping
 
-from .good_adapter import ParsedArtifact, to_good_artifact
+try:
+    from .good_adapter import ParsedArtifact, to_good_artifact
+except (ImportError, ValueError):
+    from good_adapter import ParsedArtifact, to_good_artifact
 
 D = Decimal
 
@@ -55,6 +58,10 @@ class EnkaProfile:
     level: int
     world_level: int
     characters: list[EnkaCharacter]
+
+    @property
+    def player_name(self) -> str:
+        return self.nickname
 
 
 # Enka slot identifier to internal Russian slot name
@@ -248,7 +255,7 @@ def parse_enka_relic(item: Mapping[str, Any], character_name: str = "") -> Parse
     flat = item.get("flat", {})
     item_type = flat.get("itemType")
 
-    if item_type != "ITEM_RELIQUARY" and "reliquary" not in item:
+    if item_type != "ITEM_RELIQUARY" and "reliquary" not in item and "relic" not in item and "equipType" not in flat:
         raise EnkaError("Item is not a reliquary artifact.")
 
     equip_type = flat.get("equipType", "")
@@ -256,19 +263,20 @@ def parse_enka_relic(item: Mapping[str, Any], character_name: str = "") -> Parse
         raise EnkaError(f"Unrecognized artifact equipType: {equip_type}")
     slot = ENKA_SLOT_MAP[equip_type]
 
-    mainstat_data = flat.get("reliquaryMainstat", {})
+    mainstat_data = flat.get("reliquaryMainstat") or flat.get("relicMainstat", {})
     main_prop_id = mainstat_data.get("mainPropId", "")
     if main_prop_id not in ENKA_PROP_MAP:
         raise EnkaError(f"Unrecognized mainPropId: {main_prop_id}")
     main_stat = ENKA_PROP_MAP[main_prop_id]
 
-    relic_info = item.get("reliquary", {})
+    relic_info = item.get("reliquary") or item.get("relic", {})
     raw_level = int(relic_info.get("level", 1))
     level = max(0, min(20, raw_level - 1))
     rarity = int(flat.get("rankLevel", 5))
 
     substats: list[tuple[str, Decimal]] = []
-    for sub in flat.get("reliquarySubstats", []):
+    substats_raw = flat.get("reliquarySubstats") or flat.get("relicSubstatList", [])
+    for sub in substats_raw:
         sub_prop = sub.get("appendPropId", "")
         if sub_prop in ENKA_PROP_MAP:
             s_name = ENKA_PROP_MAP[sub_prop]
@@ -409,3 +417,44 @@ def fetch_enka_profile(uid: str, timeout: int = 8, use_cache: bool = True) -> En
     ttl = int(data.get("ttl", 60))
     _CACHE[clean_uid] = (now + ttl, profile)
     return profile
+
+
+def validate_uid(uid: str) -> bool:
+    """Validate 9 or 10 digit UID format."""
+    clean = uid.strip()
+    return clean.isdigit() and len(clean) in (9, 10)
+
+
+def parse_enka_showcase(payload: Mapping[str, Any]) -> dict[str, Any]:
+    """Parse raw showcase dict into characters and artifacts list."""
+    profile = parse_showcase(payload)
+    chars = []
+    for c in profile.characters:
+        chars.append({
+            "name": c.name,
+            "element": c.element,
+            "artifacts": c.artifacts,
+        })
+    return {"player": profile.player_name, "characters": chars}
+
+
+def parse_enka_artifact(relic: Mapping[str, Any]) -> ParsedArtifact:
+    """Convert raw relic dictionary to ParsedArtifact."""
+    return parse_enka_relic(relic)
+
+
+def fetch_showcase(uid: str) -> dict[str, Any]:
+    """Fetch raw showcase JSON payload by UID."""
+    if not validate_uid(uid):
+        raise ValueError(f"Invalid UID: {uid}")
+    clean_uid = uid.strip()
+    url = f"https://enka.network/api/uid/{clean_uid}/"
+    req = urllib.request.Request(
+        url,
+        headers={
+            "User-Agent": "GenshinArtifactCalc/2.0",
+            "Accept": "application/json",
+        },
+    )
+    with urllib.request.urlopen(req, timeout=8) as resp:
+        return json.loads(resp.read().decode("utf-8"))

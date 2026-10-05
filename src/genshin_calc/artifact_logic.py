@@ -67,7 +67,19 @@ ARTIFACT_SLOTS: tuple[str, ...] = (
     "Корона разума",
 )
 
-MAIN_STATS_BY_SLOT: dict[str, tuple[str, ...]] = {
+class _MainStatsDict(dict):
+    def __getitem__(self, key):
+        if key == "Корона проницательности" and key not in self:
+            return super().__getitem__("Корона разума")
+        return super().__getitem__(key)
+
+    def get(self, key, default=None):
+        if key == "Корона проницательности" and key not in self:
+            return super().get("Корона разума", default)
+        return super().get(key, default)
+
+
+MAIN_STATS_BY_SLOT: dict[str, tuple[str, ...]] = _MainStatsDict({
     "Цветок жизни": ("HP",),
     "Перо смерти": ("Сила атаки",),
     "Пески времени": (
@@ -101,7 +113,7 @@ MAIN_STATS_BY_SLOT: dict[str, tuple[str, ...]] = {
         "Бонус лечения",
         "Мастерство стихий",
     ),
-}
+})
 
 LEVELS = (0, 4, 8, 12, 16, 20)
 

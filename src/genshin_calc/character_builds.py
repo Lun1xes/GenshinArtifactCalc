@@ -88,6 +88,18 @@ class CharacterBuild:
     notes: str = ""                 # e.g. "Требует 160-200% ВЭ. Атака не нужна."
     weapons: list[dict] = field(default_factory=list)
 
+    def __post_init__(self):
+        slot_map = {
+            "sands": "Пески времени",
+            "goblet": "Кубок пространства",
+            "circlet": "Корона разума",
+        }
+        for eng, ru in slot_map.items():
+            if ru in self.main_stats and eng not in self.main_stats:
+                self.main_stats[eng] = self.main_stats[ru]
+            elif eng in self.main_stats and ru not in self.main_stats:
+                self.main_stats[ru] = self.main_stats[eng]
+
     @property
     def display_name(self) -> str:
         return f"{self.name} ({self.build_name})"
@@ -100,6 +112,14 @@ class CharacterBuild:
             if wid:
                 names.append(format_weapon_name(wid))
         return names
+
+    @property
+    def top_weapons_ru(self) -> list[str]:
+        return self.top_weapon_names
+
+    @property
+    def recommended_sets(self) -> list[str]:
+        return self.best_sets
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -1167,15 +1187,71 @@ class CompatibilityResult:
     verdict: str                    # e.g. "⭐ Идеально", "✅ Отлично", "⚠️ Сомнительно", "❌ Не подходит"
     explanation: str                # Human-readable breakdown in Russian
 
+    def __float__(self) -> float:
+        return float(self.score)
+
+    def __int__(self) -> int:
+        return int(self.score)
+
+    def __lt__(self, other: Any) -> bool:
+        other_score = other.score if isinstance(other, CompatibilityResult) else float(other)
+        return self.score < other_score
+
+    def __le__(self, other: Any) -> bool:
+        other_score = other.score if isinstance(other, CompatibilityResult) else float(other)
+        return self.score <= other_score
+
+    def __gt__(self, other: Any) -> bool:
+        other_score = other.score if isinstance(other, CompatibilityResult) else float(other)
+        return self.score > other_score
+
+    def __ge__(self, other: Any) -> bool:
+        other_score = other.score if isinstance(other, CompatibilityResult) else float(other)
+        return self.score >= other_score
+
+    def __eq__(self, other: Any) -> bool:
+        if isinstance(other, CompatibilityResult):
+            return self.score == other.score and self.build == other.build
+        try:
+            return self.score == float(other)
+        except Exception:
+            return False
+
 
 def evaluate_artifact_for_build(
-    build: CharacterBuild,
-    slot: str,
-    main_stat: str,
-    substats: dict[str, Any],
+    build: Any = None,
+    slot: str = "",
+    main_stat: str = "",
+    substats: Optional[dict[str, Any]] = None,
     set_name_or_key: str = "",
+    *args,
+    **kwargs,
 ) -> CompatibilityResult:
     """Evaluate how well an artifact matches a specific character build."""
+    if "set_key" in kwargs and not set_name_or_key:
+        set_name_or_key = kwargs["set_key"] or ""
+
+    if isinstance(build, str) and isinstance(substats, CharacterBuild):
+        actual_slot = build
+        actual_main = slot
+        actual_subs = main_stat if isinstance(main_stat, dict) else {}
+        actual_build = substats
+        build, slot, main_stat, substats = actual_build, actual_slot, actual_main, actual_subs
+    elif isinstance(build, str) and len(args) >= 1 and isinstance(args[0], CharacterBuild):
+        actual_slot = build
+        actual_main = slot
+        actual_subs = substats if isinstance(substats, dict) else {}
+        actual_build = args[0]
+        actual_set = args[1] if len(args) > 1 else set_name_or_key
+        build, slot, main_stat, substats, set_name_or_key = actual_build, actual_slot, actual_main, actual_subs, actual_set
+    elif isinstance(build, str):
+        found = next((b for b in CHARACTER_BUILDS if build.lower() in b.name.lower() or build.lower() in b.display_name.lower()), None)
+        if found:
+            build = found
+
+    if substats is None:
+        substats = {}
+
     set_matches = False
     if set_name_or_key:
         key = SET_NAME_TO_KEY.get(set_name_or_key, set_name_or_key)
@@ -1271,9 +1347,39 @@ def find_top_characters_for_artifact(
     return results[:limit]
 
 
+def find_top_matching_characters(
+    slot: str,
+    main_stat: str,
+    substats: dict[str, Any],
+    top_n: int = 5,
+    set_name_or_key: str = "",
+) -> list[tuple[CharacterBuild, float]]:
+    """Return top compatible character builds as (build, score) pairs."""
+    evals = find_top_characters_for_artifact(
+        slot=slot,
+        main_stat=main_stat,
+        substats=substats,
+        set_name_or_key=set_name_or_key,
+        limit=top_n * 3,
+    )
+    # Deduplicate by character display name
+    seen = set()
+    pairs = []
+    for r in sorted(evals, key=lambda x: x.score, reverse=True):
+        if r.build.name not in seen:
+            seen.add(r.build.name)
+            pairs.append((r.build, float(r.score)))
+            if len(pairs) >= top_n:
+                break
+    return pairs
+
+
 def _load_external_data() -> None:
     """Seamlessly load and merge external data from data/*.json if present."""
-    from .utils import get_project_root
+    try:
+        from .utils import get_project_root
+    except (ImportError, ValueError):
+        from utils import get_project_root
     data_dir = os.path.join(get_project_root(), "data")
     if not os.path.isdir(data_dir):
         return

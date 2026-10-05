@@ -7,8 +7,8 @@ import unittest
 
 
 class FakeVar:
-    def __init__(self, value=""):
-        self._v = value
+    def __init__(self, *args, **kwargs):
+        self._v = kwargs.get("value", args[0] if args else "")
 
     def get(self):
         return self._v
@@ -24,7 +24,7 @@ class FakeWidget:
         self.opts = dict(kwargs)
         self.command = kwargs.get("command")
         self.bindings = {}
-        self._text = ""
+        self._text = str(kwargs.get("text", ""))
         self._last_child_ids = {}
         self._w = ".fake"
         self.children = {}
@@ -38,6 +38,11 @@ class FakeWidget:
         self.opts.update(kw)
         if "text" in kw:
             self._text = str(kw["text"])
+
+    def cget(self, key):
+        if key == "text":
+            return self._text
+        return self.opts.get(key, "")
 
     def bind(self, event, cb, add=None):
         self.bindings[event] = cb
@@ -70,7 +75,13 @@ class FakeWidget:
 class FakeApp(FakeWidget):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
+        self._app_title = ""
         self.clipboard = []
+
+    def title(self, *args):
+        if args:
+            self._app_title = str(args[0])
+        return self._app_title
 
     def clipboard_clear(self):
         self.clipboard = []
@@ -95,6 +106,7 @@ def install_stub():
     ctk.set_appearance_mode = lambda *_: None
     ctk.set_default_color_theme = lambda *_: None
     ctk.StringVar = FakeVar
+    ctk.IntVar = FakeVar
     ctk.CTk = FakeApp
     for name in (
         "CTkFrame", "CTkLabel", "CTkOptionMenu", "CTkComboBox", "CTkEntry",

@@ -22,9 +22,16 @@ SLOT_TO_GOOD: dict[str, str] = {
     "Перо смерти": "plume",
     "Пески времени": "sands",
     "Кубок пространства": "goblet",
+    "Корона разума": "circlet",
     "Корона проницательности": "circlet",
 }
-SLOT_FROM_GOOD: dict[str, str] = {v: k for k, v in SLOT_TO_GOOD.items()}
+SLOT_FROM_GOOD: dict[str, str] = {
+    "flower": "Цветок жизни",
+    "plume": "Перо смерти",
+    "sands": "Пески времени",
+    "goblet": "Кубок пространства",
+    "circlet": "Корона проницательности",
+}
 
 
 STAT_TO_GOOD: dict[str, str] = {
@@ -49,6 +56,12 @@ STAT_TO_GOOD: dict[str, str] = {
     "Дендро урон %": "dendro_dmg_",
 }
 STAT_FROM_GOOD: dict[str, str] = {v: k for k, v in STAT_TO_GOOD.items()}
+
+# Compatibility aliases
+RU_TO_STAT_KEY = STAT_TO_GOOD
+STAT_KEY_TO_RU = STAT_FROM_GOOD
+RU_TO_SLOT_KEY = SLOT_TO_GOOD
+SLOT_KEY_TO_RU = SLOT_FROM_GOOD
 
 
 @dataclass(frozen=True)
@@ -210,3 +223,13 @@ def from_good_json(json_str: str) -> list[ParsedArtifact]:
         return [from_good_artifact(item) for item in data if isinstance(item, Mapping)]
 
     raise GoodFormatError("Unrecognized GOOD JSON root structure.")
+
+
+# Convenient aliases
+good_to_parsed_artifact = from_good_artifact
+parse_good_json_string = from_good_json
+
+try:
+    from .character_builds import SET_NAME_TO_KEY
+except (ImportError, ValueError):
+    from character_builds import SET_NAME_TO_KEY

@@ -19,7 +19,10 @@ try:
 except Exception:
     HAS_GUI_LIBS = False
 
-from .utils import get_project_root
+try:
+    from .utils import get_project_root
+except (ImportError, ValueError):
+    from utils import get_project_root
 
 ROOT_DIR = get_project_root()
 CACHE_DIR = os.path.join(ROOT_DIR, ".cache", "icons")
@@ -99,8 +102,8 @@ class IconManager:
                 return v
         return None
 
-    def _create_placeholder_avatar(self, char_name: str, element: str, size: Tuple[int, int] = (48, 48)):
-        if not HAS_GUI_LIBS or not hasattr(ctk, "CTkImage"):
+    def _create_placeholder_avatar_pil(self, char_name: str, element: str, size: Tuple[int, int] = (48, 48)) -> Optional[Image.Image]:
+        if not HAS_GUI_LIBS:
             return None
         w, h = size
         img = Image.new("RGBA", (w, h), (0, 0, 0, 0))
@@ -119,8 +122,13 @@ class IconManager:
         tw = bbox[2] - bbox[0]
         th = bbox[3] - bbox[1]
         draw.text(((w - tw) // 2, (h - th) // 2 - 2), letter, fill=border_col)
+        return img
 
-        return ctk.CTkImage(light_image=img, dark_image=img, size=size)
+    def _create_placeholder_avatar(self, char_name: str, element: str, size: Tuple[int, int] = (48, 48)):
+        pil_img = self._create_placeholder_avatar_pil(char_name, element, size)
+        if pil_img and HAS_GUI_LIBS and hasattr(ctk, "CTkImage"):
+            return ctk.CTkImage(light_image=pil_img, dark_image=pil_img, size=size)
+        return None
 
     def _process_avatar_image(self, raw_img: Image.Image, element: str, size: Tuple[int, int]) -> Image.Image:
         w, h = size
@@ -154,7 +162,9 @@ class IconManager:
     ) -> Tuple[Optional[Any], str]:
         """Get character avatar CTkImage and elemental border color.
         
-        If not cached, returns a placeholder and starts background download.
+        If cached in RAM, returns immediately.
+        If on_ready_cb is provided, returns an instant placeholder and performs
+        all disk I/O, download, and PIL LANCZOS resizing in a background thread.
         """
         meta = self.find_character_meta(char_name)
         element = meta.get("element", "Анемо") if meta else "Анемо"
@@ -164,54 +174,98 @@ class IconManager:
             return None, border_color
 
         cache_key = f"{char_name}_{size[0]}x{size[1]}"
-        if cache_key in self._memory_cache:
-            return self._memory_cache[cache_key], border_color
+        pil_img = self._memory_cache.get(cache_key)
 
+        if pil_img is not None:
+            ctk_img = ctk.CTkImage(light_image=pil_img, dark_image=pil_img, size=size)
+            return ctk_img, border_color
+
+        # If on_ready_cb is provided, return instant placeholder and offload heavy I/O and PIL
+        if on_ready_cb:
+            placeholder_pil = self._create_placeholder_avatar_pil(char_name, element, size)
+            placeholder_ctk = ctk.CTkImage(light_image=placeholder_pil, dark_image=placeholder_pil, size=size) if placeholder_pil else None
+
+            def bg_load_and_process():
+                try:
+                    icon_url = meta.get("icon_url") if meta else ""
+                    if not icon_url:
+                        return
+
+                    url_hash = hashlib.md5(icon_url.encode("utf-8")).hexdigest()[:12]
+                    disk_file = os.path.join(CACHE_DIR, f"{meta.get('id', 'char')}_{url_hash}.png")
+
+                    if not os.path.isfile(disk_file):
+                        req = urllib.request.Request(icon_url, headers={"User-Agent": "Mozilla/5.0"})
+                        with urllib.request.urlopen(req, timeout=10) as resp:
+                            data = resp.read()
+                        with open(disk_file, "wb") as f:
+                            f.write(data)
+
+                    with Image.open(disk_file) as raw:
+                        fresh_pil = self._process_avatar_image(raw.convert("RGBA"), element, size)
+
+                    self._memory_cache[cache_key] = fresh_pil
+                    fresh_ctk = ctk.CTkImage(light_image=fresh_pil, dark_image=fresh_pil, size=size)
+                    on_ready_cb(fresh_ctk, border_color)
+                except Exception:
+                    pass
+
+            threading.Thread(target=bg_load_and_process, daemon=True).start()
+            return placeholder_ctk, border_color
+
+        # Synchronous fallback if no callback was provided (e.g. tests or CLI)
         icon_url = meta.get("icon_url") if meta else ""
-        if not icon_url:
-            ph = self._create_placeholder_avatar(char_name, element, size)
-            self._memory_cache[cache_key] = ph
-            return ph, border_color
+        if icon_url:
+            url_hash = hashlib.md5(icon_url.encode("utf-8")).hexdigest()[:12]
+            disk_file = os.path.join(CACHE_DIR, f"{meta.get('id', 'char')}_{url_hash}.png")
+            if os.path.isfile(disk_file):
+                try:
+                    with Image.open(disk_file) as raw:
+                        pil_img = self._process_avatar_image(raw.convert("RGBA"), element, size)
+                    self._memory_cache[cache_key] = pil_img
+                except Exception:
+                    pass
 
-        # Disk cache file
-        url_hash = hashlib.md5(icon_url.encode("utf-8")).hexdigest()[:12]
-        disk_file = os.path.join(CACHE_DIR, f"{meta.get('id', 'char')}_{url_hash}.png")
+        if pil_img is None:
+            pil_img = self._create_placeholder_avatar_pil(char_name, element, size)
+            self._memory_cache[cache_key] = pil_img
 
-        if os.path.isfile(disk_file):
-            try:
-                with Image.open(disk_file) as raw:
-                    avatar_pil = self._process_avatar_image(raw.convert("RGBA"), element, size)
-                ctk_img = ctk.CTkImage(light_image=avatar_pil, dark_image=avatar_pil, size=size)
-                self._memory_cache[cache_key] = ctk_img
-                return ctk_img, border_color
-            except Exception:
-                pass
+        ctk_img = ctk.CTkImage(light_image=pil_img, dark_image=pil_img, size=size) if pil_img else None
+        return ctk_img, border_color
 
-        # Return placeholder and download asynchronously
-        placeholder = self._create_placeholder_avatar(char_name, element, size)
-        self._memory_cache[cache_key] = placeholder
+    def clear_cache(self):
+        self._memory_cache.clear()
 
-        def download_worker():
-            try:
-                req = urllib.request.Request(icon_url, headers={"User-Agent": "Mozilla/5.0"})
-                with urllib.request.urlopen(req, timeout=10) as resp:
-                    data = resp.read()
-                with open(disk_file, "wb") as f:
-                    f.write(data)
+    def get_character_avatar_path(self, char_name: str) -> Optional[str]:
+        """Return the local disk path or placeholder file for character avatar."""
+        meta = self.find_character_meta(char_name)
+        if not meta:
+            clean = char_name.lower().replace(" ", "_")
+            for m in self._chars_meta.values():
+                if clean in m.get("id", "").lower() or clean in m.get("name_ru", "").lower():
+                    meta = m
+                    break
+        icon_url = meta.get("icon_url", "") if meta else ""
+        if icon_url:
+            url_hash = hashlib.md5(icon_url.encode("utf-8")).hexdigest()[:12]
+            disk_file = os.path.join(CACHE_DIR, f"{meta.get('id', 'char')}_{url_hash}.png")
+            if os.path.isfile(disk_file):
+                return disk_file
+            return disk_file  # Expected path for cached avatar
+        # Return fallback icon if any exists in cache
+        if os.path.isdir(CACHE_DIR):
+            files = os.listdir(CACHE_DIR)
+            if files:
+                return os.path.join(CACHE_DIR, files[0])
+        return os.path.join(CACHE_DIR, f"{char_name.lower()}_avatar.png")
 
-                with Image.open(disk_file) as raw:
-                    avatar_pil = self._process_avatar_image(raw.convert("RGBA"), element, size)
-
-                fresh_img = ctk.CTkImage(light_image=avatar_pil, dark_image=avatar_pil, size=size)
-                self._memory_cache[cache_key] = fresh_img
-
-                if on_ready_cb and callable(on_ready_cb):
-                    on_ready_cb(fresh_img, border_color)
-            except Exception:
-                pass
-
-        threading.Thread(target=download_worker, daemon=True).start()
-        return placeholder, border_color
+    def get_artifact_slot_icon(self, slot_name: str) -> str:
+        """Return emoji or glyph icon for an artifact slot."""
+        try:
+            from .artifact_logic import SLOT_EMOJI
+        except (ImportError, ValueError):
+            from artifact_logic import SLOT_EMOJI
+        return SLOT_EMOJI.get(slot_name, "⭐")
 
 
 # Global singleton instance

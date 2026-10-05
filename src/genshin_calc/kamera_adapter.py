@@ -18,7 +18,10 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Any, Callable, Optional, Sequence
 
-from .good_adapter import ParsedArtifact, from_good_artifact, from_good_json
+try:
+    from .good_adapter import ParsedArtifact, from_good_artifact, from_good_json
+except (ImportError, ValueError):
+    from good_adapter import ParsedArtifact, from_good_artifact, from_good_json
 
 logger = logging.getLogger(__name__)
 
@@ -57,7 +60,10 @@ def find_kamera_executable(search_dirs: Optional[Sequence[str | Path]] = None) -
                     return sub
         return None
 
-    from .utils import get_project_root
+    try:
+        from .utils import get_project_root
+    except (ImportError, ValueError):
+        from utils import get_project_root
     root = Path(get_project_root())
     for rel_path in DEFAULT_SEARCH_PATHS:
         p = root / rel_path
@@ -80,7 +86,10 @@ def get_kamera_output_dirs(search_dirs: Optional[Sequence[str | Path]] = None) -
                 results.append(p)
         return results
 
-    from .utils import get_project_root
+    try:
+        from .utils import get_project_root
+    except (ImportError, ValueError):
+        from utils import get_project_root
     root = Path(get_project_root())
     for rel in DEFAULT_OUTPUT_DIRS:
         p = (root / rel).resolve()
@@ -164,28 +173,45 @@ def list_kamera_exports(search_dirs: Optional[Sequence[str | Path]] = None) -> l
     return exports
 
 
+def find_good_files(folder_path: str | Path) -> list[str]:
+    """Find all JSON files in the specified directory, sorted newest first."""
+    p = Path(folder_path)
+    if not p.exists() or not p.is_dir():
+        return []
+    candidates = [f for f in p.glob("*.json") if f.is_file()]
+    candidates.sort(key=lambda x: x.stat().st_mtime, reverse=True)
+    return [str(c.resolve()) for c in candidates]
+
+
+def load_kamera_json(file_path: str | Path) -> dict[str, Any]:
+    """Load JSON content from a Kamera export file."""
+    path = Path(file_path)
+    if not path.is_file():
+        raise FileNotFoundError(f"Export file not found: {file_path}")
+    with open(path, "r", encoding="utf-8", errors="replace") as f:
+        return json.load(f)
+
+
+def extract_parsed_artifacts(data: dict[str, Any]) -> list[ParsedArtifact]:
+    """Extract and parse list of ParsedArtifact from raw GOOD format dictionary."""
+    raw_artifacts = data.get("artifacts", [])
+    parsed_artifacts: list[ParsedArtifact] = []
+    for raw in raw_artifacts:
+        try:
+            parsed_artifacts.append(from_good_artifact(raw))
+        except Exception as e:
+            logger.debug("Skipping unparseable artifact %s: %s", raw, e)
+    return parsed_artifacts
+
+
 def load_kamera_good_file(file_path: str | Path) -> tuple[list[ParsedArtifact], dict[str, Any]]:
     """Load and parse an exported GOOD JSON file into ParsedArtifact instances.
 
     Returns:
         (artifacts, metadata_dict)
     """
-    path = Path(file_path)
-    if not path.is_file():
-        raise FileNotFoundError(f"Export file not found: {file_path}")
-
-    with open(path, "r", encoding="utf-8") as f:
-        content = f.read()
-
-    data = json.loads(content)
-    raw_artifacts = data.get("artifacts", [])
-    parsed_artifacts: list[ParsedArtifact] = []
-
-    for raw in raw_artifacts:
-        try:
-            parsed_artifacts.append(from_good_artifact(raw))
-        except Exception as e:
-            logger.debug("Skipping unparseable artifact %s: %s", raw, e)
+    data = load_kamera_json(file_path)
+    parsed_artifacts = extract_parsed_artifacts(data)
 
     meta = {
         "format": data.get("format", "GOOD"),

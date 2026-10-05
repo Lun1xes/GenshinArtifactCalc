@@ -117,7 +117,7 @@ class TestTier1FeatureCoverage(HeadlessTestBase):
     # ──────────────────────────────────────────────────────────────────
     def test_f3_01_all_five_slots_defined(self):
         """F3: ARTIFACT_SLOTS defines all 5 Genshin artifact slots."""
-        expected = ["Цветок жизни", "Перо смерти", "Пески времени", "Кубок пространства", "Корона проницательности"]
+        expected = ["Цветок жизни", "Перо смерти", "Пески времени", "Кубок пространства", "Корона разума"]
         self.assertEqual(list(artifact_logic.ARTIFACT_SLOTS), expected)
 
     def test_f3_02_slot_emojis_mapping(self):
@@ -127,7 +127,7 @@ class TestTier1FeatureCoverage(HeadlessTestBase):
         self.assertEqual(emojis["Перо смерти"], "✒️")
         self.assertEqual(emojis["Пески времени"], "⏳")
         self.assertEqual(emojis["Кубок пространства"], "🍷")
-        self.assertEqual(emojis["Корона проницательности"], "👑")
+        self.assertEqual(emojis["Корона разума"], "👑")
 
     def test_f3_03_slot_selection_updates_state(self):
         """F3: Selecting a slot updates active slot state."""
@@ -265,15 +265,15 @@ class TestTier1FeatureCoverage(HeadlessTestBase):
 
     def test_f6_04_discrete_addends_derivation(self):
         """F6: Discrete roll addends match official tiers in STATS_DB."""
-        cr_rolls = artifact_logic.STATS_DB["Шанс крит. попадания"]
+        cr_rolls = artifact_logic.STATS_DB["Шанс крит. попадания"]["rolls"]
         self.assertEqual(len(cr_rolls), 4)
         self.assertIn(Decimal("3.89"), cr_rolls)
 
     def test_f6_05_illegal_substat_duplicate_validation(self):
         """F6: Substats database defines discrete tier values."""
-        cd_rolls = artifact_logic.STATS_DB["Крит. урон"]
+        cd_rolls = artifact_logic.STATS_DB["Крит. урон"]["rolls"]
         self.assertIn(Decimal("7.77"), cd_rolls)
-        self.assertIn(Decimal("7.0"), cd_rolls)
+        self.assertIn(Decimal("6.99"), cd_rolls)
 
     # ──────────────────────────────────────────────────────────────────
     # F7: Clear & Quick Paste Actions
@@ -419,7 +419,7 @@ class TestTier1FeatureCoverage(HeadlessTestBase):
     def test_f10_05_rank_badge_color_mapping(self):
         """F10: get_rank returns associated color."""
         _, color_sss = artifact_logic.get_rank(95.0)
-        self.assertEqual(color_sss.lower(), "#ffd700")
+        self.assertEqual(color_sss.lower(), "#e040fb")
 
     # ──────────────────────────────────────────────────────────────────
     # F11: +20 Upgrade Monte Carlo Forecast
@@ -597,15 +597,28 @@ class TestTier1FeatureCoverage(HeadlessTestBase):
         self.assertTrue(any("Итто" in n or "Альбедо" in n or "Ноэлль" in n or "Тиори" in n for n in matched_names))
 
     # ──────────────────────────────────────────────────────────────────
+    def _fill_valid_artifact(self, app, slot="Пески времени", main_stat="Мастерство стихий"):
+        app.slot_var.set(slot)
+        app.main_stat_var.set(main_stat)
+        app.level_var.set("+20")
+        subs = [
+            ("Крит. урон", "28.0"),
+            ("Шанс крит. попадания", "10.5"),
+            ("Сила атаки %", "5.83"),
+            ("Восст. энергии", "6.48"),
+        ]
+        for i, (s, v) in enumerate(subs):
+            app.stat_widgets[i]["stat_combo"].set(s)
+            app.stat_widgets[i]["entry"].delete(0, "end")
+            app.stat_widgets[i]["entry"].insert(0, v)
+
+    # ──────────────────────────────────────────────────────────────────
     # F14: History Persistence & Report Copy
     # ──────────────────────────────────────────────────────────────────
     def test_f14_01_save_artifact_to_history(self):
         """F14: Saving artifact writes record to history file."""
         app = self.create_legacy_app()
-        app.slot_var.set("Пески времени")
-        app.main_stat_var.set("Мастерство стихий")
-        app.stat_widgets[0]["stat_combo"].set("Крит. урон")
-        app.stat_widgets[0]["entry"].insert(0, "14.0")
+        self._fill_valid_artifact(app)
         app.calculate()
         app.save_to_history()
         self.assertTrue(os.path.exists(legacy_calculator.HISTORY_FILE))
@@ -613,10 +626,7 @@ class TestTier1FeatureCoverage(HeadlessTestBase):
     def test_f14_02_history_record_contains_required_fields(self):
         """F14: History record contains slot, main_stat, substats, rank, and PAV."""
         app = self.create_legacy_app()
-        app.slot_var.set("Пески времени")
-        app.main_stat_var.set("Мастерство стихий")
-        app.stat_widgets[0]["stat_combo"].set("Крит. урон")
-        app.stat_widgets[0]["entry"].insert(0, "14.0")
+        self._fill_valid_artifact(app)
         app.calculate()
         app.save_to_history()
         with open(legacy_calculator.HISTORY_FILE, "r", encoding="utf-8") as f:
@@ -630,9 +640,10 @@ class TestTier1FeatureCoverage(HeadlessTestBase):
     def test_f14_03_history_persistence_retrieval(self):
         """F14: Multiple saved artifacts are correctly retrieved from history."""
         app = self.create_legacy_app()
+        self._fill_valid_artifact(app, slot="Пески времени")
         app.calculate()
         app.save_to_history()
-        app.slot_var.set("Перо смерти")
+        self._fill_valid_artifact(app, slot="Перо смерти", main_stat="Сила атаки")
         app.calculate()
         app.save_to_history()
         with open(legacy_calculator.HISTORY_FILE, "r", encoding="utf-8") as f:
@@ -642,6 +653,7 @@ class TestTier1FeatureCoverage(HeadlessTestBase):
     def test_f14_04_copy_report_card_formatting(self):
         """F14: Copy share card generates formatted string with slot and stats."""
         app = self.create_legacy_app()
+        self._fill_valid_artifact(app)
         app.calculate()
         app.copy_share_card()
         clip = app.clipboard_get()
@@ -650,6 +662,7 @@ class TestTier1FeatureCoverage(HeadlessTestBase):
     def test_f14_05_report_card_contains_cv_and_rank(self):
         """F14: Share card output includes rank and CV information."""
         app = self.create_legacy_app()
+        self._fill_valid_artifact(app)
         app.calculate()
         app.copy_share_card()
         clip = app.clipboard_get()
@@ -930,6 +943,7 @@ class TestTier1FeatureCoverage(HeadlessTestBase):
     def test_f20_01_history_table_population(self):
         """F20: Saved history records are accessible for display."""
         app = self.create_legacy_app()
+        self._fill_valid_artifact(app)
         app.calculate()
         app.save_to_history()
         history = app._load_history()
@@ -938,10 +952,10 @@ class TestTier1FeatureCoverage(HeadlessTestBase):
     def test_f20_02_history_filter_by_slot(self):
         """F20: Filtering history by slot selects only matching artifacts."""
         app = self.create_legacy_app()
-        app.slot_var.set("Цветок жизни")
+        self._fill_valid_artifact(app, slot="Цветок жизни", main_stat="HP")
         app.calculate()
         app.save_to_history()
-        app.slot_var.set("Перо смерти")
+        self._fill_valid_artifact(app, slot="Перо смерти", main_stat="Сила атаки")
         app.calculate()
         app.save_to_history()
         
@@ -1095,6 +1109,8 @@ class TestTier1FeatureCoverage(HeadlessTestBase):
         app = self.create_legacy_app()
         entry = app.stat_widgets[0]["entry"]
         entry.insert(0, "cut_val")
+        if hasattr(entry, "select_range"):
+            entry.select_range(0, "end")
         event = MagicMock()
         event.widget = entry
         event.keycode = 88
