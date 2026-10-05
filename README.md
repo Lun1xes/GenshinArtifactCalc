@@ -59,6 +59,8 @@ pip install customtkinter Pillow
 ### Запуск калькулятора
 
 ```bash
+python main.py
+# или
 python calculator.py
 ```
 

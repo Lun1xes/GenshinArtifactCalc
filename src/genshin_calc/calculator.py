@@ -14,6 +14,12 @@ from typing import Any, Optional, List, Dict, Union, Tuple, Callable
 
 import customtkinter as ctk
 
+if __name__ == "__main__" and not __package__:
+    import sys
+    from pathlib import Path
+    sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+    __package__ = "genshin_calc"
+
 from . import character_builds as cb
 from . import enka_adapter
 from . import good_adapter
